@@ -1,0 +1,81 @@
+#mundo-aberto>h2.titulo {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 8;
+    color: #7138E5;
+}
+
+#mundo-aberto figure {
+    background-color: #09070D;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#mundo-aberto .foto-produto {
+    height: 100%;
+    width: 100%;
+    max-height: 380px;
+    max-width: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.produto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Espaçamento entre os passeios */
+}
+
+#acao>h2.titulo{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 8;
+    color: #7138E5;
+}
+/* Estilos básicos */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título da seção */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+/* Estilo do container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+
+/* Efeito de zoom ao passar o mouse */
+.produto:hover {
+    transform: scale(1.05);
+}
+
+

@@ -43,6 +43,7 @@ header nav ul li a{
     color: #8F60E9;
     font-family: 'roboto serif';
     padding: 10px 0px;
+    margin: 10px;
 }
 
 header nav>input{
@@ -79,6 +80,7 @@ header nav>input{
 header nav>i{
     font-size: 30px;
     color: #8F60E9;
+    margin: 10px;
 }
 
 header nav>h2 a{
