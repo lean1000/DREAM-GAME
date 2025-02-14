@@ -1,101 +1,63 @@
-Tela inicial
-    header
-        menu de navegação - feito
-            Loja 
-                Leva para a tela inicial
-            Destaques 
-                Leva para a tela de Destaques
-            Suporte 
-                Leva para a tela de suporte
-            Sobre
-                Leva para a tela de login
-        hamburguer
-            Abre outro menu de navegações com mais algumas opções
-        search bar - feito
-            icone de filtro
-                Leva para a tela de pesquisa 
-            search bar
-                leva para o tela de produto com o produto que você pesquisou ,caso pesquise errado leva para a tela de pesquisa
-    banner - feito
-        imagens do produto
-        botão de compra
-            Leva para a tela de produto do produto do banner
-    área de produto
-        Leva para tela de produto do produto selecionado
-    footer - feito
-        copyright
+# Tela Inicial
+- [ ] **Header**
+  - **Menu de Navegação**
+    - [ ] **Loja**: Leva para a tela inicial.
+    - [ ] **Destaques**: Leva para a tela de Destaques.
+    - [ ] **Suporte**: Leva para a tela de Suporte.
+    - [ ] **Sobre**: Leva para a tela de Login.
+  - [ ] **Hamburguer**: Abre um menu de navegação com mais opções.
+  - **Search Bar**
+    - [ ] **Ícone de Filtro**: Leva para a tela de pesquisa.
+    - Leva para a tela de produto com o produto pesquisado; se a pesquisa estiver errada, leva para a tela de pesquisa.
+- [ ] **Banner**
+  - [ ] Imagens do produto.
+  - [ ] **Botão de Compra**: Leva para a tela de produto do produto do banner.
+- [ ] **Área de Produto**: Leva para a tela de produto do produto selecionado.
+- [ ] **Footer**
+  - Copyright.
 
+# Tela de Destaques
+- [ ] **Header**
+- [ ] **Search Bar**
+- [ ] **Container de Produtos**
+  - [ ] Imagem do produto.
+  - [ ] **Botão de Compra**: Leva para a tela do produto.
+- [ ] **Footer**
 
+# Tela de Suporte
+- [ ] **Header**
+- [ ] **Título**
+- [ ] **Subtítulo**
+- [ ] **Botões**
+  - [ ] **Relatar Bugs**: Abre um formulário.
+  - [ ] **Problemas na Compra**: Abre um texto de possíveis soluções.
+  - [ ] **Problema de Login**: Abre um texto de possíveis soluções.
+  - [ ] **Outro**: Abre um formulário.
+- [ ] **Ícones**
 
+# Tela de Pesquisa
+- [ ] **Header**
+- [ ] **Search Bar**
+- [ ] **Produtos**
+- [ ] **Filtro**
+  - Filtro do lado com várias informações.
 
+# Tela de Produtos
+- [ ] **Header**
+- [ ] **Container de Produto**
+  - [ ] Informações.
+  - [ ] Imagem.
+  - [ ] Descrição.
+  - [ ] **Botão de Compra**.
+- [ ] **Footer**
 
-Tela de Destaques -feito
-    header
-    search bar 
-    conteiner de produtos
-        imagen do produto
-        botão de compra
-            leva para a tela do produto
-    footer
+# Tela de Perfil
+- [ ] **Header**
+- [ ] Opções para editar o perfil.
+- [ ] **Footer**
 
-
-
-
-
-Tela de Suporte 
-    header - feito
-    título - feito
-    subtitulo - feito
-    botões - feito
-        Relatar Bugs
-            abre um formulario
-        Problemas na compra
-            abre um texto de possiveis soluções
-        Problema de login
-            abre um texto de possiveis soluções
-        Outro
-            abre um formulario
-    icons - feito
-
-
-
-
-
-Tela de pesquisa
-    header - feito
-    search bar
-    produtos
-    filtro
-        filtro do lado com varias informações
-
-
-
-
-  
-Tela de produtos
-    header - feito
-    conteiner de produto 
-        informações
-        imagen
-        descrição
-        botao de compra
-    footer - feito
-
-
-
-
-
-Tela perfil
-    header - feito
-    opçoes para editar o perfil
-    footer - feito
-
-
-
-
-
-Tela de Login
-    Logo
-    formulario
-    area de cadastro
-    botao para entrar
+# Tela de Login
+- [ ] Logo.
+- [ ] Formulário.
+- [ ] Área de cadastro.
+- [ ] **Botão para Entrar**.
