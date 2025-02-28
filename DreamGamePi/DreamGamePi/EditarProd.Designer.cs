@@ -52,11 +52,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxGenero = new System.Windows.Forms.TextBox();
+            this.textBoxAno = new System.Windows.Forms.TextBox();
+            this.textBoxAvaliacao = new System.Windows.Forms.TextBox();
+            this.textBoxValor = new System.Windows.Forms.TextBox();
+            this.textBoxTamanho = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -76,6 +76,7 @@
             this.buttonBuscar.TabIndex = 55;
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // buttonEditarproduto
             // 
@@ -331,50 +332,51 @@
             this.mySqlCommand1.EnableCaching = false;
             this.mySqlCommand1.Transaction = null;
             // 
-            // textBox1
+            // textBoxGenero
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(120, 278);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 22);
-            this.textBox1.TabIndex = 56;
+            this.textBoxGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGenero.Location = new System.Drawing.Point(120, 278);
+            this.textBoxGenero.Name = "textBoxGenero";
+            this.textBoxGenero.Size = new System.Drawing.Size(227, 22);
+            this.textBoxGenero.TabIndex = 56;
             // 
-            // textBox2
+            // textBoxAno
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(120, 373);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(227, 22);
-            this.textBox2.TabIndex = 57;
+            this.textBoxAno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAno.Location = new System.Drawing.Point(120, 373);
+            this.textBoxAno.Name = "textBoxAno";
+            this.textBoxAno.Size = new System.Drawing.Size(227, 22);
+            this.textBoxAno.TabIndex = 57;
             // 
-            // textBox3
+            // textBoxAvaliacao
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(120, 422);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(227, 22);
-            this.textBox3.TabIndex = 58;
+            this.textBoxAvaliacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxAvaliacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAvaliacao.Location = new System.Drawing.Point(120, 422);
+            this.textBoxAvaliacao.Name = "textBoxAvaliacao";
+            this.textBoxAvaliacao.Size = new System.Drawing.Size(227, 22);
+            this.textBoxAvaliacao.TabIndex = 58;
             // 
-            // textBox4
+            // textBoxValor
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(445, 233);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(227, 22);
-            this.textBox4.TabIndex = 59;
+            this.textBoxValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxValor.Location = new System.Drawing.Point(445, 233);
+            this.textBoxValor.Name = "textBoxValor";
+            this.textBoxValor.Size = new System.Drawing.Size(227, 22);
+            this.textBoxValor.TabIndex = 59;
+            this.textBoxValor.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox5
+            // textBoxTamanho
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(120, 467);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(227, 22);
-            this.textBox5.TabIndex = 60;
+            this.textBoxTamanho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTamanho.Location = new System.Drawing.Point(120, 467);
+            this.textBoxTamanho.Name = "textBoxTamanho";
+            this.textBoxTamanho.Size = new System.Drawing.Size(227, 22);
+            this.textBoxTamanho.TabIndex = 60;
             // 
             // textBox6
             // 
@@ -382,7 +384,7 @@
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(445, 422);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(40, 22);
+            this.textBox6.Size = new System.Drawing.Size(227, 22);
             this.textBox6.TabIndex = 61;
             // 
             // label9
@@ -393,9 +395,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(442, 404);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(21, 16);
+            this.label9.Size = new System.Drawing.Size(43, 16);
             this.label9.TabIndex = 62;
-            this.label9.Text = "Id";
+            this.label9.Text = "Busca";
             // 
             // EditarProd
             // 
@@ -405,11 +407,11 @@
             this.ClientSize = new System.Drawing.Size(800, 574);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxTamanho);
+            this.Controls.Add(this.textBoxValor);
+            this.Controls.Add(this.textBoxAvaliacao);
+            this.Controls.Add(this.textBoxAno);
+            this.Controls.Add(this.textBoxGenero);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.buttonEditarproduto);
             this.Controls.Add(this.richTextBoxDescricao);
@@ -468,11 +470,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxGenero;
+        private System.Windows.Forms.TextBox textBoxAno;
+        private System.Windows.Forms.TextBox textBoxAvaliacao;
+        private System.Windows.Forms.TextBox textBoxValor;
+        private System.Windows.Forms.TextBox textBoxTamanho;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
     }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/02/2025 às 12:20
+-- Tempo de geração: 28/02/2025 às 13:32
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -43,14 +43,23 @@ CREATE TABLE `tb_info_users` (
 CREATE TABLE `tb_produtos` (
   `ID` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL,
-  `valor` decimal(4,2) NOT NULL,
-  `ano` date NOT NULL,
+  `valor` decimal(45,2) NOT NULL,
+  `ano` year(4) NOT NULL,
   `desenvolvedor` varchar(100) NOT NULL,
   `genero` varchar(20) NOT NULL,
-  `descrição` text NOT NULL,
-  `tamanho` decimal(3,2) NOT NULL,
+  `descricao` text NOT NULL,
+  `tamanho` decimal(4,2) NOT NULL,
   `avaliacao` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tb_produtos`
+--
+
+INSERT INTO `tb_produtos` (`ID`, `titulo`, `valor`, `ano`, `desenvolvedor`, `genero`, `descricao`, `tamanho`, `avaliacao`) VALUES
+(1, 'Homem Aranha 2', 99.99, '0000', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha, onde você assume o papel do icônico herói de Nova York, Peter Parker. Neste jogo de ação e aventura, você terá a chance de balançar entre os arranha-céus, explorar uma cidade vibrante e enfrentar vilões clássicos do universo Marvel.', 9.99, 3),
+(2, 'Homem Aranha', 99.99, '0000', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha, onde você assume o papel do icônico herói de Nova York, Peter Parker. Neste jogo de ação e aventura, você terá a chance de balançar entre os arranha-céus, explorar uma cidade vibrante e enfrentar vilões clássicos do universo Marvel.', 9.99, 3),
+(3, 'Homem Aranha', 99.99, '2023', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha, onde você assume o papel do icônico herói de Nova York, Peter Parker. Neste jogo de ação e aventura, você terá a chance de balançar entre os arranha-céus, explorar uma cidade vibrante e enfrentar vilões clássicos do universo Marvel.', 9.99, 3);
 
 -- --------------------------------------------------------
 
@@ -101,7 +110,7 @@ ALTER TABLE `tb_info_users`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `tb_users`
