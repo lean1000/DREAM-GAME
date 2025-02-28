@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|c:\\users\\leandro.pbarreto1\\source\\repos\\dreamgamepi\\dreamgamepi\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\dreamgamepi\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|c:\\users\\leandro.pbarreto1\\source\\repos\\dreamgamepi\\dreamgamepi\\editarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\editarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|c:\\users\\leandro.pbarreto1\\source\\repos\\dreamgamepi\\dreamgamepi\\editarprod.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\editarprod.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|c:\\users\\leandro.pbarreto1\\source\\repos\\dreamgamepi\\dreamgamepi\\editarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\editarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\dreamgamepi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|c:\\users\\leandro.pbarreto1\\source\\repos\\dreamgamepi\\dreamgamepi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{521CDC4A-5DB7-4773-83DE-2EF597EDEE90}|DreamGamePi\\DreamGamePi.csproj|solutionrelative:dreamgamepi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 340,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditarProd.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\EditarProd.Designer.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\EditarProd.Designer.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\EditarProd.Designer.cs",
+              "RelativeToolTip": "DreamGamePi\\EditarProd.Designer.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAmwPcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:51:20.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Menu.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\Menu.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Menu.cs",
+              "RelativeToolTip": "DreamGamePi\\Menu.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:50:37.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Form1.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\Form1.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Form1.cs",
+              "RelativeToolTip": "DreamGamePi\\Form1.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:49:25.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditarProd.cs",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\EditarProd.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\EditarProd.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\EditarProd.cs",
+              "RelativeToolTip": "DreamGamePi\\EditarProd.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:49:01.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditarProd.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\EditarProd.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\EditarProd.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\EditarProd.cs [Design]",
+              "RelativeToolTip": "DreamGamePi\\EditarProd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:56:18.88Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Menu.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\Menu.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Menu.cs [Design]",
+              "RelativeToolTip": "DreamGamePi\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:58:10.422Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Form1.cs",
+              "RelativeDocumentMoniker": "DreamGamePi\\Form1.cs",
+              "ToolTip": "C:\\Users\\leandro.pbarreto1\\source\\repos\\DreamGamePi\\DreamGamePi\\Form1.cs [Design]",
+              "RelativeToolTip": "DreamGamePi\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T12:36:42.983Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 52,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
