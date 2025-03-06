@@ -1,0 +1,55 @@
+.suporte-container {
+    margin-top: 50px;
+    margin: 10px;
+}
+
+.suporte-container h1 {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Righteous';
+}
+
+.suporte-container p {
+    color: white;
+}
+
+.suporte-opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0 33.3%;
+    background-color: #09070D;
+    width: 300px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.suporte-btn {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.suporte-btn:hover {
+    background-color: #999;
+}
+
+.falar-atendente {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px;
+}
+
+.falar-atendente:hover {
+    text-decoration: underline;
+}

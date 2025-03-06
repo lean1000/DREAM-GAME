@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Game</title>
+
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
+
+            <ul class="menu">
+                <li><a href="#">loja</a></li>
+                <li><a href="#">destaques</a></li>
+                <li><a href="#">suporte</a></li>
+                <li><a href="#">sobre</a></li>
+            </ul>
+
+
+            <div class="user">
+                <a href="#"><i class="bi bi-person icon"></i></a>
+                <button class="btn-entrar">Entrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <button>
+            <i class="bi bi-funnel"></i>
+        </button>
+        <input type="text" placeholder="Search...">
+        <button>
+            <i class="bi bi-search"></i>
+        </button>
+    </div>
+
+    <section class="banner-container">
+        <button class="nav-button left" onclick="prevBanner()">&#9664;</button>
+
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos/LittleN.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 219,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos/MK1.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos/TheLast.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 452,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos/Poppy4.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 301,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos//GTA-6.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos//LikeDragon.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 299,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav-button right" onclick="nextBanner()">&#9654;</button>
+    </section>
+
+    <script src="./assets/js/banner.js"></script>

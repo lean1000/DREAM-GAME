@@ -1,0 +1,21 @@
+.sobre {
+    background-color: #09070D;
+    padding: 20px;
+    margin: 20px auto;
+    width: 900px;
+    height: 450px;
+    border-radius: 25px;
+    color: white;
+}
+
+.sobre h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Righteous';
+    font-style: normal;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    margin: 50px;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+
+body {
+    background-color: #261E33;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+header {
+    background-color: #09070D;
+}
+
+nav {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-logo {
+    padding: 10px;
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 150px 0 0;
+}
+
+.menu li a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu li :hover {
+    text-decoration: underline;
+}
+
+.icon {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.btn-entrar {
+    background-color: white;  
+    color: #09070D;                
+    border: none;                
+    padding: 4px 8px;    
+    font-size: 1rem;            
+    border-radius: 5px;         
+    cursor:  pointer;           
+    transition: all 0.3s ease;  
+    display: block;
+}
+
+.btn-entrar:hover {
+    background-color: rgba(255, 255, 255, 0.719);  
+    transform: scale(1.1);      
+}
+
+.btn-entrar:focus {
+    outline: none;               
+    box-shadow: 0 0 5px rgba(37, 0, 48, 0.5);
+}
+
+.user {
+    text-align: center;
+    margin: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 50px 33.33%;
+}
+.search-bar input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #09070D;
+    padding: 5px;
+}
+.search-bar input::placeholder {
+    color: gray;
+}
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-bar button i {
+    width: 20px;
+    height: 20px;
+}
