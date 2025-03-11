@@ -226,3 +226,4 @@ C:\Users\leandro.pbarreto1\source\repos\DreamGamePi\DreamGamePi\bin\Debug\ru\Mic
 C:\Users\leandro.pbarreto1\source\repos\DreamGamePi\DreamGamePi\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\leandro.pbarreto1\source\repos\DreamGamePi\DreamGamePi\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\leandro.pbarreto1\source\repos\DreamGamePi\DreamGamePi\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\leandro.pbarreto1\source\repos\DreamGamePi\DreamGamePi\obj\Debug\DreamGamePi.EditarUsuarios.resources

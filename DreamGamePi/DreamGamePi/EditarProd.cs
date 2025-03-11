@@ -25,11 +25,6 @@ namespace DreamGamePi
             form.ShowDialog();
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
 
@@ -51,7 +46,7 @@ namespace DreamGamePi
 
                         if (reader.Read())
                         {
-                            
+
                             textBoxTitulo.Text = reader["titulo"].ToString();
                             textBoxAno.Text = reader["ano"].ToString();
                             textBoxValor.Text = reader["valor"].ToString();
@@ -74,6 +69,59 @@ namespace DreamGamePi
             }
         }
 
+        private void buttonEditarproduto_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Server=localhost; Port=3306; Database=db_dreamgame; Uid=root; Pwd=;";
+
+            string query = "UPDATE tb_produtos SET valor = @Valor, ano = @Ano, desenvolvedor = @Desenvolvedor, " +
+                           "genero = @Genero, descricao = @Descricao, tamanho = @Tamanho, avaliacao = @Avaliacao " +
+                           "WHERE titulo = @Titulo";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+
+                    command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
+                    command.Parameters.AddWithValue("@Valor", textBoxValor.Text);
+                    command.Parameters.AddWithValue("@Ano", textBoxAno.Text);
+                    command.Parameters.AddWithValue("@Desenvolvedor", textBoxDesenvolvedor.Text);
+                    command.Parameters.AddWithValue("@Genero", textBoxGenero.Text);
+                    command.Parameters.AddWithValue("@Descricao", richTextBoxDescricao.Text);
+                    command.Parameters.AddWithValue("@Tamanho", textBoxTamanho.Text);
+                    command.Parameters.AddWithValue("@Avaliacao", textBoxAvaliacao.Text);
+
+                    try
+                    {
+                        connection.Open();
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Produto atualizado com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Nenhuma alteração foi feita ou produto não encontrado.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
+
+                    textBoxTitulo.Text = "";
+                    textBoxValor.Text = "";
+                    textBoxAno.Text = "";
+                    textBoxDesenvolvedor.Text = "";
+                    textBoxGenero.Text = "";
+                    richTextBoxDescricao.Text = "";
+                    textBoxTamanho.Text = "";
+                    textBoxAvaliacao.Focus();
+
+                }
+            }
         }
     }
-    
+}
+

@@ -479,6 +479,12 @@
     <Compile Include="EditarProd.Designer.cs">
       <DependentUpon>EditarProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuarios.Designer.cs">
+      <DependentUpon>EditarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -495,6 +501,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EditarProd.resx">
       <DependentUpon>EditarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuarios.resx">
+      <DependentUpon>EditarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

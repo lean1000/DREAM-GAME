@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace DreamGamePi
 {
-    public partial class Menu : Form
+    public partial class EditarUsuarios : Form
     {
-        public Menu()
+        public EditarUsuarios()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            EditarProd form = new EditarProd();
-            form.ShowDialog();
         }
     }
 }
