@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.container-mundo-aberto h2 {
+    background-color: #09070D;
+    color: #fafafa;
+    text-align: left;
+    padding: 8px;
+    margin: left 25px;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    z-index: 1;
+}
+
+.container-mundo-aberto {
+    max-width: 100%;
+    height: 325px;
+    justify-content: center;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    z-index: -1;
+}
+
+
+.container-acao h2 {
+    background-color: #09070D;
+    color: #fafafa;
+    text-align: left;
+    padding: 8px;
+    margin: left 20px;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    z-index: 1;
+}
+
+.container-acao {
+    max-width: 100%;
+    height: 325px;
+    justify-content: center;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    padding-top: 5px;
+
+
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    z-index: 1;
+    
+}
+
+figure img {
+    max-width: 250px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.849);
+    border-radius: 10px;
+    animation: animation 50s linear infinite;
+
+
+}
+
+figure img:hover {
+    transform: scale(1.1);
+    opacity: 1.0;
+}
+
+@keyframes animation {
+    to {
+        translate: calc(-4*250px);
+    }
+}
