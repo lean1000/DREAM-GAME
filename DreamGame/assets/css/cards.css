@@ -52,7 +52,6 @@ figure {
     display: flex;
     justify-content: center;
     padding: 5px;
-    
     animation: animation 60s linear;
     animation-timeline: scroll;
 
@@ -75,7 +74,15 @@ figure img:hover {
 
 
 .mundo-aberto {
-    width: 1900px; 
+    width: 100%; 
+    height: auto; 
+    overflow-x: auto; 
+    scrollbar-color:  #09070D transparent; 
+    
+}
+
+.acao{
+    width: 100%; 
     height: auto; 
     overflow-x: auto; 
     scrollbar-color:  #09070D transparent; 
