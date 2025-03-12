@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* Remove a barra de rolagem da tela */
+}
+
 .container-mundo-aberto h2 {
     background-color: #09070D;
     color: #fafafa;
@@ -7,7 +14,8 @@
     padding: 8px;
     margin: left 25px;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    z-index: 1;
+    
+    /* Permite rolagem vertical */
 }
 
 .container-mundo-aberto {
@@ -15,7 +23,7 @@
     height: 325px;
     justify-content: center;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    z-index: -1;
+    
 }
 
 
@@ -26,35 +34,36 @@
     padding: 8px;
     margin: left 20px;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    z-index: 1;
+    
 }
 
 .container-acao {
     max-width: 100%;
-    height: 325px;
+    height: auto;
     justify-content: center;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
     padding-top: 5px;
-
+    
 
 }
+
 
 figure {
     display: flex;
     justify-content: center;
     padding: 5px;
-    z-index: 1;
     
+    animation: animation 60s linear;
+    animation-timeline: scroll;
+
 }
 
 figure img {
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
     margin: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.849);
     border-radius: 10px;
-    animation: animation 50s linear infinite;
-
 
 }
 
@@ -63,8 +72,12 @@ figure img:hover {
     opacity: 1.0;
 }
 
-@keyframes animation {
-    to {
-        translate: calc(-4*250px);
-    }
+
+
+.mundo-aberto {
+    width: 1900px; 
+    height: auto; 
+    overflow-x: auto; 
+    scrollbar-color:  #09070D transparent; 
 }
+
