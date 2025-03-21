@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-
-
-
 body {
-    background-color: #261E33;
-    padding: 0;
     margin: 0;
-    align-items: center;
+    background-color: #261E33;
 }
+
 
 header {
     background-color: #09070D;
@@ -52,24 +48,24 @@ nav {
 }
 
 .btn-entrar {
-    background-color: white;  
-    color: #09070D;                
-    border: none;                
-    padding: 4px 8px;    
-    font-size: 1rem;            
-    border-radius: 5px;         
-    cursor:  pointer;           
-    transition: all 0.3s ease;  
+    background-color: white;
+    color: #09070D;
+    border: none;
+    padding: 4px 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
     display: block;
 }
 
 .btn-entrar:hover {
-    background-color: rgba(255, 255, 255, 0.719);  
-    transform: scale(1.1);      
+    background-color: rgba(255, 255, 255, 0.719);
+    transform: scale(1.1);
 }
 
 .btn-entrar:focus {
-    outline: none;               
+    outline: none;
     box-shadow: 0 0 5px rgba(37, 0, 48, 0.5);
 }
 
@@ -78,83 +74,137 @@ nav {
     margin: 10px;
 }
 
-
-.card {
+.search-bar {
     display: flex;
-    background-color: #14101D;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 1200px;
-    
-    padding: 30px; /* Aumenta o espaçamento interno */
-    justify-content: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.game-image {
-    width: 500px;
-    border-radius: 10px;
-}
-
-.game-info {
-    flex: 1;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 50px 33.33%;
 }
 
-.top-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.destaques {
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 20px;
-    
-}
-
-.info-icon {
-    font-size: 16px;
-    background: #c9c9c9;
-    border-radius: 25%;
-    padding: 2px 5px;
-    margin-left: 0px;
-    cursor: pointer;
-}
-
-.price {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.logo-container {
-    margin: 20px 0;
-}
-
-.logo {
-    width: 170px;
-}
-
-.buy-button {
-    background-color: #e0e0e0;
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
+.search-bar input {
+    flex-grow: 1;
+    background: transparent;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    
+    outline: none;
+    color: #09070D;
+    padding: 5px;
 }
 
-.buy-button:hover {
-    background-color: #c9c9c9;
+.search-bar input::placeholder {
+    color: gray;
 }
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.container-destaques {
+    width: 1300px;
+    /* Largura do cartão */
+    padding: 2px;
+    margin: 100px;
+    background: linear-gradient(135deg, transparent, #09070D, transparent);
+    padding-left: 10px;
+    border-radius: 25px;
+
+
+    .card {
+        display: flex;
+        background-color: #09070D;
+        border-radius: 25px;
+        height: auto;
+        width: 1200px;
+        padding: 0px;
+        margin: 50px;
+
+    }
+
+    .card img {
+        border-radius: 25px;
+        width: 35%;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .game-info img {
+        width: 200px;
+        margin: auto;
+
+
+    }
+
+    .game-info {
+        flex: 1;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .destaques {
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 20px;
+
+    }
+
+    .info-icon {
+        font-size: 16px;
+        background: #c9c9c9;
+        border-radius: 25%;
+        padding: 2px 5px;
+        margin-left: 65%;
+        cursor: pointer;
+    }
+
+    .price {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .logo-container {
+        margin: 20px 0;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    .buy-button {
+        background-color: #e0e0e0;
+        color: black;
+        padding: 10px 50px;
+        margin-left: 80%;
+        font-size: 16px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+
+    }
+
+    .buy-button:hover {
+        background-color: #c9c9c9;
+    }

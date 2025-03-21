@@ -4,7 +4,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    /* Remove a barra de rolagem da tela */
+    
 }
 
 .container-mundo-aberto h2 {
@@ -15,7 +15,7 @@ body {
     margin: left 25px;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
     
-    /* Permite rolagem vertical */
+    
 }
 
 .container-mundo-aberto {
@@ -60,8 +60,8 @@ figure {
 figure img {
     max-width: 200px;
     height: auto;
-    margin: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.849);
+    margin: 10px;
+    
     border-radius: 10px;
 
 }
