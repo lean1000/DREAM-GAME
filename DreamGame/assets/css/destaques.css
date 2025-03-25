@@ -81,7 +81,7 @@ nav {
     padding: 5px;
     border-radius: 20px;
     width: 400px;
-    margin: 50px 33.33%;
+    margin: 50px auto;
 }
 
 .search-bar input {
@@ -112,13 +112,12 @@ nav {
 
 .container-destaques {
     width: 1300px;
-    /* Largura do cartão */
     padding: 2px;
-    margin: 100px;
+    margin: 105px;
     background: linear-gradient(135deg, transparent, #09070D, transparent);
     padding-left: 10px;
     border-radius: 25px;
-
+}
 
     .card {
         display: flex;
@@ -134,7 +133,7 @@ nav {
     .card img {
         border-radius: 25px;
         width: 35%;
-        margin: auto;
+        margin: 5px;
         padding: 15px;
     }
 
@@ -195,9 +194,9 @@ nav {
     .buy-button {
         background-color: #e0e0e0;
         color: black;
-        padding: 10px 50px;
+        padding: 10px 48px;
         margin-left: 80%;
-        font-size: 16px;
+        font-size: 12px;
         border: none;
         border-radius: 20px;
         cursor: pointer;

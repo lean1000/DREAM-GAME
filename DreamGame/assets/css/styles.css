@@ -85,7 +85,7 @@ nav {
     padding: 5px;
     border-radius: 20px;
     width: 400px;
-    margin: 50px 33.33%;
+    margin: 50px auto;
 }
 .search-bar input {
     flex-grow: 1;

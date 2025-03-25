@@ -86,5 +86,6 @@ figure img:hover {
     height: auto; 
     overflow-x: auto; 
     scrollbar-color:  #09070D transparent; 
+    cursor: pointer;
 }
 

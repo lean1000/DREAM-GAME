@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/busca.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Dream Game</title>
+</head>
+
+<body>
+
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Jogos</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+
+    <header>
+        <nav>
+            <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
+
+            <ul class="menu">
+                <li><a href="#">loja</a></li>
+
+                <li><a href="#">suporte</a></li>
+                <li><a href="#">sobre</a></li>
+            </ul>
+
+
+            <div class="user">
+                <a href="#"><i class="bi bi-person icon"></i></a>
+                <button class="btn-entrar">Entrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class="container-busca">
+            <div class="search-bar">
+                
+                <input type="text" id="searchInput" placeholder="Buscar..." onkeyup="searchGames()">
+                <i class="bi bi-search"></i>
+                
+                <div><button>Buscar</button></div>
+            </div>
+
+        
+        
+           <ul class="game-list" id="gameList">
+                <li class="game-item">
+                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Call of Duty">
+                    <div class="game-info">
+                        <span>
+                            <h6>Call of Duty: Black OPS 6</h6></span>
+                    </div>
+                    <span class="game-price">R$: 339,00</span>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Jujutsu Kaisen">
+                    <div class="game-info">
+                        <span>Jujutsu Kaisen Cursed Clash</span>
+                    </div>
+                    <span class="game-price">R$: 229,00</span>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Prince of Persia">
+                    <div class="game-info">
+                        <span>Prince of Persia: The Lost Crown</span>
+                    </div>
+                    <span class="game-price">R$: 199,99</span>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="The Last of Us">
+                    <div class="game-info">
+                        <span>The Last of Us Part II</span>
+                    </div>
+                    <span class="game-price">R$: 219,90</span>
+                </li>
+                <li class="game-item">
+                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Tekken 8">
+                    <div class="game-info">
+                        <span>Tekken 8</span>
+                    </div>
+                    <span class="game-price">R$: 269,90</span>
+                </li>
+            </ul>
+        </div>
+        
+
+
+
+
+    </body>
+
+    </html>
+
+    <script>
+        function searchGames() {
+            let input = document.getElementById("searchInput").value.toLowerCase(); // Captura o valor digitado
+            let games = document.querySelectorAll(".game-item"); // Seleciona todos os itens da lista
+
+            games.forEach(game => {
+                let title = game.querySelector(".game-info span").textContent.toLowerCase(); // Pega o nome do jogo
+
+                // Se o título contém o termo buscado, mostra o item, se não, esconde
+                if (title.includes(input)) {
+                    game.style.display = "flex";
+                } else {
+                    game.style.display = "none";
+                }
+            });
+
+            // Se o campo de busca for apagado, volta à tela original
+            if (input === "") {
+                resetGameList();
+            }
+        }
+
+        // Função para resetar a lista e mostrar todos os jogos novamente
+        function resetGameList() {
+            let games = document.querySelectorAll(".game-item");
+            games.forEach(game => {
+                game.style.display = "flex";
+            });
+        }
+
+    </script>
