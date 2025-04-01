@@ -12,13 +12,15 @@
 <body>
     <div class="caixa">
         <img src="./assets/img/logo/logo.png" alt="logo">
-        <form action="" method="post">
-            <input type="email" placeholder="email">
-            <input type="password" placeholder="senha">
-            <a href="./cadastro.php">cadastrar-se</a>
+        <form id="loginForm" onsubmit="validarFormulario(event)" method="post">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="senha" placeholder="Senha" maxlength="16" required>
+            <a href="./cadastro.php">Cadastrar-se</a>
             <input type="submit" value="Entrar">
         </form>
     </div>
-</body>
+    
+    <script src="./assets/js/login.js"></script>
 
+</body>
 </html>
