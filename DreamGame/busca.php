@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/busca.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Dream Game</title>
-</head>
-
-<body>
-
-    <html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lista de Jogos</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    </head>
-
-    <header>
-        <nav>
-            <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
-
-            <ul class="menu">
-                <li><a href="#">loja</a></li>
-
-                <li><a href="#">suporte</a></li>
-                <li><a href="#">sobre</a></li>
-            </ul>
-
-
-            <div class="user">
-                <a href="#"><i class="bi bi-person icon"></i></a>
-                <button class="btn-entrar">Entrar</button>
-            </div>
-        </nav>
-    </header>
-
-    <body>
+<?php include './includes/header.php'; ?>
 
         <div class="container-busca">
             <div class="search-bar">
@@ -50,8 +9,6 @@
                 <div><button>Buscar</button></div>
             </div>
 
-        
-        
            <ul class="game-list" id="gameList">
                 <li class="game-item">
                     <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Call of Duty">
@@ -92,10 +49,6 @@
             </ul>
         </div>
         
-
-
-
-
     </body>
 
     </html>

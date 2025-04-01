@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-
-body {
-    margin: 0;
-    overflow-x: hidden;
-    
-}
-
 .container-mundo-aberto h2 {
     background-color: #09070D;
     color: #fafafa;
@@ -14,8 +5,6 @@ body {
     padding: 8px;
     margin: left 25px;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    
-    
 }
 
 .container-mundo-aberto {
@@ -23,7 +12,6 @@ body {
     height: 325px;
     justify-content: center;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    
 }
 
 
@@ -34,7 +22,6 @@ body {
     padding: 8px;
     margin: left 20px;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    
 }
 
 .container-acao {
@@ -43,10 +30,7 @@ body {
     justify-content: center;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
     padding-top: 5px;
-    
-
 }
-
 
 figure {
     display: flex;
@@ -54,16 +38,13 @@ figure {
     padding: 5px;
     animation: animation 60s linear;
     animation-timeline: scroll;
-
 }
 
 figure img {
     max-width: 200px;
     height: auto;
     margin: 10px;
-    
     border-radius: 10px;
-
 }
 
 figure img:hover {
@@ -71,21 +52,17 @@ figure img:hover {
     opacity: 1.0;
 }
 
-
-
 .mundo-aberto {
     width: 100%; 
     height: auto; 
     overflow-x: auto; 
     scrollbar-color:  #09070D transparent; 
-    
 }
 
-.acao{
+.acao {
     width: 100%; 
     height: auto; 
     overflow-x: auto; 
     scrollbar-color:  #09070D transparent; 
     cursor: pointer;
 }
-

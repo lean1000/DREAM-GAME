@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-
-
-
 body {
     background-color: #261E33;
     padding: 0;
@@ -78,34 +75,6 @@ nav {
     margin: 10px;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px;
-    width: 400px;
-    margin: 50px auto;
+.user a {
+    text-decoration: none;
 }
-.search-bar input {
-    flex-grow: 1;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #09070D;
-    padding: 5px;
-}
-.search-bar input::placeholder {
-    color: gray;
-}
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.search-bar button i {
-    width: 20px;
-    height: 20px;
-}
-
-  

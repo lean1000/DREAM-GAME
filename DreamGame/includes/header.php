@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Game</title>
-    
+
+    <link rel="stylesheet" href="./assets/css/buca.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/suporte.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/cards.css">
+    <link rel="stylesheet" href="./assets/css/destaques.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="./assets/img/logo/logo.png" alt="">
+            <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
 
-            <ul>
-                <li><a href="#">loja</a></li>
-                <li><a href="#">destaques</a></li>
-                <li><a href="#">suporte</a></li>
-                <li><a href="#">sobre</a></li>
+            <ul class="menu">
+                <li><a href="./index.php">loja</a></li>
+                <li><a href="./destaques.php">destaques</a></li>
+                <li><a href="./suporte.php">suporte</a></li>
+                <li><a href="./sobre.php">sobre</a></li>
             </ul>
 
-            <a href="#"><i class="bi bi-list"></i></a>
 
-            <a href="#"><img src="" alt=""></a>
+            <div class="user">
+                <a href="./perfil.php"><i class="bi bi-person icon"></i></a>
+                <a href="./login.php"><button class="btn-entrar">Entrar</button></a>
+            </div>
         </nav>
     </header>
-
-
-
-
-
-
-
-    </body>
-</html>

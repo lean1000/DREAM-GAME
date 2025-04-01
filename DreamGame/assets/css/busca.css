@@ -1,84 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-body {
-    margin: 0;
-    background-color: #261E33;
-}
-
-
-header {
-    background-color: #09070D;
-}
-
-nav {
-    font-family: 'Righteous';
-    font-style: normal;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.img-logo {
-    padding: 10px;
-    width: 120px;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0 150px 0 0;
-}
-
-.menu li a {
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.menu li :hover {
-    text-decoration: underline;
-}
-
-.icon {
-    color: white;
-    font-size: 2.8rem;
-}
-
-.btn-entrar {
-    background-color: white;
-    color: #09070D;
-    border: none;
-    padding: 4px 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: block;
-}
-
-.btn-entrar:hover {
-    background-color: rgba(255, 255, 255, 0.719);
-    transform: scale(1.1);
-}
-
-.btn-entrar:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(37, 0, 48, 0.5);
-}
-
-.user {
-    text-align: center;
-    margin: 10px;
-}
-
 .container-busca {
     width: 600px;
     padding: 50px;
     margin: 150px;
-   background-color: #09070D;
+    background-color: #09070D;
     padding-left: 10px;
     border-radius: 25px;
 }
@@ -116,7 +40,6 @@ nav {
     cursor: pointer;
 }
 
-/* Container principal */
 .container-card {
     width: 800px;
     height: 500px;
@@ -127,14 +50,12 @@ nav {
     z-index: -1;
 }
 
-/* Remove estilos padrão da lista */
 .game-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Estiliza cada item da lista */
 .game-item {
     display: flex;
     width: 650px;
@@ -142,39 +63,29 @@ nav {
     background-color: #1e1a2e;
     margin-bottom: 10px;
     padding: 5px;
-   
     cursor: pointer;
-    position: relative; /* Permite posicionar elementos filhos */
+    position: relative; 
 }
 
-
-
-
-/* Estiliza a imagem */
 .game-item img {
-    width: 120px;  /* Largura maior para ser retangular */
-    height: 70px;  /* Altura menor para manter o formato */
-
+    width: 120px;  
+    height: 70px;  
     transition: 0.3s;
-    filter: brightness(0.7); /* Deixa um pouco escura para destacar o texto */
+    filter: brightness(0.7); 
 }
 
-
-
-/* Estiliza o container de informações */
 .game-info {
     position: absolute;
-    left: 20px; /* Ajusta o posicionamento */
+    left: 20px; 
     color: white;
     font-size: 18px;
     font-weight: bold;
     z-index: 2;
 }
 
-/* Estiliza o preço do jogo */
 .game-price {
     position: absolute;
-    right: 15px; /* Ajusta a posição para a direita */
+    right: 15px; 
     color: #2e5cfc;
     font-weight: bold;
     font-size: 18px;

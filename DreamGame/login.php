@@ -15,7 +15,7 @@
         <form action="" method="post">
             <input type="email" placeholder="email">
             <input type="password" placeholder="senha">
-            <a href="#">cadastrar-se</a>
+            <a href="./cadastro.php">cadastrar-se</a>
             <input type="submit" value="Entrar">
         </form>
     </div>

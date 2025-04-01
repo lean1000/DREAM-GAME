@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Game</title>
-    
-    <link rel="stylesheet" href="./assets/css/sobre.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
-
-            <ul class="menu">
-                <li><a href="#">loja</a></li>
-                <li><a href="#">destaques</a></li>
-                <li><a href="#">suporte</a></li>
-                <li><a href="#">sobre</a></li>
-            </ul>
-
-            <div class="user">
-                <a href="#"><i class="bi bi-person icon"></i></a>
-                <button class="btn-entrar">Entrar</button>
-            </div>
-        </nav>
-    </header>
+<?php include './includes/header.php'; ?>
 
     <main>
         <section class="sobre">

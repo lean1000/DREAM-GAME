@@ -1,51 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/destaques.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Dream Game</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
-
-            <ul class="menu">
-                <li><a href="#">loja</a></li>
-
-                <li><a href="#">suporte</a></li>
-                <li><a href="#">sobre</a></li>
-            </ul>
-
-
-            <div class="user">
-                <a href="#"><i class="bi bi-person icon"></i></a>
-                <button class="btn-entrar">Entrar</button>
-            </div>
-        </nav>
-    </header>
-
-    <div class="search-bar">
-        <button>
-            <i class="bi bi-funnel"></i>
-        </button>
-        <input type="text" placeholder="Search...">
-        <button>
-            <i class="bi bi-search"></i>
-        </button>
-    </div>
+<?php include './includes/header.php'; ?>
+<?php include './includes//searchBar.php'; ?>
 
     <section>
-
         <main class="container-destaques">
 
             <div class="card">
-                <img src="./assets/img/capa dos produtos/Blackmyth_ Wu Kong.png" alt="Wukong"
-                    class="game-image">
+                <img src="./assets/img/capa dos produtos/Blackmyth_ Wu Kong.png" alt="Wukong">
 
                 <div class="game-info">
                     <div class="top-bar">
@@ -54,16 +14,16 @@
                         <span class="price">R$ 339,00</span>
                     </div>
 
-                    <div class="logo-container">
+                    <div>
                         <img src="./assets/img/logo/logo 1.png" alt="Dream Game" class="logo">
                     </div>
 
                     <button class="buy-button">Comprar</button>
                 </div>
             </div>
+
             <div class="card">
-                <img src="./assets/img/capa dos produtos/spider_man2_destaques.png" alt="Spider-Man 2"
-                    class="game-image">
+                <img src="./assets/img/capa dos produtos/spider_man2_destaques.png" alt="Spider-Man 2">
 
                 <div class="game-info">
                     <div class="top-bar">
@@ -72,16 +32,16 @@
                         <span class="price">R$ 339,00</span>
                     </div>
 
-                    <div class="logo-container">
+                    <div>
                         <img src="./assets/img/logo/logo 1.png" alt="Dream Game" class="logo">
                     </div>
 
                     <button class="buy-button">Comprar</button>
                 </div>
             </div>
+
             <div class="card">
-                <img src="./assets/img/capa dos produtos/Star Wars Outlaws.png" alt="Star Wars Outlaws"
-                    class="game-image">
+                <img src="./assets/img/capa dos produtos/Star Wars Outlaws.png" alt="Star Wars Outlaws">
 
                 <div class="game-info">
                     <div class="top-bar">
@@ -90,16 +50,16 @@
                         <span class="price">R$ 339,00</span>
                     </div>
 
-                    <div class="logo-container">
+                    <div>
                         <img src="./assets/img/logo/logo 1.png" alt="Dream Game" class="logo">
                     </div>
 
                     <button class="buy-button">Comprar</button>
                 </div>
             </div>
-            <div class="card">
-                <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Star Wars Outlaws"
-                    class="game-image">
+
+            <div class="card imgCard">
+                <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Star Wars Outlaws">
 
                 <div class="game-info">
                     <div class="top-bar">
@@ -108,16 +68,16 @@
                         <span class="price">R$ 339,00</span>
                     </div>
 
-                    <div class="logo-container">
+                    <div>
                         <img src="./assets/img/logo/logo 1.png" alt="Dream Game" class="logo">
                     </div>
 
                     <button class="buy-button">Comprar</button>
                 </div>
             </div>
+
             <div class="card">
-                <img src="./assets/img/capa dos produtos/Mortal Kombat 1.png" alt="Star Wars Outlaws"
-                    class="game-image">
+                <img src="./assets/img/capa dos produtos/Mortal Kombat 1.png" alt="Star Wars Outlaws">
 
                 <div class="game-info">
                     <div class="top-bar">
@@ -126,7 +86,7 @@
                         <span class="price">R$ 339,00</span>
                     </div>
 
-                    <div class="logo-container">
+                    <div>
                         <img src="./assets/img/logo/logo 1.png" alt="Dream Game" class="logo">
                     </div>
 
@@ -135,11 +95,8 @@
             </div>
 
         </main>
-
-
     </section>
 
-
-</body>
+    <?php include './includes/footer.php'; ?>
 
 </html>
