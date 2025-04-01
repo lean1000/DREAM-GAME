@@ -1,4 +1,4 @@
-# Tela Inicial
+## Tela Inicial
 - [x] **Header**
   - **Menu de Navegação**
     - [x] **Início**: Leva para a tela inicial.
@@ -16,7 +16,7 @@
 - [x] **Footer**
   - [x] Informações de direitos autorais.
 
-# Tela de Produtos
+## Tela de Produtos
 - [x] **Header**
 - [ ] **Lista de Produtos**
   - [ ] Imagem do produto.
@@ -24,7 +24,7 @@
   - [ ] **Botão "Comprar"**: Redireciona para a tela do produto selecionado.
 - [x] **Footer**
 
-# Tela de Suporte
+## Tela de Suporte
 - [x] **Header**
 - [x] **Título e Subtítulo**
 - [x] **Opções de Suporte**
@@ -34,7 +34,7 @@
   - [x] **Outros problemas**: Abre um formulário personalizado.
 - [x] **Ícones de Ajuda**
 
-# Tela de Pesquisa
+## Tela de Pesquisa
 - [x] **Header**
 - [x] **Barra de Pesquisa**
 - [ ] **Resultados de Produtos**
@@ -45,7 +45,7 @@
 - [ ] **Opções para edição do perfil**
 - [x] **Footer**
 
-# Tela de Cadastro e Login
+## Tela de Cadastro e Login
 - [x] **Logo**
 - [x] **Formulário de Cadastro**
  
@@ -99,9 +99,9 @@
 - [x] **Botão para Entrar**
 - [x] Entra na tela principal do site
 
-## Telas em c#
+# Telas em c#
 
-# Tela de login
-# Tela de editar produto
-# Tela de cadastro
-# Tela de editar usuario 
+## Tela de login
+## Tela de editar produto
+## Tela de cadastro
+## Tela de editar usuario 
