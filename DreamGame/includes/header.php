@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Game</title>
 
-    <link rel="stylesheet" href="./assets/css/buca.css">
+    <link rel="stylesheet" href="./assets/css/busca.css">
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/suporte.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/destaques.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+
 </head>
 
 <body>

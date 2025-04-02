@@ -1,68 +1,47 @@
-.container-mundo-aberto h2 {
-    background-color: #09070D;
-    color: #fafafa;
-    text-align: left;
-    padding: 8px;
-    margin: left 25px;
+.container-mundo-aberto, .container-acao {
+    max-width: 100%;
+    justify-content: center;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
 }
 
 .container-mundo-aberto {
-    max-width: 100%;
     height: 325px;
-    justify-content: center;
-    background: linear-gradient(135deg, #09070D, transparent, #09070D);
 }
 
+.container-acao {
+    padding-top: 5px;
+}
 
-.container-acao h2 {
+.container-mundo-aberto h2, .container-acao h2 {
     background-color: #09070D;
     color: #fafafa;
     text-align: left;
     padding: 8px;
-    margin: left 20px;
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
-}
-
-.container-acao {
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    background: linear-gradient(135deg, #09070D, transparent, #09070D);
-    padding-top: 5px;
 }
 
 figure {
     display: flex;
     justify-content: center;
     padding: 5px;
-    animation: animation 60s linear;
-    animation-timeline: scroll;
 }
 
 figure img {
     max-width: 200px;
     height: auto;
-    margin: 10px;
+    margin: 12px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 figure img:hover {
     transform: scale(1.1);
-    opacity: 1.0;
 }
 
-.mundo-aberto {
-    width: 100%; 
-    height: auto; 
-    overflow-x: auto; 
-    scrollbar-color:  #09070D transparent; 
-}
-
-.acao {
-    width: 100%; 
-    height: auto; 
-    overflow-x: auto; 
-    scrollbar-color:  #09070D transparent; 
-    cursor: pointer;
+.mundo-aberto, .acao {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    scrollbar-color: #09070D transparent;
+    cursor: grab;
 }

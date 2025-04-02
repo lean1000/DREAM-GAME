@@ -1,12 +1,13 @@
+/* Container de busca */
 .container-busca {
     width: 600px;
-    padding: 50px;
-    margin: 150px;
+    padding: 50px 10px; /* Ajuste de padding para simplificar */
+    margin: 150px auto; /* Centraliza o container */
     background-color: #09070D;
-    padding-left: 10px;
     border-radius: 25px;
 }
 
+/* Barra de busca */
 .search-bar {
     display: flex;
     align-items: center;
@@ -38,43 +39,59 @@
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona transição ao botão */
 }
 
+.search-bar button:hover {
+    background-color: #e0e0e0; /* Efeito hover no botão */
+}
+
+/* Container de cartões */
 .container-card {
     width: 800px;
-    height: 500px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
     background-color: #0c0915;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
-    z-index: -1;
 }
 
-.game-list {
+/* Lista de produtos */
+.produto-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.game-item {
+/* Item do produto */
+.produto-item {
     display: flex;
-    width: 650px;
     align-items: center;
     background-color: #1e1a2e;
     margin-bottom: 10px;
     padding: 5px;
     cursor: pointer;
     position: relative; 
+    transition: background-color 0.3s; /* Adiciona transição ao item */
 }
 
-.game-item img {
+.produto-item:hover {
+    background-color: #252039; /* Efeito hover no item do produto */
+}
+
+.produto-item img {
     width: 120px;  
     height: 70px;  
-    transition: 0.3s;
+    transition: transform 0.3s; /* Transição para efeito de zoom */
     filter: brightness(0.7); 
 }
 
-.game-info {
+.produto-item:hover img {
+    transform: scale(1.05); /* Efeito de zoom na imagem ao passar o mouse */
+}
+
+/* Informações do produto */
+.produto-info {
     position: absolute;
     left: 20px; 
     color: white;
@@ -83,7 +100,7 @@
     z-index: 2;
 }
 
-.game-price {
+.produto-price {
     position: absolute;
     right: 15px; 
     color: #2e5cfc;

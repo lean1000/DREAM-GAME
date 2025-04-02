@@ -62,6 +62,7 @@
                 <div>
                     <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
                 </div>
+                
 
 
             </figure>
@@ -103,6 +104,18 @@
                 </div>
                 <div>
                     <img src="./assets/img/capa dos produtos/TheLast.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
                 </div>
                 <div>
                     <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
@@ -151,6 +164,18 @@
                 <div>
                     <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
                 </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
+                <div>
+                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+                </div>
 
 
             </figure>
@@ -163,3 +188,4 @@
 <?php include './includes/footer.php'; ?>
 
 <script src="./assets/js/banner.js"></script>
+

@@ -11,42 +11,42 @@
 
            <ul class="game-list" id="gameList">
                 <li class="game-item">
-                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Call of Duty">
+        <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Call of Duty">
                     <div class="game-info">
-                        <span>
+            <span>
                             <h6>Call of Duty: Black OPS 6</h6></span>
-                    </div>
+        </div>
                     <span class="game-price">R$: 339,00</span>
-                </li>
+    </li>
                 <li class="game-item">
-                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Jujutsu Kaisen">
+        <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Jujutsu Kaisen">
                     <div class="game-info">
-                        <span>Jujutsu Kaisen Cursed Clash</span>
-                    </div>
+            <span>Jujutsu Kaisen Cursed Clash</span>
+        </div>
                     <span class="game-price">R$: 229,00</span>
-                </li>
+    </li>
                 <li class="game-item">
-                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Prince of Persia">
+        <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Prince of Persia">
                     <div class="game-info">
-                        <span>Prince of Persia: The Lost Crown</span>
-                    </div>
+            <span>Prince of Persia: The Lost Crown</span>
+        </div>
                     <span class="game-price">R$: 199,99</span>
-                </li>
+    </li>
                 <li class="game-item">
-                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="The Last of Us">
+        <img src="./assets/img/capa dos produtos/hogwarts.png" alt="The Last of Us">
                     <div class="game-info">
-                        <span>The Last of Us Part II</span>
-                    </div>
+            <span>The Last of Us Part II</span>
+        </div>
                     <span class="game-price">R$: 219,90</span>
-                </li>
+    </li>
                 <li class="game-item">
-                    <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Tekken 8">
+        <img src="./assets/img/capa dos produtos/hogwarts.png" alt="Tekken 8">
                     <div class="game-info">
-                        <span>Tekken 8</span>
-                    </div>
+            <span>Tekken 8</span>
+        </div>
                     <span class="game-price">R$: 269,90</span>
-                </li>
-            </ul>
+    </li>
+</ul>
         </div>
         
     </body>
