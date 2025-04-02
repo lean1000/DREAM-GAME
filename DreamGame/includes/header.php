@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Game</title>
 
-    <link rel="stylesheet" href="./assets/css/buca.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/busca.css">
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/suporte.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
@@ -22,7 +23,7 @@
             <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
 
             <ul class="menu">
-                <li><a href="./index.php">loja</a></li>
+                <li><a href="./index.php">Inicio</a></li>
                 <li><a href="./destaques.php">destaques</a></li>
                 <li><a href="./suporte.php">suporte</a></li>
                 <li><a href="./sobre.php">sobre</a></li>

@@ -160,6 +160,7 @@
 
 </section>
 
+<script src="./assets/js/banner.js"></script>
+
 <?php include './includes/footer.php'; ?>
 
-<script src="./assets/js/banner.js"></script>

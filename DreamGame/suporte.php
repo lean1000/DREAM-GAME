@@ -9,7 +9,6 @@
             <button class="suporte-btn">Problema de Login</button>
             <button class="suporte-btn">Outro</button>
         </div>
-        <a href="#" class="falar-atendente">Falar com atendente</a>
     </main>
 
     
