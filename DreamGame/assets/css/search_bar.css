@@ -2,28 +2,37 @@
     display: flex;
     align-items: center;
     background-color: white;
-    padding: 5px;
+    padding: 5px 12px;
     border-radius: 20px;
     width: 400px;
     margin: 50px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .search-bar input {
     flex-grow: 1;
     background: transparent;
     border: none;
     outline: none;
     color: #09070D;
-    padding: 5px;
+    font-size: 16px;
+    padding: 8px;
 }
+
 .search-bar input::placeholder {
     color: gray;
 }
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
+
+.icon-link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #09070D; /* Cor do ícone */
+    font-size: 18px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.search-bar button i {
-    width: 20px;
-    height: 20px;
+
+.icon-link:hover {
+    color: #555; /* Efeito hover */
 }

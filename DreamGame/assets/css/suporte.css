@@ -41,19 +41,6 @@
     background-color: #999;
 }
 
-.falar-atendente {
-    display: block;
-    margin-top: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 2px;
-}
-
-.falar-atendente:hover {
-    text-decoration: underline;
-}
-
 .social-media {
     position: fixed; 
     bottom: 15px; 

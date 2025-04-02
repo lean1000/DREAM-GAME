@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 /* Container de busca */
 .container-busca {
+=======
+.ctn-busca {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     width: 600px;
     padding: 50px 10px; /* Ajuste de padding para simplificar */
     margin: 150px auto; /* Centraliza o container */
@@ -7,8 +11,12 @@
     border-radius: 25px;
 }
 
+<<<<<<< HEAD
 /* Barra de busca */
 .search-bar {
+=======
+.searchBar {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     display: flex;
     align-items: center;
     background-color: #252039;
@@ -17,13 +25,13 @@
     margin-bottom: 15px;
 }
 
-.search-bar i {
+.searchBar i {
     color: white;
     font-size: 18px;
     padding: 0 10px;
 }
 
-.search-bar input {
+.searchBar input {
     flex: 1;
     border: none;
     background: none;
@@ -32,7 +40,7 @@
     outline: none;
 }
 
-.search-bar button {
+.searchBar button {
     background-color: #ffffff;
     color: #000000;
     border: none;
@@ -42,12 +50,16 @@
     transition: background-color 0.3s; /* Adiciona transição ao botão */
 }
 
+<<<<<<< HEAD
 .search-bar button:hover {
     background-color: #e0e0e0; /* Efeito hover no botão */
 }
 
 /* Container de cartões */
 .container-card {
+=======
+.ctn-card {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     width: 800px;
     height: auto; /* Permite que a altura se ajuste ao conteúdo */
     background-color: #0c0915;
@@ -56,15 +68,23 @@
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
 }
 
+<<<<<<< HEAD
 /* Lista de produtos */
 .produto-list {
+=======
+.list-game {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+<<<<<<< HEAD
 /* Item do produto */
 .produto-item {
+=======
+.item-game {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     display: flex;
     align-items: center;
     background-color: #1e1a2e;
@@ -75,23 +95,31 @@
     transition: background-color 0.3s; /* Adiciona transição ao item */
 }
 
+<<<<<<< HEAD
 .produto-item:hover {
     background-color: #252039; /* Efeito hover no item do produto */
 }
 
 .produto-item img {
+=======
+.item-game img {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     width: 120px;  
     height: 70px;  
     transition: transform 0.3s; /* Transição para efeito de zoom */
     filter: brightness(0.7); 
 }
 
+<<<<<<< HEAD
 .produto-item:hover img {
     transform: scale(1.05); /* Efeito de zoom na imagem ao passar o mouse */
 }
 
 /* Informações do produto */
 .produto-info {
+=======
+.info-game {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     position: absolute;
     left: 20px; 
     color: white;
@@ -100,7 +128,11 @@
     z-index: 2;
 }
 
+<<<<<<< HEAD
 .produto-price {
+=======
+.price-game {
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     position: absolute;
     right: 15px; 
     color: #2e5cfc;

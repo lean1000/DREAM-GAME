@@ -185,7 +185,12 @@
 
 </section>
 
-<?php include './includes/footer.php'; ?>
-
 <script src="./assets/js/banner.js"></script>
 
+<?php include './includes/footer.php'; ?>
+
+<<<<<<< HEAD
+<script src="./assets/js/banner.js"></script>
+
+=======
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc

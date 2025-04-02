@@ -5,6 +5,10 @@
 }
 
 .container-mundo-aberto {
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
     height: 325px;
 }
 
@@ -20,6 +24,17 @@
     background: linear-gradient(135deg, #09070D, transparent, #09070D);
 }
 
+<<<<<<< HEAD
+=======
+.container-acao {
+  
+    height: auto;
+    justify-content: center;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    padding-top: 5px;
+}
+
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
 figure {
     display: flex;
     justify-content: center;
@@ -38,6 +53,7 @@ figure img:hover {
     transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 .mundo-aberto, .acao {
     width: 100%;
     height: auto;
@@ -45,3 +61,19 @@ figure img:hover {
     scrollbar-color: #09070D transparent;
     cursor: grab;
 }
+=======
+.mundo-aberto {
+     
+    height: auto; 
+    overflow-x: auto; 
+    scrollbar-color:  #09070D transparent; 
+}
+
+.acao {
+   
+    height: auto; 
+    overflow-x: auto; 
+    scrollbar-color:  #09070D transparent; 
+    cursor: pointer;
+}
+>>>>>>> 522324d780f5c444e1074cf8473e6c64f45c5cbc
