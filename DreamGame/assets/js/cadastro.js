@@ -1,5 +1,5 @@
 function validarFormulario(event) {
-    event.preventDefault(); // Evita o envio do formulário antes da validação
+    event.preventDefault();
     
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;

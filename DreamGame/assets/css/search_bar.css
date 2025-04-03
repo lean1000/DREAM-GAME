@@ -24,8 +24,8 @@
 }
 
 .icon-link {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: #09070D; /* Cor do ícone */
+    text-decoration: none;
+    color: #09070D; 
     font-size: 18px;
     padding: 8px;
     display: flex;
@@ -34,5 +34,5 @@
 }
 
 .icon-link:hover {
-    color: #555; /* Efeito hover */
+    color: #555;
 }
