@@ -1,9 +1,11 @@
 .ctn-busca {
     width: 600px;
-    padding: 50px 10px;
-    margin: 150px auto; 
+    padding: 50px;
+    margin: 150px;
     background-color: #09070D;
+    padding-left: 10px;
     border-radius: 25px;
+    justify-content: center;
 }
 
 .searchBar {
@@ -11,8 +13,9 @@
     align-items: center;
     background-color: #252039;
     padding: 5px;
-    border-radius: 25px;
+    border-radius: 10px;
     margin-bottom: 15px;
+    width: 625px;
 }
 
 .searchBar i {
@@ -37,70 +40,17 @@
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.searchBar button:hover {
-    background-color: #e0e0e0;
-}
-
-.container-card {
-    width: 800px;
-    height: auto;
+.ctn-card {
+    width: 900px;
+    height: 500px;
     background-color: #0c0915;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
-}
-
-.produto-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.produto-item {
-    display: flex;
+   
     align-items: center;
-    background-color: #1e1a2e;
-    margin-bottom: 10px;
-    padding: 5px;
-    cursor: pointer;
-    position: relative; 
-    transition: background-color 0.3s;
-}
-
-.produto-item:hover {
-    background-color: #252039; 
-}
-
-.produto-item img {
-    width: 120px;  
-    height: 70px;  
-    transition: transform 0.3s;
-    filter: brightness(0.7); 
-}
-
-.produto-item:hover img {
-    transform: scale(1.05); 
-}
-
-.produto-info {
-    position: absolute;
-    left: 20px; 
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    z-index: 2;
-}
-
-.produto-price {
-    position: absolute;
-    right: 15px; 
-    color: #2e5cfc;
-    font-weight: bold;
-    font-size: 18px;
-    z-index: 2;
 }
 
 .list-game {
@@ -111,9 +61,14 @@
 
 .item-game {
     display: flex;
-    width: 650px;
+    width: 625px;
     align-items: center;
+    background-color: #1e1a2e;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
     position: relative; 
+    border-radius: 10px;
 }
 
 .item-game img {
@@ -121,10 +76,23 @@
     height: 70px;  
     transition: 0.3s;
     filter: brightness(0.7); 
+    border-radius: 5px;
+}
+
+.info-game {
+    position: absolute;
+    left: 150px; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
 }
 
 .price-game {
     position: absolute;
     right: 15px; 
-    color: #2e5cfc;
+    color: #e0e0e0;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
 }
