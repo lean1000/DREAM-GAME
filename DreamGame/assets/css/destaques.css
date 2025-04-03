@@ -1,7 +1,7 @@
 .container-destaques {
     width: 90%;
     max-width: 1300px;
-    padding: 10px;
+    padding: 5px;
     margin: 50px auto;
     background: #14101D;
     border-radius: 25px;
@@ -13,7 +13,7 @@
     flex-direction: column;
     background-color: #09070D;
     border-radius: 15px;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 90%;
 }
  
