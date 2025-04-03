@@ -1,24 +1,42 @@
-.container {
+.container-mundo-aberto, .container-acao {
     max-width: 100%;
     justify-content: center;
-    height: 325px;
-    overflow-x: auto;
-    scrollbar-color: #09070D ;
-    cursor: grab;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
 }
- 
-.titulo-genero {
+
+.container-mundo-aberto {
+
+    height: 325px;
+}
+
+.container-acao {
+    padding-top: 5px;
+}
+
+.container-mundo-aberto h2, .container-acao h2 {
     background-color: #09070D;
     color: #fafafa;
     text-align: left;
     padding: 5px;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
 }
- 
+
+
+.container-acao {
+  
+    height: auto;
+    justify-content: center;
+    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    padding-top: 5px;
+}
+
+
 figure {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
- 
+
 figure img {
     max-width: 200px;
     height: auto;
@@ -26,13 +44,28 @@ figure img {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
- 
+
 figure img:hover {
     transform: scale(1.1);
 }
- 
-.produto{
+
+
+.mundo-aberto, .acao {
     width: 100%;
     height: auto;
-    background: linear-gradient(135deg, #09070D, transparent, #09070D);
+    overflow-x: auto;
+    scrollbar-color: #09070D transparent;
+    cursor: grab;
 }
+
+
+
+.acao , .mundo-aberto {
+   
+    height: auto; 
+    overflow-x: auto; 
+    scrollbar-color:  #09070D transparent; 
+    cursor: pointer;
+    
+}
+
