@@ -1,55 +1,39 @@
 <?php include './includes/header.php'; ?>
 
 <Section id="produto">
-    <main class="container">
+    <main class="container_produto">
+
         <div class="row">
 
             <img src="./assets/img/capa dos produtos/GTA-6.png" alt="GTA-6">
-            <img src="./assets/img/logo/logo.png" alt="logo">
 
-            <div class="col">
-                <button>
-                    Comprar
-                </button>
+            <div class="col-prod">
+
+                <img src="./assets/img/logo/logo.png" alt="logo">
+                
+                <div class="row-buy">
+                    <h3 class="h">R$: 339,00</h3>
+                    <button class="button_compra">Comprar</button>
+                </div>
             </div>
-
         </div>
 
         <div class="row">
 
-            <div class="col">
-                <h1>NOME DO JOGO</h1>
-                <?php include 'estrelas.php'; ?>
-            </div>
-
-            <p></p>
+                <h1 class="h">NOME DO JOGO</h1>
+                <!-- include 'estrelas.php';  -->
+            
         </div>
-        <div class="row">
+        
+        <p>Prepare-se para entrar em um dos capítulos mais intensos e intrigantes da série Call of Duty. Em Call of Duty: Black Ops, você assume o papel de um membro das forças especiais em uma série de missões clandestinas durante a Guerra Fria. Com uma narrativa envolvente que mistura eventos históricos e ficção</p>
+        
+        <div class="row-requerimento">
 
-            <div class="col">
-                <h2>Requsitos mínimos.</h2>
-                <ul>
-                    <li>Sistema Operacional: janelas</li>
-                    <li>Processador: Intel Core</li>
-                    <li>Memória RAM: 8GB</li>
-                    <li>Placa de Vídeo: Nvidia</li>
-                    <li>Espaço em Disco: 150 GB</li>
-                    <li>DirectX: Versões</li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h2>Requisitos recomendados.</h2>
-                <ul>
-                    <li>Sistema Operacional: Windows 10 ou 11</li>
-                    <li>Processador Intel Core</li>
-                    <li>Memória RAM: 12GB</li>
-                    <li>Placa de Vídeo: Nvidia</li>
-                    <li>Espaço em Disco:150GB</li>
-                    <li>DirectX: V</li>
-                </ul>
-            </div>
-
+            <h3>tamanho</h3>
+            <h3>genero</h3>
+            <h3>desenvolvedor</h3>
+            <h3>ano</h3>
+            
         </div>
     </main>
 </Section>

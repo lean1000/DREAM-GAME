@@ -1,6 +1,4 @@
-function validarFormulario(event) {
-    event.preventDefault();
-    
+function validarFormulario() {
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
     let confirmarSenha = document.getElementById("confirmarSenha").value;
@@ -38,5 +36,6 @@ function validarFormulario(event) {
         return false;
     }
     
-    document.getElementById("cadastroForm").submit();
+    // Se tudo estiver certo, o formulário será enviado normalmente
+    return true;
 }

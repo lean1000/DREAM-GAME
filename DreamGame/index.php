@@ -4,18 +4,56 @@
 <section class="banner-container">
     <button class="nav-button left" onclick="prevBanner()">&#9664;</button>
 
-    <div class="banner">
-        <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
-        <div class="details">
-            <div class="thumbnails">
-                <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 1">
-                <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="Screenshot 2">
-                <img src="./assets/img/capa dos produtos/LittleN.png" alt="Screenshot 3">
-                <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+    <div class="banner-wrapper">
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos/LittleN.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 219,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
             </div>
-            <div class="buy">
-                <p class="price">R$: 219,99</p>
-                <button class="buy-button">Comprar</button>
+        </div>
+    </div>
+
+    <div class="banner-wrapper">
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos/LittleN.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 219,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-wrapper">
+        <div class="banner">
+            <img src="./assets/img/capa dos produtos/Horizon.png" alt="Horizon Forbidden West" class="cover">
+            <div class="details">
+                <div class="thumbnails">
+                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="Screenshot 1">
+                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="Screenshot 2">
+                    <img src="./assets/img/capa dos produtos/LittleN.png" alt="Screenshot 3">
+                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="Screenshot 4">
+                </div>
+                <div class="buy">
+                    <p class="price">R$: 219,99</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -24,174 +62,46 @@
 </section>
 
 <section>
-    <div class="container-mundo-aberto">
 
-        <h2>Mundo Aberto</h2>
-        <div class="mundo-aberto">
+    <h2 class="h2">RPG</h2>
 
-            <figure>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Forza5.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GTA-6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Horizon.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/SpiderMan2.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/TheLast.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/LikeDragon.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GTA-6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="foto-produto">
-                </div>
-                
-            </figure>
-        </div>
+    <div class="container">
 
+        <hr>
 
-        </figure>
-    </div>
-    </div>
-
-    <div class="container-acao">
-        <h2>Ação</h2>
-        <div class="acao">
+        <div class="scrol">
 
             <figure>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Forza5.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GTA-6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Horizon.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/LikeDragon.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/SpiderMan2.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/TheLast.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
 
+                <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
 
-            </figure>
+                <img src="./assets/img/capa dos produtos/Forza5.png" alt="foto-produto">
 
-        </div>
-    </div>
+                <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="foto-produto">
 
-    <div class="container-acao">
-        <h2>RPG</h2>
-        <div class="acao">
+                <img src="./assets/img/capa dos produtos/GTA-6.png" alt="foto-produto">
 
-            <figure>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Forza5.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/GTA-6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Horizon.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/LikeDragon.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/SpiderMan2.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/TheLast.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
-                <div>
-                    <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-                </div>
+                <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="foto-produto">
 
+                <img src="./assets/img/capa dos produtos/Horizon.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/LikeDragon.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/SpiderMan2.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/TheLast.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
+
+                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
 
             </figure>
 
@@ -203,4 +113,3 @@
 <script src="./assets/js/banner.js"></script>
 
 <?php include './includes/footer.php'; ?>
-

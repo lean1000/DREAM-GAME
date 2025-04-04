@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/* HEADER */
+
 body {
     background-color: #261E33;
     padding: 0;
@@ -78,3 +80,88 @@ nav {
 .user a {
     text-decoration: none;
 }
+
+/* HEADER */
+
+/* FOOTER */
+
+.footer-content {
+    background-color: #09070D; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+}
+
+.footer-content p {
+    font-size: 14px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+.footer-links {
+    list-style-type: none; 
+    display: inline-flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.footer-links a {
+    text-decoration: none; 
+    color: white; 
+    margin: 0 10px; 
+}
+
+.footer-links a:hover {
+    color: #555; /
+}
+
+.footer-links li {
+    display: inline; 
+    font-size: 14px; 
+}
+
+/* FOOTER */
+
+/* SEARCH BAR NAV */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    padding: 5px 12px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #09070D;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.search-bar input::placeholder {
+    color: #09070D;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: #09070D; 
+    font-size: 18px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-link:hover {
+    color: #09070D;
+}
+
+/* SEARCH BAR NAV */

@@ -55,3 +55,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #b6b6b6;
 }
+
+.erro {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}

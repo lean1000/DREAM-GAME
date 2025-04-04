@@ -8,26 +8,19 @@
 
     <link rel="stylesheet" href="./assets/css/cadastro.css">
 
-    <style>
-        .erro {
-            color: red;
-            font-size: 14px;
-            margin-top: 5px;
-            display: none;
-        }
-    </style>
 </head>
 
 <body>
+
     <div class="caixa">
         <img src="./assets/img/logo/logo.png" alt="logo">
-        <form id="cadastroForm" onsubmit="validarFormulario(event)" method="post">
-            <input type="text" id="apelido" placeholder="Apelido" required>
-            <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
-            <input type="date" id="dataNascimento" min="1970-01-01" max="2025-12-31" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="senha" placeholder="Senha" required>
-            <input type="password" id="confirmarSenha" placeholder="Confirmar Senha" required>
+        <form id="cadastroForm" action="./classes/auxcadastro.php" method="post" onsubmit="return validarFormulario()">
+        <input type="text" id="apelido" placeholder="Apelido" name="apelido" required>
+            <input type="text" id="nomeCompleto" placeholder="Nome Completo" name="nome" required>
+            <input type="date" id="dataNascimento" min="1970-01-01" max="2025-12-31" name="nascimento" required>
+            <input type="email" id="email" placeholder="Email" name="email" required>
+            <input type="password" id="senha" placeholder="Senha" name="senha" required>
+            <input type="password" id="confirmarSenha" placeholder="Confirmar Senha" name="confirmarSenha" required>
             <div id="erroMsg" class="erro"></div>
             <input type="submit" value="Cadastrar">
         </form>

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/02/2025 às 13:32
+-- Tempo de geração: 04/04/2025 às 04:02
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,13 +43,13 @@ CREATE TABLE `tb_info_users` (
 CREATE TABLE `tb_produtos` (
   `ID` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL,
-  `valor` decimal(45,2) NOT NULL,
-  `ano` year(4) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `ano` year(4) DEFAULT NULL,
   `desenvolvedor` varchar(100) NOT NULL,
-  `genero` varchar(20) NOT NULL,
+  `genero` varchar(50) NOT NULL,
   `descricao` text NOT NULL,
-  `tamanho` decimal(4,2) NOT NULL,
-  `avaliacao` int(1) NOT NULL
+  `tamanho` decimal(5,2) NOT NULL,
+  `avaliacao` tinyint(2) NOT NULL CHECK (`avaliacao` between 0 and 10)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -57,9 +57,8 @@ CREATE TABLE `tb_produtos` (
 --
 
 INSERT INTO `tb_produtos` (`ID`, `titulo`, `valor`, `ano`, `desenvolvedor`, `genero`, `descricao`, `tamanho`, `avaliacao`) VALUES
-(1, 'Homem Aranha 2', 99.99, '0000', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha, onde você assume o papel do icônico herói de Nova York, Peter Parker. Neste jogo de ação e aventura, você terá a chance de balançar entre os arranha-céus, explorar uma cidade vibrante e enfrentar vilões clássicos do universo Marvel.', 9.99, 3),
-(2, 'Homem Aranha', 99.99, '0000', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha, onde você assume o papel do icônico herói de Nova York, Peter Parker. Neste jogo de ação e aventura, você terá a chance de balançar entre os arranha-céus, explorar uma cidade vibrante e enfrentar vilões clássicos do universo Marvel.', 9.99, 3),
-(3, 'Homem Aranha', 99.99, '2023', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha, onde você assume o papel do icônico herói de Nova York, Peter Parker. Neste jogo de ação e aventura, você terá a chance de balançar entre os arranha-céus, explorar uma cidade vibrante e enfrentar vilões clássicos do universo Marvel.', 9.99, 3);
+(1, 'Homem Aranha 2', 99.99, '2023', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha...', 9.99, 3),
+(2, 'Homem Aranha', 99.99, '2023', 'Sony Pictures', 'Ação', 'Entre no mundo emocionante do Homem-Aranha...', 9.99, 3);
 
 -- --------------------------------------------------------
 
@@ -82,7 +81,9 @@ CREATE TABLE `tb_users` (
 -- Índices de tabela `tb_info_users`
 --
 ALTER TABLE `tb_info_users`
-  ADD PRIMARY KEY (`ID_info`);
+  ADD PRIMARY KEY (`ID_info`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD KEY `ID_users` (`ID_users`);
 
 --
 -- Índices de tabela `tb_produtos`
@@ -110,13 +111,23 @@ ALTER TABLE `tb_info_users`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `tb_users`
 --
 ALTER TABLE `tb_users`
   MODIFY `ID_users` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restrições para tabelas despejadas
+--
+
+--
+-- Restrições para tabelas `tb_info_users`
+--
+ALTER TABLE `tb_info_users`
+  ADD CONSTRAINT `tb_info_users_ibfk_1` FOREIGN KEY (`ID_users`) REFERENCES `tb_users` (`ID_users`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
