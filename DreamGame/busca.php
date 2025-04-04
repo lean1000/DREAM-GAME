@@ -8,7 +8,6 @@
             <input type="text" id="searchInput" placeholder="Buscar..." onkeyup="searchGames()">
             <i class="bi bi-search"></i>
 
-            <button>Buscar</button>
         </div>
 
         <ul class="list-game" id="gameList">

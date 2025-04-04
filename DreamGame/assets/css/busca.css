@@ -35,15 +35,6 @@
     outline: none;
 }
 
-.searchBar button {
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .ctn-card {
     width: 900px;
     height: 500px;

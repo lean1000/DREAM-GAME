@@ -61,54 +61,61 @@
     <button class="nav-button right" onclick="nextBanner()">&#9654;</button>
 </section>
 
-<section>
+<?php
+// Conectar ao banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_dreamgame";
 
-    <h2 class="h2">RPG</h2>
+// Criar a conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    <div class="container">
+// Verificar a conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
 
-        <hr>
+// Recuperar todos os gêneros
+$sql = "SELECT * FROM tb_generos";
+$result = $conn->query($sql);
+$generos = [];
 
-        <div class="scrol">
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $generos[] = $row;
+    }
+}
 
-            <figure>
+foreach ($generos as $genero) {
+    echo '<section>';
+    echo '<h2 class="h2">' . $genero['genero'] . '</h2>';
+    echo '<div class="container">';
+    echo '<hr>';
+    echo '<div class="scrol">';
+    echo '<figure>';
 
-                <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
+    // Recuperar os produtos para o gênero atual
+    $sql_produtos = "SELECT * FROM tb_produtos WHERE ID_genero = " . $genero['ID_genero'];
+    $result_produtos = $conn->query($sql_produtos);
 
-                <img src="./assets/img/capa dos produtos/Forza5.png" alt="foto-produto">
+    if ($result_produtos->num_rows > 0) {
+        while($produto = $result_produtos->fetch_assoc()) {
+            // Exibir a imagem do produto com id do produto
+            echo '<img src="./assets/img/capa dos produtos/' . $produto['imagen'] . '" alt="foto-produto" id="produto_' . $produto['ID'] . '">';
+        }
+    } else {
+        echo '<p>Nenhum produto encontrado para este gênero.</p>';
+    }
 
-                <img src="./assets/img/capa dos produtos/GOWragnarok.png" alt="foto-produto">
+    echo '</figure>';
+    echo '</div>';
+    echo '</div>';
+    echo '</section>';
+}
 
-                <img src="./assets/img/capa dos produtos/GTA-6.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/HogwartsLegacy.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/Horizon.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/LikeDragon.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/RedDeadR2.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/SpiderMan2.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/TheLast.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/Farcry6.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-
-                <img src="./assets/img/capa dos produtos/Village.png" alt="foto-produto">
-
-            </figure>
-
-        </div>
-    </div>
-
-</section>
+$conn->close();
+?>
 
 <script src="./assets/js/banner.js"></script>
 
