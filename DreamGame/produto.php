@@ -29,10 +29,9 @@
         
         <div class="row-requerimento">
 
-            <h3>tamanho</h3>
-            <h3>genero</h3>
-            <h3>desenvolvedor</h3>
-            <h3>ano</h3>
+            <h3>Genero:</h3>
+            <h3>Desenvolvedor:</h3>
+            <h3>Ano:</h3>
             
         </div>
     </main>

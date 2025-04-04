@@ -12,7 +12,7 @@
 <body>
     <div class="caixa">
         <img src="./assets/img/logo/logo.png" alt="logo">
-        <form id="loginForm" action="./classes/auxlogin.php" onsubmit="validarFormulario(event)" method="post">
+        <form id="loginForm" action="./auxilio/auxlogin.php" onsubmit="validarFormulario(event)" method="post">
             <input type="email" id="email" placeholder="Email" name="email" required>
             <input type="password" id="senha" placeholder="Senha" maxlength="16" name="senha" required>
             <a href="./cadastro.php">Cadastrar-se</a>

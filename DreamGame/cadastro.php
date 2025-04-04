@@ -14,7 +14,7 @@
 
     <div class="caixa">
         <img src="./assets/img/logo/logo.png" alt="logo">
-        <form id="cadastroForm" action="./classes/auxcadastro.php" method="post" onsubmit="return validarFormulario()">
+        <form id="cadastroForm" action="./auxilio/auxcadastro.php" method="post" onsubmit="return validarFormulario()">
         <input type="text" id="apelido" placeholder="Apelido" name="apelido" required>
             <input type="text" id="nomeCompleto" placeholder="Nome Completo" name="nome" required>
             <input type="date" id="dataNascimento" min="1970-01-01" max="2025-12-31" name="nascimento" required>

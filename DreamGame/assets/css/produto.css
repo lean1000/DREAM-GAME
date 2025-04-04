@@ -78,10 +78,7 @@
 }
 
 .row-requerimento{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:88%;
+    width:90%;
 }
 
 .requerimentos, .h-requirimentos{
@@ -92,11 +89,11 @@
 
 .requerimentos li {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 p {
-    font-size: 1.2rem;
-    margin: 10px 55px;
-    text-align:justify;
+    font-size: 1rem;
+    margin: 10px 60px;
+    text-align: justify;
 }

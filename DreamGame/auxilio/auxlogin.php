@@ -29,11 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['email'] = $usuario['email'];
 
         // Redirecionar para a página principal
-        header("Location: dashboard.php");
+        header("Location: ../index.php");
         exit;
     } else {
         // Falha no login
-        echo "<script>alert('Email ou senha incorretos!'); window.location.href = '../login.php';</script>";
+        echo "<script>alert('Email ou senha incorretos!'); window.location.href = '../login';</script>";
+
         exit;
     }
 } else {

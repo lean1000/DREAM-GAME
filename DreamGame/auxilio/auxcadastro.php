@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 // Recebendo dados do formulário com segurança
 $apelidoFormulario = filter_input(INPUT_POST, 'apelido', FILTER_SANITIZE_STRING);
 $senhaFormulario = $_POST['senha'];
@@ -50,13 +53,11 @@ try {
     ]);
 
     // Redirecionamento após sucesso
-    echo "<script>alert('Cadastro realizado com sucesso!');</script>";
-header("Location: login.php");
 
+    header("Location: ../login.php");
 
-exit;
+    exit;
 
 } catch (PDOException $e) {
     echo "Erro ao cadastrar: " . $e->getMessage();
 }
-?>
