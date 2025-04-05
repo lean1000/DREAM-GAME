@@ -6,7 +6,6 @@
     background: #14101D;
     border-radius: 25px;
     align-items: center;
-    
 }
  
 .card {
@@ -39,7 +38,7 @@
 }
  
 
-.buy-button {
+.button-buy {
     background-color: #e0e0e0;
     color: black;
     padding: 10px 24px;
@@ -53,7 +52,7 @@
     
 }
  
-.buy-button:hover {
+.button-buy:hover {
     background-color: #c9c9c9;
 }
 

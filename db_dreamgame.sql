@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/04/2025 às 16:46
+-- Tempo de geração: 05/04/2025 às 05:33
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -166,7 +166,47 @@ INSERT INTO `tb_produtos` (`ID`, `titulo`, `imagen`, `valor`, `ano`, `desenvolve
 (70, 'Mobile Legends', 'mobile_legends.jpg', 0.00, '2016', 'Moonton', 'Um dos MOBAs mais populares para dispositivos móveis, com jogos rápidos e heróis únicos.', 5, 5),
 (71, 'League of Legends: Wild Rift', 'wild_rift.jpg', 0.00, '2020', 'Riot Games', 'Versão mobile do popular jogo MOBA, com gráficos e jogabilidade adaptados para celulares.', 5, 5),
 (72, 'Battalion 1944', 'battalion_1944.jpg', 0.00, '2018', 'Bulkhead Interactive', 'FPS com forte influência de MOBAs, misturando estratégias de batalha com elementos históricos.', 4, 5),
-(73, 'Strife', 'strife.jpg', 0.00, '2015', 'S2 Games', 'MOBA com ênfase em jogabilidade simplificada e foco em equilíbrio e diversão.', 4, 5);
+(73, 'Strife', 'strife.jpg', 0.00, '2015', 'S2 Games', 'MOBA com ênfase em jogabilidade simplificada e foco em equilíbrio e diversão.', 4, 5),
+(74, 'Apex Legends', 'apex_legends.jpg', 0.00, '2019', 'Respawn Entertainment', 'Battle royale com heróis únicos e habilidades especiais.', 5, 6),
+(75, 'PUBG: Battlegrounds', 'pubg.jpg', 59.90, '2017', 'PUBG Corporation', 'Jogo realista de sobrevivência em estilo battle royale.', 4, 6),
+(76, 'Warzone', 'warzone.jpg', 0.00, '2020', 'Infinity Ward', 'Modo battle royale da série Call of Duty com gráficos realistas.', 4, 6),
+(77, 'Spellbreak', 'spellbreak.jpg', 0.00, '2020', 'Proletariat Inc.', 'Battle royale mágico com combate de feitiços.', 4, 6),
+(78, 'Realm Royale', 'realm_royale.jpg', 0.00, '2018', 'Hi-Rez Studios', 'Mistura de battle royale com classes e montarias.', 3, 6),
+(79, 'Hyper Scape', 'hyper_scape.jpg', 0.00, '2020', 'Ubisoft', 'Battle royale futurista com jogabilidade vertical.', 3, 6),
+(80, 'Super People', 'super_people.jpg', 0.00, '2022', 'Wonder People', 'Battle royale com personagens de superpoderes.', 4, 6),
+(81, 'The Cycle: Frontier', 'the_cycle_frontier.jpg', 0.00, '2022', 'YAGER', 'FPS PvEvP com mecânicas de extração.', 3, 6),
+(82, 'Naraka: Bladepoint', 'naraka_bladepoint.jpg', 99.90, '2021', '24 Entertainment', 'Battle royale com combate corpo-a-corpo e parkour.', 5, 6),
+(83, 'CRSED: F.O.A.D.', 'crsed.jpg', 0.00, '2019', 'Darkflow Software', 'Battle royale caótico com armas bizarras e poderes.', 3, 6),
+(84, 'eFootball 2022', 'efootball_2022.jpg', 0.00, '2021', 'Konami', 'Simulação de futebol gratuita com atualizações constantes.', 3, 7),
+(85, 'FIFA 22', 'fifa_22.jpg', 199.90, '2021', 'EA Sports', 'Futebol com jogabilidade realista e modos variados.', 4, 7),
+(86, 'NBA 2K22', 'nba_2k22.jpg', 249.90, '2021', 'Visual Concepts', 'Simulação de basquete com jogadores reais.', 5, 7),
+(87, 'Madden NFL 22', 'madden_22.jpg', 229.90, '2021', 'EA Sports', 'Jogo de futebol americano com modo carreira.', 4, 7),
+(88, 'Rocket League', 'rocket_league.jpg', 0.00, '2015', 'Psyonix', 'Futebol com carros turbinados em arenas futuristas.', 5, 7),
+(89, 'Tony Hawk\'s Pro Skater 1+2', 'tony_hawk.jpg', 149.90, '2020', 'Vicarious Visions', 'Remake dos clássicos de skate com gráficos atualizados.', 5, 7),
+(90, 'WWE 2K22', 'wwe_2k22.jpg', 249.90, '2022', '2K Games', 'Simulador de luta livre com diversos lutadores e arenas.', 4, 7),
+(91, 'F1 2021', 'f1_2021.jpg', 199.90, '2021', 'Codemasters', 'Corridas de Fórmula 1 com equipes oficiais e circuitos reais.', 5, 7),
+(92, 'PGA Tour 2K21', 'pga_tour.jpg', 149.90, '2020', 'HB Studios', 'Simulação de golfe com física realista.', 4, 7),
+(93, 'Skater XL', 'skater_xl.jpg', 99.90, '2020', 'Easy Day Studios', 'Skate realista com foco em manobras e física.', 4, 7),
+(94, 'The Sims 4', 'sims_4.jpg', 199.90, '2014', 'Maxis', 'Crie e controle pessoas em uma simulação de vida.', 5, 8),
+(95, 'Cities: Skylines', 'cities_skylines.jpg', 99.90, '2015', 'Colossal Order', 'Simulador de construção e gestão de cidades.', 5, 8),
+(96, 'Flight Simulator 2020', 'flight_simulator.jpg', 249.90, '2020', 'Asobo Studio', 'Simulação realista de voo com gráficos impressionantes.', 5, 8),
+(97, 'Farming Simulator 22', 'farming_simulator.jpg', 179.90, '2021', 'GIANTS Software', 'Cultive e administre uma fazenda com veículos reais.', 4, 8),
+(98, 'Euro Truck Simulator 2', 'euro_truck.jpg', 79.90, '2012', 'SCS Software', 'Dirija caminhões por estradas europeias.', 5, 8),
+(99, 'Train Sim World 2', 'train_sim.jpg', 129.90, '2020', 'Dovetail Games', 'Controle trens com precisão realista em diversas linhas.', 4, 8),
+(100, 'House Flipper', 'house_flipper.jpg', 69.90, '2018', 'Empyrean', 'Compre, reforme e venda casas.', 4, 8),
+(101, 'PowerWash Simulator', 'powerwash.jpg', 59.90, '2022', 'FuturLab', 'Limpeza relaxante de ambientes com lavadora de alta pressão.', 5, 8),
+(102, 'PC Building Simulator', 'pc_building.jpg', 49.90, '2019', 'The Irregular Corporation', 'Monte e conserte PCs como na vida real.', 4, 8),
+(103, 'Cooking Simulator', 'cooking_simulator.jpg', 69.90, '2019', 'Big Cheese Studio', 'Cozinhe diversos pratos com física realista.', 3, 8),
+(104, 'Terraria', 'terraria.jpg', 49.90, '2011', 'Re-Logic', 'Aventura sandbox em 2D com exploração e criação.', 5, 9),
+(105, 'Garry\'s Mod', 'garrys_mod.jpg', 19.90, '2006', 'Facepunch Studios', 'Caixa de areia baseada em física com infinitas possibilidades.', 5, 9),
+(106, 'Roblox', 'roblox.jpg', 0.00, '2006', 'Roblox Corporation', 'Plataforma de criação de jogos e mundos virtuais.', 4, 9),
+(107, 'No Man\'s Sky', 'no_mans_sky.jpg', 199.90, '2016', 'Hello Games', 'Explore planetas infinitos em um universo procedural.', 4, 9),
+(108, 'Trove', 'trove.jpg', 0.00, '2015', 'Trion Worlds', 'MMO sandbox com classes e aventuras em blocos.', 4, 9),
+(109, 'Astroneer', 'astroneer.jpg', 99.90, '2019', 'System Era Softworks', 'Explore planetas e colete recursos para construir bases.', 4, 9),
+(110, 'Besiege', 'besiege.jpg', 29.90, '2015', 'Spiderling Studios', 'Construa máquinas para destruir fortalezas medievais.', 4, 9),
+(111, 'Scrap Mechanic', 'scrap_mechanic.jpg', 59.90, '2016', 'Axolot Games', 'Crie veículos e engenhocas em um mundo criativo.', 4, 9),
+(112, 'Eco', 'eco.jpg', 89.90, '2018', 'Strange Loop Games', 'Crie uma civilização cooperativa equilibrando ecossistemas.', 4, 9),
+(113, 'Portal Knights', 'portal_knights.jpg', 59.90, '2017', 'Keen Games', 'RPG de ação com criação e construção de mundos.', 4, 9);
 
 -- --------------------------------------------------------
 
@@ -244,7 +284,7 @@ ALTER TABLE `tb_info_users`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- AUTO_INCREMENT de tabela `tb_users`

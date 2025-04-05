@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/produto.css">
+    <link rel="stylesheet" href="./assets/css/perfil.css">
     <link rel="stylesheet" href="./assets/css/busca.css">
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/suporte.css">
