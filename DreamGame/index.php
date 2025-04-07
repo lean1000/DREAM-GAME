@@ -2,21 +2,21 @@
 <?php include './includes/searchBar.php'; ?>
 
 <section class="banner-container">
-    <button class="nav-button left" onclick="prevBanner()">&#9664;</button>
+    <button class="banner-botao-nav banner-esquerda" onclick="prevBanner()">&#9664;</button>
 
     <div class="banner-wrapper">
         <div class="banner">
-            <img src="./assets/img/capa_banners/hogwarts.png" alt="foto-banner" class="cover">
-            <div class="details">
-                <div class="thumbnails">
-                    <img src="./assets/img/capa_produtos/batman_arkham_knight.jpg" alt="Screenshot 3">
-                    <img src="./assets/img/capa_produtos/among_us.jpg" alt="Screenshot 1">
-                    <img src="./assets/img/capa_produtos/battlefield_v.jpg" alt="Screenshot 4">
-                    <img src="./assets/img/capa_produtos/animal_crossing.jpg" alt="Screenshot 2">
+            <img src="./assets/img/cod_modern_warfare.jpg" alt="foto-banner" class="banner-capa">
+            <div class="banner-detalhes">
+                <div class="banner-miniaturas">
+                    <img src="./assets/img/batman_arkham_knight.jpg" alt="Screenshot 3">
+                    <img src="./assets/img/among_us.jpg" alt="Screenshot 1">
+                    <img src="./assets/img/battlefield_v.jpg" alt="Screenshot 4">
+                    <img src="./assets/img/animal_crossing.jpg" alt="Screenshot 2">
                 </div>
-                <div class="buy">
-                    <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Ver Produto</button>
+                <div class="banner-compra">
+                    <p class="banner-preco">R$: 219,99</p>
+                    <button class="banner-botao-compra">Ver Produto</button>
                 </div>
             </div>
         </div>
@@ -24,35 +24,17 @@
 
     <div class="banner-wrapper">
         <div class="banner">
-            <img src="./assets/img/capa_banners/wu_kong.png" alt="foto-banner" class="cover">
-            <div class="details">
-                <div class="thumbnails">
-                    <img src="./assets/img/capa_produtos/among_us.jpg" alt="Screenshot 1">
-                    <img src="./assets/img/capa_produtos/animal_crossing.jpg" alt="Screenshot 2">
-                    <img src="./assets/img/capa_produtos/batman_arkham_knight.jpg" alt="Screenshot 3">
-                    <img src="./assets/img/capa_produtos/battlefield_v.jpg" alt="Screenshot 4">
+            <img src="./assets/img//call_of_duty_cold_war.jpg" alt="foto-banner" class="banner-capa">
+            <div class="banner-detalhes">
+                <div class="banner-miniaturas">
+                    <img src="./assets/img/batman_arkham_knight.jpg" alt="Screenshot 3">
+                    <img src="./assets/img/among_us.jpg" alt="Screenshot 1">
+                    <img src="./assets/img/battlefield_v.jpg" alt="Screenshot 4">
+                    <img src="./assets/img/animal_crossing.jpg" alt="Screenshot 2">
                 </div>
-                <div class="buy">
-                    <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Ver Produto</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="banner-wrapper">
-        <div class="banner">
-            <img src="./assets/img/capa_banners/horizon.png" alt="foto-banner" class="cover">
-            <div class="details">
-                <div class="thumbnails">
-                    <img src="./assets/img/capa_produtos/batman_arkham_knight.jpg" alt="Screenshot 3">
-                    <img src="./assets/img/capa_produtos/animal_crossing.jpg" alt="Screenshot 2">
-                    <img src="./assets/img/capa_produtos/among_us.jpg" alt="Screenshot 1">
-                    <img src="./assets/img/capa_produtos/battlefield_v.jpg" alt="Screenshot 4">
-                </div>
-                <div class="buy">
-                    <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Ver Produto</button>
+                <div class="banner-compra">
+                    <p class="banner-preco">R$: 219,99</p>
+                    <button class="banner-botao-compra">Ver Produto</button>
                 </div>
             </div>
         </div>
@@ -60,23 +42,23 @@
 
     <div class="banner-wrapper">
         <div class="banner">
-            <img src="./assets/img/capa_banners/forza_5.png" alt="foto-banner" class="cover">
-            <div class="details">
-                <div class="thumbnails">
-                    <img src="./assets/img/capa_produtos/among_us.jpg" alt="Screenshot 1">
-                    <img src="./assets/img/capa_produtos/animal_crossing.jpg" alt="Screenshot 2">
-                    <img src="./assets/img/capa_produtos/batman_arkham_knight.jpg" alt="Screenshot 3">
-                    <img src="./assets/img/capa_produtos/battlefield_v.jpg" alt="Screenshot 4">
+            <img src="./assets/img/horizon_zero_dawn.jpg" alt="foto-banner" class="banner-capa">
+            <div class="banner-detalhes">
+                <div class="banner-miniaturas">
+                    <img src="./assets/img/batman_arkham_knight.jpg" alt="Screenshot 3">
+                    <img src="./assets/img/among_us.jpg" alt="Screenshot 1">
+                    <img src="./assets/img/battlefield_v.jpg" alt="Screenshot 4">
+                    <img src="./assets/img/animal_crossing.jpg" alt="Screenshot 2">
                 </div>
-                <div class="buy">
-                    <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Ver Produto</button>
+                <div class="banner-compra">
+                    <p class="banner-preco">R$: 219,99</p>
+                    <button class="banner-botao-compra">Ver Produto</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <button class="nav-button right" onclick="nextBanner()">&#9654;</button>
+    <button class="banner-botao-nav banner-direita" onclick="nextBanner()">&#9654;</button>
 </section>
 
 <?php
@@ -103,11 +85,11 @@ if ($result->num_rows > 0) {
 
 foreach ($generos as $genero) {
     echo '<section>';
-    echo '<h2 class="h2">' . $genero['genero'] . '</h2>';
-    echo '<div class="container">';
-    echo '<hr>';
-    echo '<div class="scrol">';
-    echo '<figure>';
+    echo '<h2 class="home-h2">' . $genero['genero'] . '</h2>';
+    echo '<div class="home-container">';
+    echo '<hr class="home-hr">';
+    echo '<div class="home-scrol">';
+    echo '<figure class="home-figure">';
 
     $sql_produtos = "SELECT * FROM tb_produtos WHERE ID_genero = " . $genero['ID_genero'];
     $result_produtos = $conn->query($sql_produtos);

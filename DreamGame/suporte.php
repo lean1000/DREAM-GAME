@@ -4,10 +4,10 @@
     <h1>Dream Game Suporte</h1>
     <p>Bem-vindo, como podemos ajudar?</p>
     <div class="suporte-opcoes">
-        <button class="suporte-btn">Relatar Bugs</button>
-        <button class="suporte-btn">Problemas na Compra</button>
-        <button class="suporte-btn">Problema de Login</button>
-        <button class="suporte-btn">Outro</button>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Nome Completo" required>
+        <input type="text" placeholder="Assunto" required>
+        <input type="submit" value="Enviar">
     </div>
 </main>
 
@@ -19,3 +19,5 @@
         <img src="./assets/img/logo/Vector (1).png" alt="Facebook">
     </a>
 </div>
+
+<?php include './includes/footer.php'; ?>

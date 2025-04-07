@@ -1,3 +1,12 @@
+/* Certifique-se de que o body ocupe toda a altura da tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
 .sobre {
     background-color: #09070D;
     padding: 20px;
@@ -11,12 +20,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 70px 200px;
+    margin: 100px 0 0 0; /* Remover margens, já que estamos centralizando com flexbox */
 }
 
 .sobre h2 {
     text-decoration: underline;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif; /* Adicionando uma fonte genérica como fallback */
     font-style: normal;
 }
 

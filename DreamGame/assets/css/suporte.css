@@ -1,56 +1,83 @@
+/* Contêiner principal do formulário */
 .suporte-container {
-    margin: 50px auto 10px auto; 
-    max-width: 60%; 
-}
-
-.suporte-container h1 {
+    background-color: #09070D; /* Fundo escuro */
     color: white;
-    text-decoration: underline;
-    font-family: 'Righteous', sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-}
-
-.suporte-container p {
-    color: white;
-    text-align: center;
-}
-
-.suporte-opcoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin: auto; 
-    background-color: #09070D;
-    max-width: 80%; 
-    padding: 5%;
-    border-radius: 25px;
     box-sizing: border-box;
 }
 
-.suporte-btn {
-    background-color: #ccc;
-    color: #000;
-    border: none;
-    padding: 15px 20px;
+/* Estilo para o título do formulário */
+.suporte-container h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Parágrafo de introdução */
+.suporte-container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Estilo dos campos de entrada */
+.suporte-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo para os campos de input */
+.suporte-opcoes input[type="text"],
+.suporte-opcoes input[type="email"] {
+    padding: 15px;
+    font-size: 1rem;
     border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #222;
+    color: white;
     width: 100%;
-    max-width: 300px;
-    font-size: 18px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+/* Foco nos campos de input */
+.suporte-opcoes input[type="text"]:focus,
+.suporte-opcoes input[type="email"]:focus {
+    border-color: #ff6600; /* Cor de foco laranja */
+    outline: none;
+}
+
+/* Estilo para o botão de envio */
+.suporte-opcoes input[type="submit"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ff6600; /* Cor laranja */
+    color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.suporte-btn:hover {
-    background-color: #999;
+/* Efeito de hover no botão de envio */
+.suporte-opcoes input[type="submit"]:hover {
+    background-color: #e65c00; /* Cor laranja escuro */
 }
 
+/* Redes sociais fixadas na tela */
 .social-media {
-    position: fixed; 
-    bottom: 15px; 
-    right: 20px; 
-    display: flex; 
-    gap: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-media a {
@@ -58,6 +85,39 @@
 }
 
 .social-media img {
-    width: 25px;
+    width: 35px;
     height: auto;
+    transition: transform 0.3s;
+}
+
+/* Efeito de hover nas redes sociais */
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .suporte-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .suporte-container h1 {
+        font-size: 2rem;
+    }
+
+    .suporte-container p {
+        font-size: 1rem;
+    }
+
+    .suporte-opcoes input[type="text"],
+    .suporte-opcoes input[type="email"],
+    .suporte-opcoes input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .social-media {
+        bottom: 10px;
+        right: 10px;
+    }
 }

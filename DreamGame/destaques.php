@@ -11,7 +11,7 @@ $conn = Conexao::getConexao();
     <main class="destaques-container">
         <?php
 
-        $ids = [114, 115, 116, 117, 118, 119, 120, 113];
+        $ids = [114, 115, 116, 117, 118, 119, 120];
         $ids_str = implode(',', $ids);
 
         $query = "SELECT id, titulo, valor, imagen FROM tb_produtos WHERE id IN ($ids_str)";

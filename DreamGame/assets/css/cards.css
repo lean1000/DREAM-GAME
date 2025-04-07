@@ -1,12 +1,12 @@
-.container {
+.home-container {
     max-width: 100%;
     justify-content: center;
-    background: linear-gradient( #09070D, transparent);
+    background: linear-gradient(#09070D, transparent);
     height: auto;
     margin: 0;
 }
 
-.h2 {
+.home-h2 {
     background-color: #09070D;
     color: #fafafa;
     text-align: left;
@@ -14,35 +14,50 @@
     margin: 0;
 }
 
-hr {
+.home-hr {
     margin: 0;
     padding: 0;
 }
 
-figure {
+.home-figure {
     display: flex;
     justify-content: start;
     padding: 5px;
     margin: 20px 10px 5px;
 }
 
-figure img {
-    
-    height: auto;
-    width: 200px;
+.home-figure img {
+    height: 300px; /* Definir uma altura fixa para padronizar */
+    width: 200px; /* Largura fixa */
     margin: 0 12px;
     border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
     transition: transform 0.3s ease;
 }
 
-figure img:hover {
+.home-figure img:hover {
     transform: scale(1.1);
 }
 
-.scrol {
+.home-scrol {
     width: 100%;
     height: auto;
     overflow-x: auto;
-    scrollbar-color: #09070D transparent;
+    scrollbar-color: #09070D transparent; /* Estiliza a barra de rolagem no Firefox */
     cursor: pointer;
+    padding-bottom: 10px; /* Adiciona um pequeno padding na parte inferior */
+}
+
+/* Personalização da barra de rolagem nos navegadores baseados em Webkit (Chrome, Safari) */
+.home-scrol::-webkit-scrollbar {
+    height: 8px;
+}
+
+.home-scrol::-webkit-scrollbar-thumb {
+    background-color: #09070D;
+    border-radius: 10px;
+}
+
+.home-scrol::-webkit-scrollbar-track {
+    background-color: transparent;
 }
