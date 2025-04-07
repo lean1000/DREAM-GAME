@@ -16,7 +16,7 @@
                 </div>
                 <div class="buy">
                     <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button">Ver Produto</button>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="buy">
                     <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button">Ver Produto</button>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="buy">
                     <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button">Ver Produto</button>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="buy">
                     <p class="price">R$: 219,99</p>
-                    <button class="buy-button">Comprar</button>
+                    <button class="buy-button">Ver Produto</button>
                 </div>
             </div>
         </div>
@@ -114,8 +114,8 @@ foreach ($generos as $genero) {
 
     if ($result_produtos->num_rows > 0) {
         while ($produto = $result_produtos->fetch_assoc()) {
-            echo '<a href="produto.php?id=' . $produto['ID'] . '">
-                    <img src="./assets/img/capa_produtos/' . $produto['imagen'] . '" alt="' . $produto['titulo'] . '">
+            echo '<a href="produto.php?id=' . $produto['id'] . '">
+                    <img src="./assets/img/' . $produto['imagen'] . '" alt="' . $produto['titulo'] . '">
                   </a>';
         }
     } else {

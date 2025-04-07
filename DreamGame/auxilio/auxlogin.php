@@ -15,8 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
     $senha = trim($_POST['senha']);
 
-    // Buscar o usuário pelo email
-    $query = "SELECT ID_users, email, senha FROM tb_info_users WHERE email = :email";
+    // Buscar o usuário pelo email, incluindo o nome da tb_users
+    $query = "
+        SELECT info.ID_users, info.email, info.senha, users.nome
+        FROM tb_info_users AS info
+        INNER JOIN tb_users AS users ON info.ID_users = users.ID_users
+        WHERE info.email = :email
+    ";
+
     $stmt = $banco->prepare($query);
     $stmt->bindParam(':email', $email);
     $stmt->execute();
@@ -27,18 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Login bem-sucedido, iniciar sessão
         $_SESSION['usuario_id'] = $usuario['ID_users'];
         $_SESSION['email'] = $usuario['email'];
+        $_SESSION['nome'] = $usuario['nome'];
 
         // Redirecionar para a página principal
         header("Location: ../index.php");
         exit;
     } else {
-        // Falha no login
-        echo "<script>alert('Email ou senha incorretos!'); window.location.href = '../login';</script>";
-
+        $_SESSION['erro_login'] = "Email ou senha incorretos!";
+        header("Location: ../login.php");
         exit;
     }
 } else {
-    // Se alguém tentar acessar diretamente, redireciona para login
     header("Location: ../index.php");
     exit;
 }

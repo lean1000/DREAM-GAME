@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05/04/2025 às 05:33
+-- Tempo de geração: 07/04/2025 às 04:49
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -114,9 +114,9 @@ INSERT INTO `tb_produtos` (`ID`, `titulo`, `imagen`, `valor`, `ano`, `desenvolve
 (18, 'Fall Guys: Ultimate Knockout', 'fall_guys.jpg', 89.90, '2020', 'Mediatonic', 'Lute para ser o último sobrevivente em uma série de minijogos malucos.', 5, 2),
 (19, 'League of Legends', 'league_of_legends.jpg', 0.00, '2009', 'Riot Games', 'Um dos maiores MOBAs do mundo, com competições e campeonatos globais.', 5, 3),
 (20, 'Among Us', 'among_us.jpg', 29.90, '2018', 'InnerSloth', 'Jogo de mistério onde você precisa descobrir quem entre os jogadores é o impostor.', 4, 4),
-(21, 'Ghost of Tsushima', 'ghost_of_tsushima.jpg', 249.90, '2020', 'Sucker Punch', 'Siga Jin Sakai na luta pela sobrevivência e pela honra no Japão feudal.', 5, 0),
-(22, 'Doom Eternal', 'doom_eternal.jpg', 199.90, '2020', 'id Software', 'Lute contra demônios em uma experiência de FPS ultraviolento e intensa.', 2, 0),
-(23, 'Final Fantasy VII Remake', 'final_fantasy_7_remake.jpg', 249.90, '2020', 'Square Enix', 'Reinterpretação moderna de um dos maiores clássicos do RPG, com gráficos impressionantes.', 3, 0),
+(21, 'Ghost of Tsushima', 'ghost_of_tsushima.jpg', 249.90, '2020', 'Sucker Punch', 'Siga Jin Sakai na luta pela sobrevivência e pela honra no Japão feudal.', 5, 3),
+(22, 'Doom Eternal', 'doom_eternal.jpg', 199.90, '2020', 'id Software', 'Lute contra demônios em uma experiência de FPS ultraviolento e intensa.', 2, 4),
+(23, 'Final Fantasy VII Remake', 'final_fantasy_7_remake.jpg', 249.90, '2020', 'Square Enix', 'Reinterpretação moderna de um dos maiores clássicos do RPG, com gráficos impressionantes.', 3, 2),
 (24, 'Uncharted 4: A Thief\'s End', 'uncharted_4.jpg', 249.90, '2016', 'Naughty Dog', 'Ação e aventura com um dos maiores caçadores de tesouros do mundo.', 5, 1),
 (25, 'Tomb Raider', 'tomb_raider.jpg', 149.90, '2013', 'Crystal Dynamics', 'Aventura de ação com Lara Croft, onde ela luta pela sobrevivência.', 5, 1),
 (26, 'Batman: Arkham Knight', 'batman_arkham_knight.jpg', 199.90, '2015', 'Rocksteady Studios', 'O Cavaleiro das Trevas enfrenta novos desafios e vilões em Gotham.', 5, 1),
@@ -206,7 +206,14 @@ INSERT INTO `tb_produtos` (`ID`, `titulo`, `imagen`, `valor`, `ano`, `desenvolve
 (110, 'Besiege', 'besiege.jpg', 29.90, '2015', 'Spiderling Studios', 'Construa máquinas para destruir fortalezas medievais.', 4, 9),
 (111, 'Scrap Mechanic', 'scrap_mechanic.jpg', 59.90, '2016', 'Axolot Games', 'Crie veículos e engenhocas em um mundo criativo.', 4, 9),
 (112, 'Eco', 'eco.jpg', 89.90, '2018', 'Strange Loop Games', 'Crie uma civilização cooperativa equilibrando ecossistemas.', 4, 9),
-(113, 'Portal Knights', 'portal_knights.jpg', 59.90, '2017', 'Keen Games', 'RPG de ação com criação e construção de mundos.', 4, 9);
+(113, 'Portal Knights', 'portal_knights.jpg', 59.90, '2017', 'Keen Games', 'RPG de ação com criação e construção de mundos.', 4, 9),
+(114, 'Black Myth: Wukong', 'black_myth_wukong.jpg', 249.90, '2024', 'Game Science', 'Um RPG de ação baseado na lenda chinesa do Rei Macaco, com gráficos impressionantes e combate desafiador.', 5, 3),
+(115, 'Spider-Man 2', 'spider_man_2.jpg', 299.90, '2023', 'Insomniac Games', 'Peter Parker e Miles Morales se unem em uma nova aventura cheia de ação em Nova York.', 5, 2),
+(116, 'Star Wars Outlaws', 'star_wars_outlaws.jpg', 299.90, '2024', 'Massive Entertainment', 'Explore o submundo da galáxia de Star Wars em um mundo aberto repleto de perigos e aventuras.', 5, 1),
+(117, 'Hogwarts Legacy', 'hogwarts_legacy.jpg', 279.90, '2023', 'Portkey Games', 'Um RPG de ação no universo de Harry Potter, ambientado no século XIX com magia e exploração.', 5, 3),
+(118, 'Mortal Kombat 1', 'mortal_kombat_1.jpg', 299.90, '2023', 'NetherRealm Studios', 'Reinício da franquia com combates brutais, novos gráficos e modos de jogo cinematográficos.', 5, 6),
+(119, 'Horizon Forbidden West', 'horizon_forbidden_west.jpg', 299.90, '2022', 'Guerrilla Games', 'Aloy viaja por terras desconhecidas enfrentando novos desafios e máquinas mais perigosas.', 5, 3),
+(120, 'Forza Horizon 5', 'forza_horizon_5.jpg', 249.90, '2021', 'Playground Games', 'Explore o México em corridas de mundo aberto com gráficos de última geração.', 5, 10);
 
 -- --------------------------------------------------------
 
@@ -232,7 +239,7 @@ INSERT INTO `tb_users` (`ID_users`, `apelido`, `nome`, `nascimento`) VALUES
 (4, 'KKKkkk', 'lakaok', '2016-02-03'),
 (5, 'Leandrooooo', 'leandro peoejfk', '2025-04-23'),
 (6, 'Leandrooooo', 'leandro peoejfk', '2025-04-23'),
-(7, 'adimin', 'chrisGreg', '2006-05-04');
+(7, 'adimin', 'chrisgreg', '2006-05-04');
 
 --
 -- Índices para tabelas despejadas
@@ -284,7 +291,7 @@ ALTER TABLE `tb_info_users`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
 -- AUTO_INCREMENT de tabela `tb_users`

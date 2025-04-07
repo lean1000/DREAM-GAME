@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,7 +20,6 @@
     <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/destaques.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
 </head>
 
 <body>
@@ -25,16 +28,23 @@
             <img src="./assets/img/logo/logo.png" alt="logo" class="img-logo">
 
             <ul class="menu">
-                <li><a href="./index.php">Inicio</a></li>
-                <li><a href="./destaques.php">destaques</a></li>
-                <li><a href="./suporte.php">suporte</a></li>
-                <li><a href="./sobre.php">sobre</a></li>
+                <li><a href="./index.php">Início</a></li>
+                <li><a href="./destaques.php">Destaques</a></li>
+                <li><a href="./suporte.php">Suporte</a></li>
+                <li><a href="./sobre.php">Sobre</a></li>
             </ul>
 
-
             <div class="user">
-                <a href="./perfil.php"><i class="bi bi-person icon"></i></a>
-                <a href="./login.php"><button class="btn-entrar">Entrar</button></a>
+                <?php if (isset($_SESSION['nome'])): ?>
+                    <a href="./perfil.php">
+                        <i class="bi bi-person icon"></i>
+                        <span class="nome-usuario"><?= htmlspecialchars($_SESSION['nome']) ?></span>
+                    </a>
+                <?php else: ?>
+                    <a href="./login.php">
+                        <button class="btn-entrar">Entrar</button>
+                    </a>
+                <?php endif; ?>
             </div>
         </nav>
     </header>

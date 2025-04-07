@@ -37,7 +37,7 @@ if (isset($_GET['id'])) {
 <section id="produto">
     <main class="container_produto">
         <div class="row">
-            <img src="./assets/img/capa_produtos/<?php echo $produto['imagen']; ?>" alt="<?php echo $produto['titulo']; ?>">
+            <img src="./assets/img/<?php echo $produto['imagen']; ?>" alt="<?php echo $produto['titulo']; ?>">
 
             <div class="col-prod">
                 <img src="./assets/img/logo/logo.png" alt="logo">

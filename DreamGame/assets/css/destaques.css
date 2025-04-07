@@ -1,86 +1,91 @@
-.container-destaques {
-    width: 90%;
-    max-width: 1300px;
-    padding: 15px;
-    margin: 50px auto;
-    background: #14101D;
-    border-radius: 25px;
-    align-items: center;
-}
- 
-.card {
+.destaques-container {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #14101a;
+    align-items: center;
+}
+
+.destaques-card {
+    display: flex;
+    flex-direction: row;
     background-color: #09070D;
-    border-radius: 15px;
-    margin: 15px ;
-    max-width: 100%;
-    
-}
- 
-.card img {
-    border-radius: 15px 0 0 15px;
-    width: 100%;
-    max-width: 468px;
-    height: auto;
-    margin: auto;
-    position: relative;
-    right: 272px;
-    
-}
- 
-.game-info {
-    color: white;
-    padding: 10px;
-    text-align: right;
-    margin-right: 10px;
-   font-size: 22px;
-}
- 
-
-.button-buy {
-    background-color: #e0e0e0;
-    color: black;
-    padding: 10px 24px;
-    font-size: 14px;
-    border: none;
     border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    position: relative;
-    top: -15px;
-    
-}
- 
-.button-buy:hover {
-    background-color: #c9c9c9;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1100px;
+    height: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
+.destaques-card img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaques-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 55%;
+    color: #fff;
+    position: relative;
+    background-color: #09070D;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .price {
-    font-size: 20px;  
-    color: #ffffff;
-    position: relative;
-    top: -70px;
-    
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
 }
 
-.titulo{
-    position: relative;
-    right: 580px;
-    top: -18px;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
- 
-@media (min-width: 768px) {
-    .card {
-        flex-direction: row;
-        align-items: center;
-    }
- 
-    .card .logo {
-        width: 75%;
-         
-    }
 
-   
+.logo img {
+    max-height: 125px;
+    opacity: 0.5;
+}
+
+.button-buy {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background-color: #f3f3f3;
+    color: #09070D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-buy:hover {
+    background-color: #ccc;
 }

@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Redireciona para a home se já estiver logado
+if (isset($_SESSION['usuario_id'])) {
+    header("Location: index.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,6 +22,15 @@
 <body>
     <div class="caixa">
         <img src="./assets/img/logo/logo.png" alt="logo">
+        
+        <?php
+        // Exibe mensagem de erro se houver
+        if (isset($_SESSION['erro_login'])) {
+            echo "<p style='color: red; text-align: center;'>{$_SESSION['erro_login']}</p>";
+            unset($_SESSION['erro_login']);
+        }
+        ?>
+
         <form id="loginForm" action="./auxilio/auxlogin.php" onsubmit="validarFormulario(event)" method="post">
             <input type="email" id="email" placeholder="Email" name="email" required>
             <input type="password" id="senha" placeholder="Senha" maxlength="16" name="senha" required>
@@ -21,7 +40,6 @@
     </div>
 
     <script src="./assets/js/login.js"></script>
-
 </body>
 
 </html>
