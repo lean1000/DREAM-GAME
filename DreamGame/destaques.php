@@ -1,10 +1,12 @@
 <?php include './includes/header.php'; ?>
 <?php include './includes/searchBar.php'; ?>
+<?php include './includes/estrelas.php'; ?> <!-- Adiciona esta linha -->
 
 <?php
 require_once './classes/conexao.php';
 $conn = Conexao::getConexao();
 ?>
+
 
 <section>
     <main class="destaques-container">
@@ -30,9 +32,9 @@ $conn = Conexao::getConexao();
                     </div>
 
                     <!-- Estrelas -->
-                    <?php 
-                        $avaliacao = $produto['avaliacao'];
-                        include_once './includes/estrelas.php'; 
+                    <?php
+                    $avaliacao = $produto['avaliacao'];
+                    renderizarEstrelas($avaliacao); // Chama a função para exibir as estrelas
                     ?>
 
                     <div class="destaques-logo">
@@ -44,6 +46,7 @@ $conn = Conexao::getConexao();
                     </a>
                 </div>
             </div>
+
         <?php } ?>
     </main>
 </section>

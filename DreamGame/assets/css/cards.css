@@ -17,6 +17,7 @@
 .home-hr {
     margin: 0;
     padding: 0;
+    border: 1px solid #c0c0c0;
 }
 
 .home-figure {
@@ -24,12 +25,12 @@
     justify-content: start;
     padding: 5px;
     margin: 20px 10px 5px;
+    gap: 12px; /* Espaçamento entre as imagens */
 }
 
 .home-figure img {
-    height: 300px; /* Definir uma altura fixa para padronizar */
+    height: 300px; /* Altura fixa para as imagens */
     width: 200px; /* Largura fixa */
-    margin: 0 12px;
     border-radius: 10px;
     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
     transition: transform 0.3s ease;
@@ -40,25 +41,17 @@
     transform: scale(1.1);
 }
 
+/* Rolagem horizontal com as setas */
 .home-scrol {
     width: 100%;
-    height: auto;
     overflow-x: auto;
-    scrollbar-color: #09070D transparent; /* Estiliza a barra de rolagem no Firefox */
-    cursor: pointer;
-    padding-bottom: 10px; /* Adiciona um pequeno padding na parte inferior */
+    display: flex;
+    gap: 12px; /* Espaçamento entre os itens */
+    padding-bottom: 10px;
+    cursor: pointer; /* Indicador de que a área pode ser clicada/arrastada */
+    scroll-behavior: smooth; /* Animação na rolagem */
 }
 
-/* Personalização da barra de rolagem nos navegadores baseados em Webkit (Chrome, Safari) */
 .home-scrol::-webkit-scrollbar {
-    height: 8px;
-}
-
-.home-scrol::-webkit-scrollbar-thumb {
-    background-color: #09070D;
-    border-radius: 10px;
-}
-
-.home-scrol::-webkit-scrollbar-track {
-    background-color: transparent;
+    display: none; /* Esconde a barra de rolagem nos navegadores baseados em Webkit (Chrome, Safari) */
 }

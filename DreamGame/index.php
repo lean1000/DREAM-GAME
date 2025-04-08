@@ -76,8 +76,17 @@ $miniaturas = [
 
     <button class="banner-botao-nav banner-direita" onclick="nextBanner()">&#9654;</button>
 </section>
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_dreamgame";
 
-<?php
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
+
 // Lista de gêneros e seus produtos
 $sql = "SELECT * FROM tb_generos";
 $result = $conn->query($sql);
@@ -88,9 +97,10 @@ if ($result->num_rows > 0) {
         echo '<h2 class="home-h2">' . $genero['genero'] . '</h2>';
         echo '<div class="home-container">';
         echo '<hr class="home-hr">';
-        echo '<div class="home-scrol">';
+        echo '<div class="home-scrol" id="scroll-container-' . $genero['ID_genero'] . '">'; // Aqui é onde vamos aplicar a rolagem
         echo '<figure class="home-figure">';
 
+        // Produtos por gênero
         $sql_produtos = "SELECT * FROM tb_produtos WHERE ID_genero = " . $genero['ID_genero'];
         $result_produtos = $conn->query($sql_produtos);
 
@@ -114,5 +124,6 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
+<script src="./assets/js/cards.js?v=1.0"></script>
 <script src="./assets/js/banner.js?v=1.0"></script>
 <?php include './includes/footer.php'; ?>

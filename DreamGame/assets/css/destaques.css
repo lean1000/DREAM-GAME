@@ -26,57 +26,66 @@
 }
 
 .destaques-info {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 30px;
     width: 55%;
     color: #fff;
-    position: relative;
     background-color: #09070D;
     box-sizing: border-box;
 }
 
-.top-bar {
+/* Topo: título à esquerda, preço à direita */
+.destaques-top-bar {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.titulo {
+.destaques-titulo {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
     margin: 0;
-    max-width: 70%;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.price {
+.destaques-estrelas {
+    margin-top: 5px;
+    color: #FFD700;
+    font-size: 18px;
+}
+
+.destaques-price {
     font-size: 20px;
     color: #fff;
     font-weight: bold;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+/* Centraliza a logo no meio da área de informações */
+.destaques-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.logo img {
-    max-height: 125px;
+.destaques-logo img {
+    max-height: 120px;
     opacity: 0.5;
 }
 
+/* Botão no canto inferior direito */
 .button-buy {
     position: absolute;
     bottom: 20px;
     right: 30px;
-    background-color: #f3f3f3;
+    background-color: #555;
     color: #09070D;
     border: none;
     padding: 10px 20px;

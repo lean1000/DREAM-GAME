@@ -136,7 +136,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.247);
     backdrop-filter: blur(8px);
     border-radius: 50px;
     padding: 10px 20px;
@@ -178,6 +178,15 @@ nav {
     display: flex;
     gap: 3px;
     margin: 5px 0;
+}
+
+.star {
+    font-size: 1.5rem; /* Aumentei o tamanho para 1.5rem, pode ajustar conforme necessário */
+    color: #ccc; /* Cor padrão para estrelas vazias */
+}
+
+.star.filled {
+    color: #ffcc00; /* Cor para estrelas cheias */
 }
 
 /* ESTRELAS */

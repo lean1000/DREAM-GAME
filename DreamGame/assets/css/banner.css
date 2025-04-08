@@ -53,6 +53,11 @@
     height: 120px;
     border-radius: 15px;
     padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.banner-miniaturas img:hover {
+    transform: scale(1.1);
 }
 
 /* Preço do produto */
@@ -71,6 +76,10 @@
     border-radius: 5px;
     cursor: pointer;
     width: 180px;
+}
+
+.banner-botao-compra:hover {
+    background-color: #555;
 }
 
 /* Botões de navegação (anterior e próximo) */
