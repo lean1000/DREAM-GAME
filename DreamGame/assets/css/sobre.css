@@ -1,5 +1,5 @@
 /* Certifique-se de que o body ocupe toda a altura da tela */
-body {
+.sobre-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 100px 0 0 0; /* Remover margens, já que estamos centralizando com flexbox */
 }
 
 .sobre h2 {
@@ -30,6 +29,6 @@ body {
 }
 
 .sobre p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 20px;
 }

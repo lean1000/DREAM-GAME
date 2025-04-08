@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/04/2025 às 04:49
+-- Tempo de geração: 07/04/2025 às 23:34
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -80,7 +80,7 @@ INSERT INTO `tb_info_users` (`ID_info`, `email`, `senha`, `ID_users`) VALUES
 --
 
 CREATE TABLE `tb_produtos` (
-  `ID` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL,
   `imagen` varchar(100) NOT NULL,
   `valor` decimal(10,2) NOT NULL,
@@ -95,7 +95,7 @@ CREATE TABLE `tb_produtos` (
 -- Despejando dados para a tabela `tb_produtos`
 --
 
-INSERT INTO `tb_produtos` (`ID`, `titulo`, `imagen`, `valor`, `ano`, `desenvolvedor`, `descricao`, `avaliacao`, `ID_genero`) VALUES
+INSERT INTO `tb_produtos` (`id`, `titulo`, `imagen`, `valor`, `ano`, `desenvolvedor`, `descricao`, `avaliacao`, `ID_genero`) VALUES
 (3, 'The Last of Us Part II', 'the_last_of_us_2.jpg', 249.90, '2020', 'Naughty Dog', 'Uma sequência épica de ação e aventura em um mundo pós-apocalíptico.', 5, 3),
 (4, 'Cyberpunk 2077', 'cyberpunk_2077.jpg', 199.90, '2020', 'CD Projekt Red', 'Exploração de um futuro distópico em Night City com múltiplos caminhos e escolhas.', 5, 1),
 (5, 'God of War', 'god_of_war.jpg', 199.90, '2018', 'Santa Monica Studio', 'Kratos e seu filho Atreus enfrentam mitologia nórdica em uma jornada de redenção.', 5, 3),
@@ -207,13 +207,13 @@ INSERT INTO `tb_produtos` (`ID`, `titulo`, `imagen`, `valor`, `ano`, `desenvolve
 (111, 'Scrap Mechanic', 'scrap_mechanic.jpg', 59.90, '2016', 'Axolot Games', 'Crie veículos e engenhocas em um mundo criativo.', 4, 9),
 (112, 'Eco', 'eco.jpg', 89.90, '2018', 'Strange Loop Games', 'Crie uma civilização cooperativa equilibrando ecossistemas.', 4, 9),
 (113, 'Portal Knights', 'portal_knights.jpg', 59.90, '2017', 'Keen Games', 'RPG de ação com criação e construção de mundos.', 4, 9),
-(114, 'Black Myth: Wukong', 'black_myth_wukong.jpg', 249.90, '2024', 'Game Science', 'Um RPG de ação baseado na lenda chinesa do Rei Macaco, com gráficos impressionantes e combate desafiador.', 5, 3),
-(115, 'Spider-Man 2', 'spider_man_2.jpg', 299.90, '2023', 'Insomniac Games', 'Peter Parker e Miles Morales se unem em uma nova aventura cheia de ação em Nova York.', 5, 2),
-(116, 'Star Wars Outlaws', 'star_wars_outlaws.jpg', 299.90, '2024', 'Massive Entertainment', 'Explore o submundo da galáxia de Star Wars em um mundo aberto repleto de perigos e aventuras.', 5, 1),
-(117, 'Hogwarts Legacy', 'hogwarts_legacy.jpg', 279.90, '2023', 'Portkey Games', 'Um RPG de ação no universo de Harry Potter, ambientado no século XIX com magia e exploração.', 5, 3),
-(118, 'Mortal Kombat 1', 'mortal_kombat_1.jpg', 299.90, '2023', 'NetherRealm Studios', 'Reinício da franquia com combates brutais, novos gráficos e modos de jogo cinematográficos.', 5, 6),
-(119, 'Horizon Forbidden West', 'horizon_forbidden_west.jpg', 299.90, '2022', 'Guerrilla Games', 'Aloy viaja por terras desconhecidas enfrentando novos desafios e máquinas mais perigosas.', 5, 3),
-(120, 'Forza Horizon 5', 'forza_horizon_5.jpg', 249.90, '2021', 'Playground Games', 'Explore o México em corridas de mundo aberto com gráficos de última geração.', 5, 10);
+(114, 'Black Myth: Wukong', 'black_myth_wukong.png', 249.90, '2024', 'Game Science', 'Um RPG de ação baseado na lenda chinesa do Rei Macaco, com gráficos impressionantes e combate desafiador.', 5, 3),
+(115, 'Spider-Man 2', 'spider_man_2.png', 299.90, '2023', 'Insomniac Games', 'Peter Parker e Miles Morales se unem em uma nova aventura cheia de ação em Nova York.', 5, 2),
+(116, 'Star Wars Outlaws', 'star_wars_outlaws.png', 299.90, '2024', 'Massive Entertainment', 'Explore o submundo da galáxia de Star Wars em um mundo aberto repleto de perigos e aventuras.', 5, 1),
+(117, 'Hogwarts Legacy', 'hogwarts_legacy.png', 279.90, '2023', 'Portkey Games', 'Um RPG de ação no universo de Harry Potter, ambientado no século XIX com magia e exploração.', 5, 3),
+(118, 'Mortal Kombat 1', 'mortal_kombat_1.png', 299.90, '2023', 'NetherRealm Studios', 'Reinício da franquia com combates brutais, novos gráficos e modos de jogo cinematográficos.', 5, 6),
+(119, 'Horizon Forbidden West', 'horizon_forbidden_west.png', 299.90, '2022', 'Guerrilla Games', 'Aloy viaja por terras desconhecidas enfrentando novos desafios e máquinas mais perigosas.', 5, 3),
+(120, 'Forza Horizon 5', 'forza_horizon_5.png', 249.90, '2021', 'Playground Games', 'Explore o México em corridas de mundo aberto com gráficos de última geração.', 5, 9);
 
 -- --------------------------------------------------------
 
@@ -263,7 +263,7 @@ ALTER TABLE `tb_info_users`
 -- Índices de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `tb_users`
@@ -291,7 +291,7 @@ ALTER TABLE `tb_info_users`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
 -- AUTO_INCREMENT de tabela `tb_users`

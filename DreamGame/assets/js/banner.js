@@ -4,34 +4,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateBanner() {
         bannerWrappers.forEach((banner, index) => {
-            banner.style.display = index === currentBannerIndex ? "block" : "none";
+            banner.classList.toggle("ativo", index === currentBannerIndex);
         });
     }
 
-    function prevBanner() {
+    // Tornar funções globais para funcionar com onclick
+    window.prevBanner = function () {
         currentBannerIndex = (currentBannerIndex - 1 + bannerWrappers.length) % bannerWrappers.length;
         updateBanner();
         resetAutoSlide();
-    }
+    };
 
-    function nextBanner() {
+    window.nextBanner = function () {
         currentBannerIndex = (currentBannerIndex + 1) % bannerWrappers.length;
         updateBanner();
         resetAutoSlide();
-    }
+    };
 
     let autoSlideInterval;
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextBanner, 3000);
+        autoSlideInterval = setInterval(() => {
+            nextBanner();
+        }, 5000); // Troca a cada 5 segundos
     }
 
     function resetAutoSlide() {
         clearInterval(autoSlideInterval);
         startAutoSlide();
     }
-
-    document.querySelector(".nav-button.left").addEventListener("click", prevBanner);
-    document.querySelector(".nav-button.right").addEventListener("click", nextBanner);
 
     updateBanner();
     startAutoSlide();

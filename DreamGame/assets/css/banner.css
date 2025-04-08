@@ -4,11 +4,11 @@
     align-items: center;
     background-color: #181220;
     padding: 15px;
-    border-radius: 30px;
+    border-radius: 50px;
     position: relative;
     width: 1000px;
     height: 400px;
-    margin: 20px 10%; /* Ajuste da margem para centralizar o banner */
+    margin: 20px auto;
 }
 
 /* Estilo do banner */
@@ -17,7 +17,7 @@
     background-color: #09070D;
     padding: 10px;
     border-radius: 30px;
-    margin: 50px 70px;
+    margin: 40px;
     width: 900px;
     height: 365px;
     align-items: center;
@@ -101,6 +101,15 @@
 .banner-compra button {
     position: relative;
     left: 30px;
+    bottom: 20px;
+    right: 30px;
+    background-color: #f3f3f3;
+    color: #09070D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 /* Botão "anterior" */
@@ -111,4 +120,12 @@
 /* Botão "próximo" */
 .banner-direita {
     right: 10px;
+}
+
+.banner-wrapper {
+    display: none;
+}
+
+.banner-wrapper.ativo {
+    display: block;
 }

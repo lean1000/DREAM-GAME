@@ -1,6 +1,6 @@
 <?php include './includes/header.php'; ?>
 
-<main>
+<main class="sobre-body">
     <section class="sobre">
         <h2>Sobre Nós</h2>
         <p>Uma empresa fundada por um grupo de entusiastas apaixonados por jogos e entretenimento, DreamGame é uma micro-empresa que está redefinindo o cenário dos jogos digitais com inovação, criatividade e um toque pessoal. A DreamGame nasceu de uma ideia simples, mas poderosa: criar experiências de jogo que são não apenas emocionantes, mas também acessíveis e inclusivas. Com uma equipe pequena, mas extremamente talentosa, a empresa se lançou no mercado com a missão de oferecer jogos que cativam e conectam jogadores de todas as partes do mundo. 

@@ -1,11 +1,14 @@
-<link rel="stylesheet" href="./assets/css/search_bar.css">
-
-<div class="search-bar">
-    <a href="./busca.php" class="icon-link">
+<form action="./busca.php" method="GET" class="search-bar">
+    <!-- Botão Filtro: redireciona para busca sem termo -->
+    <a href="./busca.php" class="icon-link" title="Abrir filtros">
         <i class="bi bi-funnel"></i>
     </a>
-    <input type="text" placeholder="Search...">
-    <a href="./busca.php" class="icon-link">
+
+    <!-- Campo de busca -->
+    <input type="text" name="termo" placeholder="Search..." required>
+
+    <!-- Botão de busca: envia o termo -->
+    <button type="submit" class="icon-link" style="background: none; border: none;" title="Buscar">
         <i class="bi bi-search"></i>
-    </a>
-</div>
+    </button>
+</form>

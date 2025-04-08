@@ -1,0 +1,66 @@
+.finalizar-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 10px #00000088;
+    text-align: center;
+}
+
+.produto-finalizar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.produto-finalizar img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.produto-finalizar h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+#formFinalizar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formFinalizar input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+#formFinalizar button {
+    background-color: #0f62fe;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formFinalizar button:hover {
+    background-color: #084bbb;
+}
+
+.mensagem-sucesso {
+    display: none;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #28a745;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}

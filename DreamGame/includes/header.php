@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Game</title>
 
+    <link rel="stylesheet" href="./assets/css/finalizar.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/produto.css">
     <link rel="stylesheet" href="./assets/css/perfil.css">
