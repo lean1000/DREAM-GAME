@@ -36,6 +36,10 @@ if (session_status() === PHP_SESSION_NONE) {
                 <li><a href="./sobre.php">Sobre</a></li>
             </ul>
 
+            <div id="abrir-carrinho" class="carrinho-link" style="cursor: pointer;">
+    <i class="bi bi-cart-fill icon"></i>
+</div>
+
             <div class="user">
                 <?php if (isset($_SESSION['nome'])): ?>
                     <a href="./perfil.php">
@@ -50,3 +54,4 @@ if (session_status() === PHP_SESSION_NONE) {
             </div>
         </nav>
     </header>
+    <?php include './includes/carrinho.php'; ?>
