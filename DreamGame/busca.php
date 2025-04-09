@@ -1,5 +1,7 @@
 <?php include './includes/header.php'; ?>
 
+<link rel="stylesheet" href="./assets/css/busca.css">
+
 <section class="conteiner_busca">
     <main class="ctn-busca">
         <div class="searchBar">

@@ -42,6 +42,20 @@
     </div>
 
 </footer>
+<script src="assets/js/carrinho.js"></script>
+<script>
+    const produtoAtual = {
+        id: <?= $produto['ID'] ?>,
+        titulo: "<?= addslashes($produto['titulo']) ?>",
+        valor: <?= $produto['valor'] ?>,
+        imagen: "<?= './assets/img/' . $produto['imagen'] ?>"
+    };
+
+    document.getElementById('btnComprar')?.addEventListener('click', function () {
+        adicionarAoCarrinho(produtoAtual);
+    });
+</script>
+
 </body>
 
 </html>

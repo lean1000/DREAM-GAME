@@ -1,9 +1,9 @@
 <?php
 class Conexao {
-    private static $host = "localhost";
-    private static $usuario = "root";
-    private static $senha = "";
-    private static $banco = "db_dreamgame";
+    private static $host = "185.213.81.205";
+    private static $usuario = "u336727971_hostinger";
+    private static $senha = "DreamGame@1";
+    private static $banco = "u336727971_db_dreamgame";
     private static $conn;
 
     public static function getConexao() {

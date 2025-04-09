@@ -2,6 +2,8 @@
 <?php include './includes/searchBar.php'; ?>
 <?php include './includes/estrelas.php'; ?>
 
+<link rel="stylesheet" href="./assets/css/destaques.css">
+
 <?php
 require_once './classes/conexao.php';
 $conn = Conexao::getConexao();

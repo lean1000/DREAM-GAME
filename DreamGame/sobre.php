@@ -1,5 +1,7 @@
 <?php include './includes/header.php'; ?>
 
+<link rel="stylesheet" href="./assets/css/sobre.css">
+
 <main class="sobre-body">
     <section class="sobre">
         <h2>Sobre Nós</h2>

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./assets/css/perfil.css">
 <?php
 include './includes/header.php';
 require_once './classes/conexao.php';

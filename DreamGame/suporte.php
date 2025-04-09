@@ -1,4 +1,5 @@
 <?php include './includes/header.php'; ?>
+<link rel="stylesheet" href="./assets/css/suporte.css">
 
 <main class="suporte-container">
     <h1>Dream Game Suporte</h1>

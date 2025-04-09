@@ -1,7 +1,10 @@
-<?php include './includes/header.php'; ?>
-<?php include './includes/estrelas.php'; ?>
+<link rel="stylesheet" href="./assets/css/produto.css">
+
 <?php
+include './includes/header.php';
 include './classes/conexao.php';
+include './includes/estrelas.php';
+
 
 $conn = Conexao::getConexao();
 
@@ -39,21 +42,16 @@ if ($id) {
                 <div class="produto-row-buy">
                     <h3 class="produto-h">R$: <?php echo number_format($produto['valor'], 2, ',', '.'); ?></h3>
 
-                    <button id="btnComprar">Comprar</button>
+                    <button id="btnComprar"
+                        data-id="<?php echo $produto['ID']; ?>"
+                        data-titulo="<?php echo htmlspecialchars($produto['titulo']); ?>"
+                        data-imagem="<?php echo htmlspecialchars($produto['imagen']); ?>"
+                        data-valor="<?php echo $produto['valor']; ?>">
+                        Comprar
+                    </button>
 
-                    <script src="assets/js/carrinho.js"></script>
-<script>
-    const btnComprar = document.getElementById("btnComprar");
-    const produto = <?php echo json_encode([
-        'id' => $produto['ID'],
-        'titulo' => $produto['titulo'],
-        'valor' => $produto['valor']
-    ], JSON_UNESCAPED_UNICODE); ?>;
 
-    btnComprar.addEventListener("click", function () {
-        adicionarAoCarrinho(produto);
-    });
-</script>
+
                 </div>
             </div>
         </div>
@@ -75,5 +73,4 @@ if ($id) {
         </div>
     </main>
 </section>
-
 <?php include './includes/footer.php'; ?>

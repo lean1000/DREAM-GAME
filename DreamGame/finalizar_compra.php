@@ -12,6 +12,8 @@ if (!isset($_SESSION['usuario_id'])) {
 include './includes/header.php';
 ?>
 
+<link rel="stylesheet" href="./assets/css/finalizar.css">
+
 <div class="finalizar-container">
     <h2>Finalizar Compra</h2>
 

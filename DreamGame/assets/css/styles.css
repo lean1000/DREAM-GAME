@@ -31,7 +31,7 @@ nav {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0 150px 0 0;
+    margin: 0 50px;
 }
 
 .menu li a {
@@ -108,21 +108,27 @@ nav {
 
 /* CARRINHO */
 
-    .carrinho-flutuante {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 60px;
-        right: 20px;
-        width: 300px;
-        background-color: #fff;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
-        z-index: 10000;
-        padding: 15px;
-    }
+.carrinho-flutuante {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
     
+    background-color: #09070D;
+    color: white;
+
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.932);
+    
+    padding: 15px;
+    z-index: 10000;
+}
+
     .carrinho-header {
         display: flex;
         justify-content: space-between;
@@ -146,25 +152,7 @@ nav {
 
 /* CARRINHO */
 
-/* FOOTER */
-
 /* Carrinho Flutuante */
-.carrinho-flutuante {
-    position: fixed;
-    top: 80px;
-    right: 20px;
-    width: 300px;
-    background-color: #1c1c1c;
-    color: white;
-    border: 2px solid #444;
-    border-radius: 10px;
-    z-index: 9999;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    display: none;
-    flex-direction: column;
-    max-height: 80vh;
-    overflow-y: auto;
-}
 
 .carrinho-header, .carrinho-footer {
     padding: 15px;
@@ -203,8 +191,8 @@ nav {
 
 #btn-finalizar {
     margin-top: 10px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #ffffff;
+    color: #09070D;
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
@@ -213,9 +201,46 @@ nav {
 }
 
 #btn-finalizar:hover {
-    background-color: #45a049;
+    background-color: #555;
 }
 
+/* FOOTER */
+
+.footer-content {
+    background-color: #09070D; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+}
+
+.footer-content p {
+    font-size: 14px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+.footer-links {
+    list-style-type: none; 
+    display: inline-flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.footer-links a {
+    text-decoration: none; 
+    color: white; 
+    margin: 0 10px; 
+}
+
+.footer-links a:hover {
+    color: #555; /
+}
+
+.footer-links li {
+    display: inline; 
+    font-size: 14px; 
+}
 
 /* FOOTER */
 
