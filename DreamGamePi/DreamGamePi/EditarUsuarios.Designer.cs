@@ -29,50 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarUsuarios));
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonProdutos = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
-            this.textBoxAvaliacao = new System.Windows.Forms.TextBox();
-            this.textBoxAno = new System.Windows.Forms.TextBox();
-            this.textBoxGenero = new System.Windows.Forms.TextBox();
+            this.textBoxDataNascimento = new System.Windows.Forms.TextBox();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.buttonEditarproduto = new System.Windows.Forms.Button();
-            this.textBoxDesenvolvedor = new System.Windows.Forms.TextBox();
-            this.textBoxTitulo = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxApelido = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxBusca = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.buttonVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-3, -2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(806, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(52, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonProdutos
             // 
@@ -88,6 +68,7 @@
             this.buttonProdutos.TabIndex = 44;
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
+            this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // buttonEditar
             // 
@@ -103,33 +84,34 @@
             this.buttonEditar.TabIndex = 45;
             this.buttonEditar.Text = "Usuário";
             this.buttonEditar.UseVisualStyleBackColor = false;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
-            // textBoxAvaliacao
+            // textBoxDataNascimento
             // 
-            this.textBoxAvaliacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBoxAvaliacao.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBoxAvaliacao.Location = new System.Drawing.Point(305, 312);
-            this.textBoxAvaliacao.Name = "textBoxAvaliacao";
-            this.textBoxAvaliacao.Size = new System.Drawing.Size(194, 22);
-            this.textBoxAvaliacao.TabIndex = 79;
+            this.textBoxDataNascimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxDataNascimento.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxDataNascimento.Location = new System.Drawing.Point(305, 312);
+            this.textBoxDataNascimento.Name = "textBoxDataNascimento";
+            this.textBoxDataNascimento.Size = new System.Drawing.Size(194, 22);
+            this.textBoxDataNascimento.TabIndex = 79;
             // 
-            // textBoxAno
+            // textBoxSenha
             // 
-            this.textBoxAno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBoxAno.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBoxAno.Location = new System.Drawing.Point(305, 263);
-            this.textBoxAno.Name = "textBoxAno";
-            this.textBoxAno.Size = new System.Drawing.Size(194, 22);
-            this.textBoxAno.TabIndex = 78;
+            this.textBoxSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxSenha.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxSenha.Location = new System.Drawing.Point(305, 263);
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.Size = new System.Drawing.Size(194, 22);
+            this.textBoxSenha.TabIndex = 78;
             // 
-            // textBoxGenero
+            // textBoxNome
             // 
-            this.textBoxGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBoxGenero.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBoxGenero.Location = new System.Drawing.Point(305, 168);
-            this.textBoxGenero.Name = "textBoxGenero";
-            this.textBoxGenero.Size = new System.Drawing.Size(194, 22);
-            this.textBoxGenero.TabIndex = 77;
+            this.textBoxNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxNome.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxNome.Location = new System.Drawing.Point(305, 168);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(194, 22);
+            this.textBoxNome.TabIndex = 77;
             // 
             // buttonBuscar
             // 
@@ -141,6 +123,7 @@
             this.buttonBuscar.TabIndex = 76;
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click_1);
             // 
             // buttonEditarproduto
             // 
@@ -152,24 +135,25 @@
             this.buttonEditarproduto.TabIndex = 75;
             this.buttonEditarproduto.Text = "Editar";
             this.buttonEditarproduto.UseVisualStyleBackColor = true;
+            this.buttonEditarproduto.Click += new System.EventHandler(this.buttonEditarproduto_Click);
             // 
-            // textBoxDesenvolvedor
+            // textBoxEmail
             // 
-            this.textBoxDesenvolvedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBoxDesenvolvedor.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBoxDesenvolvedor.Location = new System.Drawing.Point(305, 217);
-            this.textBoxDesenvolvedor.Name = "textBoxDesenvolvedor";
-            this.textBoxDesenvolvedor.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDesenvolvedor.TabIndex = 73;
+            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxEmail.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxEmail.Location = new System.Drawing.Point(305, 217);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(194, 22);
+            this.textBoxEmail.TabIndex = 73;
             // 
-            // textBoxTitulo
+            // textBoxApelido
             // 
-            this.textBoxTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBoxTitulo.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBoxTitulo.Location = new System.Drawing.Point(305, 123);
-            this.textBoxTitulo.Name = "textBoxTitulo";
-            this.textBoxTitulo.Size = new System.Drawing.Size(194, 22);
-            this.textBoxTitulo.TabIndex = 72;
+            this.textBoxApelido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxApelido.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxApelido.Location = new System.Drawing.Point(305, 123);
+            this.textBoxApelido.Name = "textBoxApelido";
+            this.textBoxApelido.Size = new System.Drawing.Size(194, 22);
+            this.textBoxApelido.TabIndex = 72;
             // 
             // label5
             // 
@@ -243,14 +227,35 @@
             this.label9.TabIndex = 83;
             this.label9.Text = "Busca";
             // 
-            // textBox6
+            // textBoxBusca
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox6.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBox6.Location = new System.Drawing.Point(305, 358);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 22);
-            this.textBox6.TabIndex = 82;
+            this.textBoxBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxBusca.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxBusca.Location = new System.Drawing.Point(305, 358);
+            this.textBoxBusca.Name = "textBoxBusca";
+            this.textBoxBusca.Size = new System.Drawing.Size(194, 22);
+            this.textBoxBusca.TabIndex = 82;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(52, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(122, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-3, -2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(806, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -262,21 +267,34 @@
             this.pictureBox5.TabIndex = 84;
             this.pictureBox5.TabStop = false;
             // 
+            // buttonVoltar
+            // 
+            this.buttonVoltar.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVoltar.ForeColor = System.Drawing.Color.Black;
+            this.buttonVoltar.Location = new System.Drawing.Point(12, 408);
+            this.buttonVoltar.Name = "buttonVoltar";
+            this.buttonVoltar.Size = new System.Drawing.Size(81, 30);
+            this.buttonVoltar.TabIndex = 85;
+            this.buttonVoltar.Text = "Voltar";
+            this.buttonVoltar.UseVisualStyleBackColor = true;
+            this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
+            // 
             // EditarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(30)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBoxAvaliacao);
-            this.Controls.Add(this.textBoxAno);
-            this.Controls.Add(this.textBoxGenero);
+            this.Controls.Add(this.textBoxBusca);
+            this.Controls.Add(this.textBoxDataNascimento);
+            this.Controls.Add(this.textBoxSenha);
+            this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.buttonEditarproduto);
-            this.Controls.Add(this.textBoxDesenvolvedor);
-            this.Controls.Add(this.textBoxTitulo);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxApelido);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -287,10 +305,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditarUsuarios";
             this.Text = "EditarUsuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -303,20 +322,21 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonProdutos;
         private System.Windows.Forms.Button buttonEditar;
-        private System.Windows.Forms.TextBox textBoxAvaliacao;
-        private System.Windows.Forms.TextBox textBoxAno;
-        private System.Windows.Forms.TextBox textBoxGenero;
+        private System.Windows.Forms.TextBox textBoxDataNascimento;
+        private System.Windows.Forms.TextBox textBoxSenha;
+        private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonEditarproduto;
-        private System.Windows.Forms.TextBox textBoxDesenvolvedor;
-        private System.Windows.Forms.TextBox textBoxTitulo;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxApelido;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxBusca;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button buttonVoltar;
     }
 }

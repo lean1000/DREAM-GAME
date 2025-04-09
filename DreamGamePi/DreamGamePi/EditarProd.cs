@@ -19,65 +19,19 @@ namespace DreamGamePi
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            EditarProd form = new EditarProd();
-            form.ShowDialog();
-        }
+        
 
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
+        
 
-            string connectionString = "Server=localhost; Port=3306; Database=db_dreamgame; Uid=root; Pwd=;";
-
-            string query = "SELECT titulo, valor, ano, desenvolvedor, genero, descricao, tamanho, avaliacao " +
-                           "FROM tb_produtos WHERE titulo LIKE @Titulo";
-
-            using (MySqlConnection connection = new MySqlConnection(connectionString)) // Use MySqlConnection
-            {
-                using (MySqlCommand command = new MySqlCommand(query, connection)) // Use MySqlCommand
-                {
-                    command.Parameters.AddWithValue("@Titulo", "%" + textBoxTitulo.Text + "%");
-
-                    try
-                    {
-                        connection.Open();
-                        MySqlDataReader reader = command.ExecuteReader(); // Use MySqlDataReader
-
-                        if (reader.Read())
-                        {
-
-                            textBoxTitulo.Text = reader["titulo"].ToString();
-                            textBoxAno.Text = reader["ano"].ToString();
-                            textBoxValor.Text = reader["valor"].ToString();
-                            textBoxDesenvolvedor.Text = reader["desenvolvedor"].ToString();
-                            textBoxTamanho.Text = reader["tamanho"].ToString();
-                            textBoxAvaliacao.Text = reader["avaliacao"].ToString();
-                            textBoxGenero.Text = reader["genero"].ToString();
-                            richTextBoxDescricao.Text = reader["descricao"].ToString();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Produto não encontrado.");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Erro: " + ex.Message);
-                    }
-                }
-            }
-        }
 
         private void buttonEditarproduto_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=localhost; Port=3306; Database=db_dreamgame; Uid=root; Pwd=;";
-
-            string query = "UPDATE tb_produtos SET valor = @Valor, ano = @Ano, desenvolvedor = @Desenvolvedor, " +
-                           "genero = @Genero, descricao = @Descricao, tamanho = @Tamanho, avaliacao = @Avaliacao " +
+            string conexaoString = "Server=185.213.81.205;Port=3306;Database=u336727971_db_dreamgame;Uid=u336727971_hostinger;Pwd=DreamGame@1;";
+            string query = "UPDATE tb_produtos SET valor = @Valor, imagen = @Imagen, ano = @Ano, desenvolvedor = @Desenvolvedor, " +
+                           "ID_genero = @ID_genero, descricao = @Descricao,  avaliacao = @Avaliacao " +
                            "WHERE titulo = @Titulo";
 
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            using (MySqlConnection connection = new MySqlConnection(conexaoString))
             {
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
@@ -85,11 +39,11 @@ namespace DreamGamePi
                     command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
                     command.Parameters.AddWithValue("@Valor", textBoxValor.Text);
                     command.Parameters.AddWithValue("@Ano", textBoxAno.Text);
-                    command.Parameters.AddWithValue("@Desenvolvedor", textBoxDesenvolvedor.Text);
-                    command.Parameters.AddWithValue("@Genero", textBoxGenero.Text);
+                    command.Parameters.AddWithValue("@Desenvolvedor", textBoxDesenvolvedor.Text);                   
                     command.Parameters.AddWithValue("@Descricao", richTextBoxDescricao.Text);
-                    command.Parameters.AddWithValue("@Tamanho", textBoxTamanho.Text);
+                    command.Parameters.AddWithValue("@Imagen", textBoxImagem.Text);
                     command.Parameters.AddWithValue("@Avaliacao", textBoxAvaliacao.Text);
+                    command.Parameters.AddWithValue("@ID_genero", textBoxGenero.Text);
 
                     try
                     {
@@ -116,12 +70,93 @@ namespace DreamGamePi
                     textBoxDesenvolvedor.Text = "";
                     textBoxGenero.Text = "";
                     richTextBoxDescricao.Text = "";
-                    textBoxTamanho.Text = "";
+                    textBoxImagem.Text = "";
                     textBoxAvaliacao.Focus();
 
                 }
             }
         }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+
+            string conexaoString = "Server=185.213.81.205;Port=3306;Database=u336727971_db_dreamgame;Uid=u336727971_hostinger;Pwd=DreamGame@1;";
+            string query = @"SELECT titulo, imagen, valor, ano, desenvolvedor, descricao, avaliacao, ID_genero 
+                     FROM tb_produtos 
+                     WHERE titulo LIKE @Titulo 
+                     LIMIT 1"; 
+
+            using (MySqlConnection connection = new MySqlConnection(conexaoString))
+            {
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Titulo", "%" + textBoxBusca.Text + "%");
+
+                    try
+                    {
+                        connection.Open();
+                        MySqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            textBoxTitulo.Text = reader["titulo"].ToString();
+                            textBoxImagem.Text = reader["imagen"].ToString(); 
+                            textBoxValor.Text = reader["valor"].ToString();
+                            textBoxAno.Text = reader["ano"].ToString();
+                            textBoxDesenvolvedor.Text = reader["desenvolvedor"].ToString();
+                            richTextBoxDescricao.Text = reader["descricao"].ToString();
+                            textBoxAvaliacao.Text = reader["avaliacao"].ToString();
+                            textBoxGenero.Text = reader["ID_genero"].ToString();
+                        }
+                        else
+                        {
+                            
+                            textBoxTitulo.Clear();
+                            textBoxImagem.Clear();
+                            textBoxValor.Clear();
+                            textBoxAno.Clear();
+                            textBoxDesenvolvedor.Clear();
+                            richTextBoxDescricao.Clear();
+                            textBoxAvaliacao.Clear();
+                            textBoxGenero.Clear();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            EditarUsuarios form = new EditarUsuarios();
+            form.ShowDialog();
+        }
+
+        private void buttonProdutos_Click(object sender, EventArgs e)
+        {
+            EditarProd form = new EditarProd();
+            form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu form = new Menu();
+            form.ShowDialog();
+        }
+
+        private void buttonVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textBoxAvaliacao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }
 

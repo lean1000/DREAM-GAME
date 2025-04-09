@@ -51,14 +51,15 @@
             this.textBoxAno = new System.Windows.Forms.TextBox();
             this.textBoxAvaliacao = new System.Windows.Forms.TextBox();
             this.textBoxValor = new System.Windows.Forms.TextBox();
-            this.textBoxTamanho = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxBusca = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textBoxImagem = new System.Windows.Forms.TextBox();
+            this.buttonVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -150,9 +151,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(164, 417);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 16);
+            this.label6.Size = new System.Drawing.Size(58, 16);
             this.label6.TabIndex = 48;
-            this.label6.Text = "Tamanho";
+            this.label6.Text = "Imagem";
             // 
             // label5
             // 
@@ -238,6 +239,7 @@
             this.buttonProdutos.TabIndex = 36;
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
+            this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // buttonEditar
             // 
@@ -253,6 +255,7 @@
             this.buttonEditar.TabIndex = 35;
             this.buttonEditar.Text = "Usuário";
             this.buttonEditar.UseVisualStyleBackColor = false;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // pictureBox2
             // 
@@ -297,6 +300,7 @@
             this.textBoxAvaliacao.Name = "textBoxAvaliacao";
             this.textBoxAvaliacao.Size = new System.Drawing.Size(194, 22);
             this.textBoxAvaliacao.TabIndex = 58;
+            this.textBoxAvaliacao.TextChanged += new System.EventHandler(this.textBoxAvaliacao_TextChanged);
             // 
             // textBoxValor
             // 
@@ -307,23 +311,14 @@
             this.textBoxValor.Size = new System.Drawing.Size(194, 22);
             this.textBoxValor.TabIndex = 59;
             // 
-            // textBoxTamanho
+            // textBoxBusca
             // 
-            this.textBoxTamanho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBoxTamanho.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBoxTamanho.Location = new System.Drawing.Point(167, 433);
-            this.textBoxTamanho.Name = "textBoxTamanho";
-            this.textBoxTamanho.Size = new System.Drawing.Size(194, 22);
-            this.textBoxTamanho.TabIndex = 60;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox6.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBox6.Location = new System.Drawing.Point(427, 388);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 22);
-            this.textBox6.TabIndex = 61;
+            this.textBoxBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxBusca.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxBusca.Location = new System.Drawing.Point(427, 388);
+            this.textBoxBusca.Name = "textBoxBusca";
+            this.textBoxBusca.Size = new System.Drawing.Size(194, 22);
+            this.textBoxBusca.TabIndex = 61;
             // 
             // label9
             // 
@@ -388,6 +383,7 @@
             this.button1.TabIndex = 65;
             this.button1.Text = "Adicionar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
@@ -399,20 +395,40 @@
             this.pictureBox3.TabIndex = 64;
             this.pictureBox3.TabStop = false;
             // 
+            // textBoxImagem
+            // 
+            this.textBoxImagem.Location = new System.Drawing.Point(167, 434);
+            this.textBoxImagem.Name = "textBoxImagem";
+            this.textBoxImagem.Size = new System.Drawing.Size(194, 20);
+            this.textBoxImagem.TabIndex = 68;
+            // 
+            // buttonVoltar
+            // 
+            this.buttonVoltar.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVoltar.ForeColor = System.Drawing.Color.Black;
+            this.buttonVoltar.Location = new System.Drawing.Point(12, 457);
+            this.buttonVoltar.Name = "buttonVoltar";
+            this.buttonVoltar.Size = new System.Drawing.Size(81, 30);
+            this.buttonVoltar.TabIndex = 86;
+            this.buttonVoltar.Text = "Voltar";
+            this.buttonVoltar.UseVisualStyleBackColor = true;
+            this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
+            // 
             // EditarProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(30)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 499);
+            this.Controls.Add(this.buttonVoltar);
+            this.Controls.Add(this.textBoxImagem);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBoxTamanho);
+            this.Controls.Add(this.textBoxBusca);
             this.Controls.Add(this.textBoxValor);
             this.Controls.Add(this.textBoxAvaliacao);
             this.Controls.Add(this.textBoxAno);
@@ -470,13 +486,14 @@
         private System.Windows.Forms.TextBox textBoxAno;
         private System.Windows.Forms.TextBox textBoxAvaliacao;
         private System.Windows.Forms.TextBox textBoxValor;
-        private System.Windows.Forms.TextBox textBoxTamanho;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxBusca;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBoxImagem;
+        private System.Windows.Forms.Button buttonVoltar;
     }
 }

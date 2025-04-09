@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonUsuario = new System.Windows.Forms.Button();
             this.buttonProdutos = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,25 +37,25 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxTitulo = new System.Windows.Forms.TextBox();
+            this.labelImagem = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBoxDesenvolvedor = new System.Windows.Forms.TextBox();
+            this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
+            this.buttonLimpar = new System.Windows.Forms.Button();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
+            this.maskedTextBoxAno = new System.Windows.Forms.MaskedTextBox();
+            this.comboBoxGenero = new System.Windows.Forms.ComboBox();
+            this.comboBoxAvaliacao = new System.Windows.Forms.ComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBoxImagem = new System.Windows.Forms.TextBox();
+            this.textBoxPreco = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -63,20 +63,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonEditar
+            // buttonUsuario
             // 
-            this.buttonEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
-            this.buttonEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonEditar.FlatAppearance.BorderSize = 0;
-            this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditar.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.ForeColor = System.Drawing.Color.White;
-            this.buttonEditar.Location = new System.Drawing.Point(536, 22);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(99, 38);
-            this.buttonEditar.TabIndex = 2;
-            this.buttonEditar.Text = "Usuário";
-            this.buttonEditar.UseVisualStyleBackColor = false;
+            this.buttonUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(7)))), ((int)(((byte)(13)))));
+            this.buttonUsuario.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonUsuario.FlatAppearance.BorderSize = 0;
+            this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUsuario.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUsuario.ForeColor = System.Drawing.Color.White;
+            this.buttonUsuario.Location = new System.Drawing.Point(536, 22);
+            this.buttonUsuario.Name = "buttonUsuario";
+            this.buttonUsuario.Size = new System.Drawing.Size(99, 38);
+            this.buttonUsuario.TabIndex = 2;
+            this.buttonUsuario.Text = "Usuário";
+            this.buttonUsuario.UseVisualStyleBackColor = false;
+            this.buttonUsuario.Click += new System.EventHandler(this.buttonUsuario_Click);
             // 
             // buttonProdutos
             // 
@@ -166,25 +167,25 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Título";
             // 
-            // textBox1
+            // textBoxTitulo
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox1.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(158, 210);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 22);
-            this.textBox1.TabIndex = 19;
+            this.textBoxTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxTitulo.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTitulo.Location = new System.Drawing.Point(158, 210);
+            this.textBoxTitulo.Name = "textBoxTitulo";
+            this.textBoxTitulo.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTitulo.TabIndex = 19;
             // 
-            // label6
+            // labelImagem
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(16)))), ((int)(((byte)(29)))));
-            this.label6.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.label6.Location = new System.Drawing.Point(155, 428);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 16);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Tamanho";
+            this.labelImagem.AutoSize = true;
+            this.labelImagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(16)))), ((int)(((byte)(29)))));
+            this.labelImagem.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.labelImagem.Location = new System.Drawing.Point(155, 428);
+            this.labelImagem.Name = "labelImagem";
+            this.labelImagem.Size = new System.Drawing.Size(58, 16);
+            this.labelImagem.TabIndex = 15;
+            this.labelImagem.Text = "Imagem";
             // 
             // label2
             // 
@@ -252,95 +253,96 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Preço";
             // 
-            // textBox3
+            // textBoxDesenvolvedor
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.textBox3.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.textBox3.Location = new System.Drawing.Point(158, 304);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 22);
-            this.textBox3.TabIndex = 21;
+            this.textBoxDesenvolvedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.textBoxDesenvolvedor.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.textBoxDesenvolvedor.Location = new System.Drawing.Point(158, 304);
+            this.textBoxDesenvolvedor.Name = "textBoxDesenvolvedor";
+            this.textBoxDesenvolvedor.Size = new System.Drawing.Size(194, 22);
+            this.textBoxDesenvolvedor.TabIndex = 21;
             // 
-            // richTextBox1
+            // richTextBoxDescricao
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.richTextBox1.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.richTextBox1.Location = new System.Drawing.Point(424, 256);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(194, 130);
-            this.richTextBox1.TabIndex = 26;
-            this.richTextBox1.Text = "";
+            this.richTextBoxDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.richTextBoxDescricao.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.richTextBoxDescricao.Location = new System.Drawing.Point(424, 256);
+            this.richTextBoxDescricao.Name = "richTextBoxDescricao";
+            this.richTextBoxDescricao.Size = new System.Drawing.Size(194, 130);
+            this.richTextBoxDescricao.TabIndex = 26;
+            this.richTextBoxDescricao.Text = "";
             // 
-            // button3
+            // buttonLimpar
             // 
-            this.button3.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(424, 436);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 30);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Limpar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpar.ForeColor = System.Drawing.Color.Black;
+            this.buttonLimpar.Location = new System.Drawing.Point(424, 436);
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.Size = new System.Drawing.Size(93, 30);
+            this.buttonLimpar.TabIndex = 27;
+            this.buttonLimpar.Text = "Limpar";
+            this.buttonLimpar.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
-            // button4
+            // buttonCadastrar
             // 
-            this.button4.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(525, 436);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 30);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "Cadastrar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.buttonCadastrar.Location = new System.Drawing.Point(525, 436);
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.Size = new System.Drawing.Size(93, 30);
+            this.buttonCadastrar.TabIndex = 28;
+            this.buttonCadastrar.Text = "Cadastrar";
+            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
-            // maskedTextBox1
+            // maskedTextBoxAno
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.maskedTextBox1.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(158, 351);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(194, 22);
-            this.maskedTextBox1.TabIndex = 29;
+            this.maskedTextBoxAno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.maskedTextBoxAno.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.maskedTextBoxAno.Location = new System.Drawing.Point(158, 351);
+            this.maskedTextBoxAno.Name = "maskedTextBoxAno";
+            this.maskedTextBoxAno.Size = new System.Drawing.Size(194, 22);
+            this.maskedTextBoxAno.TabIndex = 29;
             // 
-            // maskedTextBox2
+            // comboBoxGenero
             // 
-            this.maskedTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.maskedTextBox2.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(158, 444);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(194, 22);
-            this.maskedTextBox2.TabIndex = 30;
+            this.comboBoxGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.comboBoxGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxGenero.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.comboBoxGenero.FormattingEnabled = true;
+            this.comboBoxGenero.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
+            this.comboBoxGenero.Location = new System.Drawing.Point(158, 256);
+            this.comboBoxGenero.Name = "comboBoxGenero";
+            this.comboBoxGenero.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxGenero.TabIndex = 32;
+            this.comboBoxGenero.SelectedIndexChanged += new System.EventHandler(this.comboBoxGenero_SelectedIndexChanged);
             // 
-            // maskedTextBox3
+            // comboBoxAvaliacao
             // 
-            this.maskedTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.maskedTextBox3.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(424, 210);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(194, 22);
-            this.maskedTextBox3.TabIndex = 31;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(158, 256);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 24);
-            this.comboBox1.TabIndex = 32;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Georgia", 9.75F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(158, 398);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(194, 24);
-            this.comboBox2.TabIndex = 33;
+            this.comboBoxAvaliacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.comboBoxAvaliacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxAvaliacao.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.comboBoxAvaliacao.FormattingEnabled = true;
+            this.comboBoxAvaliacao.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBoxAvaliacao.Location = new System.Drawing.Point(158, 398);
+            this.comboBoxAvaliacao.Name = "comboBoxAvaliacao";
+            this.comboBoxAvaliacao.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxAvaliacao.TabIndex = 33;
             // 
             // pictureBox6
             // 
@@ -363,6 +365,20 @@
             this.pictureBox2.TabIndex = 64;
             this.pictureBox2.TabStop = false;
             // 
+            // textBoxImagem
+            // 
+            this.textBoxImagem.Location = new System.Drawing.Point(158, 445);
+            this.textBoxImagem.Name = "textBoxImagem";
+            this.textBoxImagem.Size = new System.Drawing.Size(194, 20);
+            this.textBoxImagem.TabIndex = 66;
+            // 
+            // textBoxPreco
+            // 
+            this.textBoxPreco.Location = new System.Drawing.Point(424, 210);
+            this.textBoxPreco.Name = "textBoxPreco";
+            this.textBoxPreco.Size = new System.Drawing.Size(194, 20);
+            this.textBoxPreco.TabIndex = 67;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,19 +386,19 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(30)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 516);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPreco);
+            this.Controls.Add(this.textBoxImagem);
+            this.Controls.Add(this.comboBoxAvaliacao);
+            this.Controls.Add(this.comboBoxGenero);
+            this.Controls.Add(this.maskedTextBoxAno);
+            this.Controls.Add(this.buttonCadastrar);
+            this.Controls.Add(this.buttonLimpar);
+            this.Controls.Add(this.richTextBoxDescricao);
+            this.Controls.Add(this.textBoxDesenvolvedor);
+            this.Controls.Add(this.textBoxTitulo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.labelImagem);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -394,7 +410,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.buttonProdutos);
-            this.Controls.Add(this.buttonEditar);
+            this.Controls.Add(this.buttonUsuario);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox2);
             this.ForeColor = System.Drawing.Color.White;
@@ -413,7 +429,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonEditar;
+        private System.Windows.Forms.Button buttonUsuario;
         private System.Windows.Forms.Button buttonProdutos;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
@@ -421,24 +437,24 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxTitulo;
+        private System.Windows.Forms.Label labelImagem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBoxDesenvolvedor;
+        private System.Windows.Forms.RichTextBox richTextBoxDescricao;
+        private System.Windows.Forms.Button buttonLimpar;
+        private System.Windows.Forms.Button buttonCadastrar;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxAno;
+        private System.Windows.Forms.ComboBox comboBoxGenero;
+        private System.Windows.Forms.ComboBox comboBoxAvaliacao;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textBoxImagem;
+        private System.Windows.Forms.TextBox textBoxPreco;
     }
 }

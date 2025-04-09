@@ -13,40 +13,52 @@ namespace DreamGamePi
     public partial class Form1 : Form
     {
         
-
+        private string emailCorreto = "chrisgreg@gmail.com";
+        private string senhaCorreta = "chrisgreg";
 
         public Form1()
         {
             InitializeComponent();
+            textBoxSenha.PasswordChar = '*';
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            string emailCorreto = "ChrisGreg@gmail.com";
-            string senhaCorreta = "chrisgreg";
-
             if (textBoxEmail.Text == "" || textBoxSenha.Text == "")
             {
                 label.Text = "Por favor, preencha ambos os campos.";
-                label.ForeColor = System.Drawing.Color.Red;
+                label.ForeColor = Color.Red;
                 return;
             }
 
             if (textBoxEmail.Text == emailCorreto && textBoxSenha.Text == senhaCorreta)
             {
                 label.Text = "Login bem-sucedido!";
-                label.ForeColor = System.Drawing.Color.Green;
+                label.ForeColor = Color.Green;
 
                 Menu form = new Menu();
                 form.ShowDialog();
                 this.Hide();
             }
-
             else
             {
                 label.Text = "E-mail ou senha inválidos.";
-                label.ForeColor = System.Drawing.Color.Red;
+                label.ForeColor = Color.Red;
+            }
+        }
+
+        
+        private void checkBoxMostrarSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMostrarSenha.Checked)
+            {
+                textBoxSenha.PasswordChar = '\0'; // Mostra a senha
+            }
+            else
+            {
+                textBoxSenha.PasswordChar = '*'; // Oculta a senha
             }
         }
     }
 }
+
