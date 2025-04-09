@@ -25,29 +25,4 @@ $stmt->fetch();
 $stmt->close();
 
 echo json_encode(['existe' => $total > 0]);
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $campo = $_POST['campo'];
-    $valor = $_POST['valor'];
-
-    try {
-        $pdo = new PDO("mysql:host=localhost;dbname=db_dreamgame", "root", "");
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        if ($campo === "apelido") {
-            $stmt = $pdo->prepare("SELECT COUNT(*) FROM tb_users WHERE apelido = :valor");
-        } elseif ($campo === "email") {
-            $stmt = $pdo->prepare("SELECT COUNT(*) FROM tb_info_users WHERE email = :valor");
-        } else {
-            echo "invalido";
-            exit;
-        }
-
-        $stmt->execute([':valor' => $valor]);
-        $existe = $stmt->fetchColumn() > 0;
-
-        echo $existe ? "existe" : "nao_existe";
-    } catch (PDOException $e) {
-        echo "erro";
-    }
-}
+?>

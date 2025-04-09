@@ -55,9 +55,9 @@
     margin: 0 30px;
 }
 
-.produto-button {
+#btnComprar {
     background-color: white;
-    color: black;
+    color: #09070D;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -66,7 +66,7 @@
     text-decoration: none;
 }
 
-.produto-button:hover {
+#btnComprar:hover {
     background-color: #b6b6b6;
 }
 

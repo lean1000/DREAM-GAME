@@ -1,79 +1,92 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const nomeInput = document.getElementById("nomeCompleto");
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('cadastroForm');
+    const btnCadastrar = document.getElementById('btnCadastrar');
 
-    nomeInput.addEventListener("input", () => {
-        let valor = nomeInput.value
-            .toLowerCase()
-            .replace(/[^a-zA-ZÀ-ÿ\s]/g, "")
-            .replace(/\b\w/g, (char) => char.toUpperCase());
-        nomeInput.value = valor;
+    const apelido = document.getElementById('apelido');
+    const email = document.getElementById('email');
+    const nome = document.getElementById('nomeCompleto');
+    const senha = document.getElementById('senha');
+    const confirmarSenha = document.getElementById('confirmarSenha');
+
+    const erros = {
+        apelido: document.getElementById('erroApelido'),
+        email: document.getElementById('erroEmail'),
+        nome: document.getElementById('erroNome'),
+        senha: document.getElementById('erroSenha'),
+        confirmarSenha: document.getElementById('erroConfirmarSenha')
+    };
+
+    const validarNome = nome => /^([A-ZÁÉÍÓÚÂÊÎÔÛÃÕ][a-záéíóúâêîôûãõ]+)(\s[A-ZÁÉÍÓÚÂÊÎÔÛÃÕ][a-záéíóúâêîôûãõ]+)+$/.test(nome);
+    const validarSenha = senha => /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/.test(senha);
+
+    const validarCampos = async () => {
+        let valido = true;
+
+        // Apelido
+        if (apelido.value.length < 3) {
+            erros.apelido.innerText = 'Apelido muito curto.';
+            erros.apelido.style.display = 'block';
+            valido = false;
+        } else {
+            const response = await fetch(`./auxilio/verifica_existencia.php?campo=apelido&valor=${apelido.value}`);
+            const data = await response.json();
+            if (data.existe) {
+                erros.apelido.innerText = 'Apelido já existe.';
+                erros.apelido.style.display = 'block';
+                valido = false;
+            } else {
+                erros.apelido.style.display = 'none';
+            }
+        }
+
+        // Nome
+        if (!validarNome(nome.value)) {
+            erros.nome.innerText = 'Nome inválido.';
+            erros.nome.style.display = 'block';
+            valido = false;
+        } else {
+            erros.nome.style.display = 'none';
+        }
+
+        // Email
+        if (!email.value.includes('@')) {
+            erros.email.innerText = 'Email inválido.';
+            erros.email.style.display = 'block';
+            valido = false;
+        } else {
+            const response = await fetch(`./auxilio/verifica_existencia.php?campo=email&valor=${email.value}`);
+            const data = await response.json();
+            if (data.existe) {
+                erros.email.innerText = 'Email já cadastrado.';
+                erros.email.style.display = 'block';
+                valido = false;
+            } else {
+                erros.email.style.display = 'none';
+            }
+        }
+
+        // Senha
+        if (!validarSenha(senha.value)) {
+            erros.senha.innerText = 'Senha fraca.';
+            erros.senha.style.display = 'block';
+            valido = false;
+        } else {
+            erros.senha.style.display = 'none';
+        }
+
+        // Confirmar senha
+        if (senha.value !== confirmarSenha.value) {
+            erros.confirmarSenha.innerText = 'Senhas diferentes.';
+            erros.confirmarSenha.style.display = 'block';
+            valido = false;
+        } else {
+            erros.confirmarSenha.style.display = 'none';
+        }
+
+        btnCadastrar.disabled = !valido;
+    };
+
+    form.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', validarCampos);
     });
 });
-
-async function verificarExistencia(campo, valor) {
-    const formData = new FormData();
-    formData.append("campo", campo);
-    formData.append("valor", valor);
-
-    const response = await fetch("./auxilio/verificaUsuario.php", {
-        method: "POST",
-        body: formData,
-    });
-    const resultado = await response.text();
-    return resultado === "existe";
-}
-
-async function validarFormulario() {
-    let apelido = document.getElementById("apelido").value.trim();
-    let nome = document.getElementById("nomeCompleto").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let senha = document.getElementById("senha").value;
-    let confirmarSenha = document.getElementById("confirmarSenha").value;
-    let dataNascimento = document.getElementById("dataNascimento").value;
-    let erroMsg = document.getElementById("erroMsg");
-
-    erroMsg.style.display = "none";
-    erroMsg.innerHTML = "";
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.(com|br|net|org|gov|edu)$/;
-    const senhaRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
-
-    if (await verificarExistencia("apelido", apelido)) {
-        erroMsg.innerHTML = "Este apelido já está em uso.";
-        erroMsg.style.display = "block";
-        return false;
-    }
-
-    if (await verificarExistencia("email", email)) {
-        erroMsg.innerHTML = "Este e-mail já está cadastrado.";
-        erroMsg.style.display = "block";
-        return false;
-    }
-
-    if (!emailRegex.test(email)) {
-        erroMsg.innerHTML = "Por favor, insira um e-mail válido.";
-        erroMsg.style.display = "block";
-        return false;
-    }
-
-    if (!senhaRegex.test(senha)) {
-        erroMsg.innerHTML = "A senha deve conter entre 8 e 16 caracteres, incluindo uma letra, um número e um caractere especial.";
-        erroMsg.style.display = "block";
-        return false;
-    }
-
-    if (senha !== confirmarSenha) {
-        erroMsg.innerHTML = "As senhas não coincidem.";
-        erroMsg.style.display = "block";
-        return false;
-    }
-
-    let anoNascimento = new Date(dataNascimento).getFullYear();
-    if (anoNascimento < 1970 || anoNascimento > 2025) {
-        erroMsg.innerHTML = "O ano de nascimento deve estar entre 1970 e 2025.";
-        erroMsg.style.display = "block";
-        return false;
-    }
-
-    return true;
-}

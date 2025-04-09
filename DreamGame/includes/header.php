@@ -11,6 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Game</title>
 
+    <link rel="stylesheet" href="./assets/css/produto.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/styles.css">

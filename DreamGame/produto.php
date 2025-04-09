@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./assets/css/produto.css">
-
 <?php
 include './includes/header.php';
 include './classes/conexao.php';
