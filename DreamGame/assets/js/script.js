@@ -2,7 +2,7 @@ function searchGames() {
     let input = document.getElementById("searchInput").value.toLowerCase();
 
     games.forEach(game => {
-        let title = game.querySelector(".info-game span").textContent.toLowerCase(); 
+        let title = game.querySelector(".info-game span").textContent.toLowerCase();
 
 
         if (title.includes(input)) {

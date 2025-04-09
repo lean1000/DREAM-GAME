@@ -3,12 +3,12 @@
 <main class="suporte-container">
     <h1>Dream Game Suporte</h1>
     <p>Bem-vindo, como podemos ajudar?</p>
-    <div class="suporte-opcoes">
+    <form class="suporte-opcoes" method="post">
         <input type="email" placeholder="Email" required>
         <input type="text" placeholder="Nome Completo" required>
         <input type="text" placeholder="Assunto" required>
         <input type="submit" value="Enviar">
-    </div>
+    </form>
 </main>
 
 <div class="social-media">

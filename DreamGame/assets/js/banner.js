@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Tornar funções globais para funcionar com onclick
     window.prevBanner = function () {
         currentBannerIndex = (currentBannerIndex - 1 + bannerWrappers.length) % bannerWrappers.length;
         updateBanner();
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function startAutoSlide() {
         autoSlideInterval = setInterval(() => {
             nextBanner();
-        }, 5000); // Troca a cada 5 segundos
+        }, 5000);
     }
 
     function resetAutoSlide() {

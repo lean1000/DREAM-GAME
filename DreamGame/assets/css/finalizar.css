@@ -1,7 +1,7 @@
 .finalizar-container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #1f1f1f;
+    background-color: #09070D;
     padding: 30px;
     border-radius: 15px;
     color: white;
@@ -41,8 +41,8 @@
 }
 
 #formFinalizar button {
-    background-color: #0f62fe;
-    color: white;
+    background-color: white;
+    color: #09070D;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -52,7 +52,7 @@
 }
 
 #formFinalizar button:hover {
-    background-color: #084bbb;
+    background-color: #555;
 }
 
 .mensagem-sucesso {

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     carregarGeneros();
-    buscarProdutos(); // mostra todos os produtos inicialmente
+    buscarProdutos();
 
     document.getElementById("searchInput").addEventListener("keypress", (event) => {
         if (event.key === "Enter") {
@@ -88,12 +88,9 @@ function renderizarEstrelas() {
         div.innerHTML = "";
         for (let i = 1; i <= 5; i++) {
             const estrela = document.createElement("i");
-            estrela.className = i <= avaliacao ? "bi bi-star-fill" : "bi bi-star";
-            estrela.style.color = "gold";
+            estrela.className = i <= avaliacao ? "star filled" : "star";
+            estrela.textContent = "★";
             div.appendChild(estrela);
         }
     });
 }
-document.addEventListener("DOMContentLoaded", () => {
-    renderizarEstrelas();
-});

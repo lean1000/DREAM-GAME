@@ -1,33 +1,26 @@
 <?php include './includes/header.php'; ?>
 <?php include './includes/searchBar.php'; ?>
-
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_dreamgame";
+require_once './classes/conexao.php';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
+$conn = Conexao::getConexao();
 
-// IDs dos produtos que você quer mostrar no banner
+// Produtos dos banners
 $ids = [8, 62, 76];
-$ids_str = implode(',', $ids);
+$placeholders = implode(',', array_fill(0, count($ids), '?'));
 
-// Corrigido o erro no SQL (removido o "FROM" duplicado)
-$query = "SELECT * FROM tb_produtos WHERE id IN ($ids_str)";
-$result = $conn->query($query);
+$query = "SELECT * FROM tb_produtos WHERE id IN ($placeholders)";
+$stmt = $conn->prepare($query);
+$stmt->bind_param(str_repeat('i', count($ids)), ...$ids);
+$stmt->execute();
+$result = $stmt->get_result();
 
 $banners = [];
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $banners[] = $row;
-    }
+while ($row = $result->fetch_assoc()) {
+    $banners[] = $row;
 }
 
-// Miniaturas definidas manualmente
+// Miniaturas fixas para os banners
 $miniaturas = [
     0 => [
         './assets/img/horizon1.jpg',
@@ -56,7 +49,7 @@ $miniaturas = [
     <?php foreach ($banners as $index => $produto): ?>
         <div class="banner-wrapper<?php echo $index === 0 ? ' ativo' : ''; ?>">
             <div class="banner">
-                <img src="./assets/img/<?php echo $produto['imagen']; ?>" alt="<?php echo $produto['titulo']; ?>" class="banner-capa">
+                <img src="./assets/img/<?php echo htmlspecialchars($produto['imagen']); ?>" alt="<?php echo htmlspecialchars($produto['titulo']); ?>" class="banner-capa">
                 <div class="banner-detalhes">
                     <div class="banner-miniaturas">
                         <?php foreach ($miniaturas[$index] as $img): ?>
@@ -76,50 +69,39 @@ $miniaturas = [
 
     <button class="banner-botao-nav banner-direita" onclick="nextBanner()">&#9654;</button>
 </section>
-<?php 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_dreamgame";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
-
-// Lista de gêneros e seus produtos
+<?php
+// Seções por gênero
 $sql = "SELECT * FROM tb_generos";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    while ($genero = $result->fetch_assoc()) {
-        echo '<section>';
-        echo '<h2 class="home-h2">' . $genero['genero'] . '</h2>';
-        echo '<div class="home-container">';
-        echo '<hr class="home-hr">';
-        echo '<div class="home-scrol" id="scroll-container-' . $genero['ID_genero'] . '">'; // Aqui é onde vamos aplicar a rolagem
-        echo '<figure class="home-figure">';
+while ($genero = $result->fetch_assoc()):
+    echo '<section>';
+    echo '<h2 class="home-h2">' . htmlspecialchars($genero['genero']) . '</h2>';
+    echo '<div class="home-container">';
+    echo '<hr class="home-hr">';
+    echo '<div class="home-scrol" id="scroll-container-' . $genero['ID_genero'] . '">';
+    echo '<figure class="home-figure">';
 
-        // Produtos por gênero
-        $sql_produtos = "SELECT * FROM tb_produtos WHERE ID_genero = " . $genero['ID_genero'];
-        $result_produtos = $conn->query($sql_produtos);
+    $sql_produtos = "SELECT * FROM tb_produtos WHERE ID_genero = ?";
+    $stmt_produtos = $conn->prepare($sql_produtos);
+    $stmt_produtos->bind_param("i", $genero['ID_genero']);
+    $stmt_produtos->execute();
+    $result_produtos = $stmt_produtos->get_result();
 
-        if ($result_produtos->num_rows > 0) {
-            while ($produto = $result_produtos->fetch_assoc()) {
-                echo '<a href="produto.php?id=' . $produto['id'] . '">
-                        <img src="./assets/img/' . $produto['imagen'] . '" alt="' . $produto['titulo'] . '">
-                      </a>';
-            }
-        } else {
-            echo '<p>Nenhum produto encontrado para este gênero.</p>';
+    if ($result_produtos->num_rows > 0) {
+        while ($produto = $result_produtos->fetch_assoc()) {
+            echo '<a href="produto.php?id=' . $produto['id'] . '">
+                    <img src="./assets/img/' . htmlspecialchars($produto['imagen']) . '" alt="' . htmlspecialchars($produto['titulo']) . '">
+                  </a>';
         }
-
-        echo '</figure>';
-        echo '</div>';
-        echo '</div>';
-        echo '</section>';
+    } else {
+        echo '<p>Nenhum produto encontrado para este gênero.</p>';
     }
-}
+
+    echo '</figure>';
+    echo '</div></div></section>';
+endwhile;
 
 $conn->close();
 ?>

@@ -29,7 +29,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 20px 30px;
     width: 55%;
     color: #fff;
@@ -37,11 +36,11 @@
     box-sizing: border-box;
 }
 
-/* Topo: título à esquerda, preço à direita */
 .destaques-top-bar {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 5px;
 }
 
 .destaques-titulo {
@@ -67,25 +66,27 @@
     font-weight: bold;
 }
 
-/* Centraliza a logo no meio da área de informações */
 .destaques-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .destaques-logo img {
     max-height: 120px;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
-/* Botão no canto inferior direito */
 .button-buy {
     position: absolute;
-    bottom: 20px;
-    right: 30px;
-    background-color: #555;
+    top:  110px;
+    right: 0;
+    background-color: white;
     color: #09070D;
     border: none;
     padding: 10px 20px;
@@ -93,8 +94,14 @@
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
+    z-index: 1;
 }
 
 .button-buy:hover {
-    background-color: #ccc;
+    background-color: #555;
+}
+
+.destaques-info > *:not(.destaques-logo) {
+    z-index: 1;
+    position: relative;
 }

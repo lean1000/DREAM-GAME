@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #09070D;
+}
+
+.caixa {
+    background-color: #1e172b;
+    padding: 20px 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.caixa img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.caixa input[type="text"],
+.caixa input[type="password"],
+.caixa input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.caixa input[type="submit"] {
+    background-color: #ffffff;
+    color: #09070D;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.caixa input[type="submit"]:hover {
+    background-color: #b6b6b6;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

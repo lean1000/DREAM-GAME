@@ -1,9 +1,11 @@
 <?php
-session_start();
 
-// Verifica se está logado
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 if (!isset($_SESSION['usuario_id'])) {
-    $_SESSION['redir_after_login'] = 'finalizar.php?id=' . ($_GET['id'] ?? '');
+    $_SESSION['redir_after_login'] = 'finalizar_compra.php?id=' . ($_GET['id'] ?? '');
     header('Location: login.php');
     exit;
 }
@@ -11,7 +13,6 @@ if (!isset($_SESSION['usuario_id'])) {
 include './includes/header.php';
 include './classes/conexao.php';
 
-// Pega o ID do produto
 $idProduto = $_GET['id'] ?? null;
 
 if (!$idProduto) {
@@ -20,9 +21,8 @@ if (!$idProduto) {
     exit;
 }
 
-// Consulta produto
 $conn = Conexao::getConexao();
-$stmt = $conn->prepare("SELECT * FROM tb_produtos WHERE id = ?");
+$stmt = $conn->prepare("SELECT * FROM tb_produtos WHERE ID = ?");
 $stmt->bind_param("i", $idProduto);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -38,7 +38,7 @@ if (!$produto) {
 <div class="finalizar-container">
     <h2>Finalizar Compra</h2>
     <div class="produto-finalizar">
-        <img src="./assets/img/capa_banners/<?= htmlspecialchars($produto['imagen']) ?>" alt="<?= htmlspecialchars($produto['titulo']) ?>">
+        <img src="./assets/img/<?= htmlspecialchars($produto['imagen']) ?>" alt="<?= htmlspecialchars($produto['titulo']) ?>">
         <div>
             <h3><?= htmlspecialchars($produto['titulo']) ?></h3>
             <p>Preço: R$ <?= number_format($produto['valor'], 2, ',', '.') ?></p>
@@ -47,7 +47,7 @@ if (!$produto) {
 
     <form id="formFinalizar">
         <label for="email">E-mail para envio do comprovante:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="Email" require>
         <button type="submit">Comprar</button>
     </form>
 
@@ -64,7 +64,7 @@ if (!$produto) {
         sucesso.style.display = 'block';
 
         setTimeout(() => {
-            window.location.href = 'produto.php?id=<?= $produto['id'] ?>';
+            window.location.href = 'produto.php?id=<?= $idProduto ?>';
         }, 2500);
     });
 </script>

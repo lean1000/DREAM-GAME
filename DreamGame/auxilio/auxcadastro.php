@@ -1,63 +1,80 @@
 <?php
-
 session_start();
+require_once __DIR__ . '/../classes/conexao.php';
 
-// Recebendo dados do formulário com segurança
-$apelidoFormulario = filter_input(INPUT_POST, 'apelido', FILTER_SANITIZE_STRING);
+function validarNome($nome) {
+    return preg_match('/^([A-ZÁÉÍÓÚÂÊÎÔÛÃÕ][a-záéíóúâêîôûãõ]+)(\s[A-ZÁÉÍÓÚÂÊÎÔÛÃÕ][a-záéíóúâêîôûãõ]+)+$/', $nome);
+}
+
+function validarSenha($senha) {
+    return preg_match('/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/', $senha);
+}
+
+$apelidoFormulario = trim(filter_input(INPUT_POST, 'apelido', FILTER_SANITIZE_STRING));
 $senhaFormulario = $_POST['senha'];
 $confirmarSenhaFormulario = $_POST['confirmarSenha'];
-$nomeFormulario = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-$emailFormulario = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+$nomeFormulario = trim(filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING));
+$emailFormulario = trim(filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL));
 $dataNascimentoFormulario = $_POST['nascimento'];
 
-// Verificando se as senhas coincidem
+if (!$emailFormulario || $apelidoFormulario === $emailFormulario) {
+    echo "<script>alert('E-mail inválido ou igual ao apelido.'); window.history.back();</script>";
+    exit;
+}
+
+if (!validarNome($nomeFormulario)) {
+    echo "<script>alert('Nome inválido. Use iniciais maiúsculas e sem números ou símbolos.'); window.history.back();</script>";
+    exit;
+}
+
+if (!validarSenha($senhaFormulario)) {
+    echo "<script>alert('A senha deve ter entre 8 e 16 caracteres, com letra, número e caractere especial.'); window.history.back();</script>";
+    exit;
+}
+
 if ($senhaFormulario !== $confirmarSenhaFormulario) {
     echo "<script>alert('As senhas não coincidem!'); window.history.back();</script>";
     exit;
 }
 
-// Conectando ao banco de dados
-try {
-    $banco = new PDO("mysql:host=localhost;dbname=db_dreamgame", "root", "");
-    $banco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo "Erro na conexão: " . $e->getMessage();
+$conn = Conexao::getConexao();
+
+$stmtApelido = $conn->prepare("SELECT COUNT(*) FROM tb_users WHERE apelido = ?");
+$stmtApelido->bind_param("s", $apelidoFormulario);
+$stmtApelido->execute();
+$stmtApelido->bind_result($countApelido);
+$stmtApelido->fetch();
+$stmtApelido->close();
+
+if ($countApelido > 0) {
+    echo "<script>alert('Este apelido já está em uso.'); window.history.back();</script>";
     exit;
 }
 
-// Inserindo os dados na tabela tb_users
-$insertPessoa = 'INSERT INTO tb_users (apelido, nome, nascimento) 
-                 VALUES (:apelido, :nome, :nascimento)';
+$stmtEmail = $conn->prepare("SELECT COUNT(*) FROM tb_users WHERE apelido = ?");
+$stmtEmail->bind_param("s", $emailFormulario);
+$stmtEmail->execute();
+$stmtEmail->bind_result($countEmail);
+$stmtEmail->fetch();
+$stmtEmail->close();
 
-$boxePessoa = $banco->prepare($insertPessoa);
-
-try {
-    $boxePessoa->execute([
-        ':apelido' => $apelidoFormulario,
-        ':nome' => $nomeFormulario,
-        ':nascimento' => $dataNascimentoFormulario
-    ]);
-
-    // Pegando o último ID inserido
-    $idPessoa = $banco->lastInsertId();
-
-    // Inserindo os dados na tabela tb_info_users
-    $insertUsuario = 'INSERT INTO tb_info_users (email, senha, ID_users) 
-                      VALUES (:email, :senha, :ID_users)';
-
-    $boxeUsuario = $banco->prepare($insertUsuario);
-    $boxeUsuario->execute([
-        ':email' => $emailFormulario,
-        ':senha' => password_hash($senhaFormulario, PASSWORD_DEFAULT),
-        ':ID_users' => $idPessoa
-    ]);
-
-    // Redirecionamento após sucesso
-
-    header("Location: ../login.php");
-
+if ($countEmail > 0) {
+    echo "<script>alert('Este e-mail já foi usado como apelido.'); window.history.back();</script>";
     exit;
-
-} catch (PDOException $e) {
-    echo "Erro ao cadastrar: " . $e->getMessage();
 }
+
+$stmtInsertUser = $conn->prepare("INSERT INTO tb_users (apelido, nome, nascimento) VALUES (?, ?, ?)");
+$stmtInsertUser->bind_param("sss", $apelidoFormulario, $nomeFormulario, $dataNascimentoFormulario);
+$stmtInsertUser->execute();
+$idPessoa = $conn->insert_id;
+$stmtInsertUser->close();
+
+$senhaHash = password_hash($senhaFormulario, PASSWORD_DEFAULT);
+$stmtInsertInfo = $conn->prepare("INSERT INTO tb_info_users (email, senha, ID_users) VALUES (?, ?, ?)");
+$stmtInsertInfo->bind_param("ssi", $emailFormulario, $senhaHash, $idPessoa);
+$stmtInsertInfo->execute();
+$stmtInsertInfo->close();
+
+header("Location: ../login.php");
+exit;
+?>

@@ -25,14 +25,14 @@
     justify-content: start;
     padding: 5px;
     margin: 20px 10px 5px;
-    gap: 12px; /* Espaçamento entre as imagens */
+    gap: 12px; 
 }
 
 .home-figure img {
-    height: 300px; /* Altura fixa para as imagens */
-    width: 200px; /* Largura fixa */
+    height: 300px; 
+    width: 200px; 
     border-radius: 10px;
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    object-fit: cover;
     transition: transform 0.3s ease;
     filter: brightness(90%);
 }
@@ -41,17 +41,16 @@
     transform: scale(1.1);
 }
 
-/* Rolagem horizontal com as setas */
 .home-scrol {
     width: 100%;
     overflow-x: auto;
     display: flex;
-    gap: 12px; /* Espaçamento entre os itens */
+    gap: 12px;
     padding-bottom: 10px;
-    cursor: pointer; /* Indicador de que a área pode ser clicada/arrastada */
-    scroll-behavior: smooth; /* Animação na rolagem */
+    cursor: pointer;
+    scroll-behavior: smooth; 
 }
 
 .home-scrol::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem nos navegadores baseados em Webkit (Chrome, Safari) */
+    display: none;
 }

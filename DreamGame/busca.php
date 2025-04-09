@@ -14,14 +14,21 @@
         <h2 class="filtro-titulo">Filtro</h2>
         <hr class="filtro-linha">
 
-        <select class="filtro-input" id="genero">
+        <select class="option" id="genero">
             <option value="">Gênero</option>
         </select>
 
         <input type="number" class="filtro-input" id="ano" placeholder="Ano">
         <input type="number" class="filtro-input" id="precoMin" placeholder="Preço Mín">
         <input type="number" class="filtro-input" id="precoMax" placeholder="Preço Máx">
-        <input type="number" class="filtro-input" id="avaliacao" placeholder="Avaliação mínima (1 a 5)">
+        <select class="option" id="avaliacao">
+            <option value="">Avaliação</option>
+            <option value="5">5 estrelas</option>
+            <option value="4">4 estrelas ou mais</option>
+            <option value="3">3 estrelas ou mais</option>
+            <option value="2">2 estrelas ou mais</option>
+            <option value="1">1 estrela ou mais</option>
+        </select>
 
         <hr class="filtro-linha">
         <button class="filtro-botao" onclick="buscarProdutos()">Filtrar</button>

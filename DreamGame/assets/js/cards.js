@@ -1,22 +1,19 @@
-// Função para mover a rolagem para a esquerda
 function prevBanner() {
     const container = document.querySelector('.home-scrol');
     container.scrollBy({
-        left: -300, // Mover 300px para a esquerda
+        left: -300,
         behavior: 'smooth'
     });
 }
 
-// Função para mover a rolagem para a direita
 function nextBanner() {
     const container = document.querySelector('.home-scrol');
     container.scrollBy({
-        left: 300, // Mover 300px para a direita
+        left: 300,
         behavior: 'smooth'
     });
 }
 
-// Função para permitir arrastar o conteúdo
 document.querySelectorAll('.home-scrol').forEach(container => {
     let isMouseDown = false;
     let startX;
@@ -43,7 +40,7 @@ document.querySelectorAll('.home-scrol').forEach(container => {
         if (!isMouseDown) return;
         e.preventDefault();
         const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 2; // Multiplicador para controlar a velocidade do arrasto
+        const walk = (x - startX) * 2;
         container.scrollLeft = scrollLeft - walk;
     });
 });

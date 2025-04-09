@@ -2,7 +2,7 @@
 include __DIR__ . '/../classes/conexao.php';
 header('Content-Type: application/json');
 
-$conn = Conexao::getConexao(); // <- pega a conexão corretamente
+$conn = Conexao::getConexao();
 
 $acao = $_GET['acao'] ?? '';
 
@@ -54,8 +54,16 @@ if ($acao === 'buscar') {
         $params[] = $avaliacao;
     }
 
+
     $stmt = $conn->prepare($sql);
-    $tipos = str_repeat('s', count($params));
+    $tipos = '';
+    foreach ($params as $param) {
+        if (is_numeric($param)) {
+            $tipos .= (strpos($param, '.') !== false) ? 'd' : 'i';
+        } else {
+            $tipos .= 's';
+        }
+    }
     if ($params) $stmt->bind_param($tipos, ...$params);
     $stmt->execute();
     $res = $stmt->get_result();

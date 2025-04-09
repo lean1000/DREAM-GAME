@@ -6,16 +6,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 1300px;
     width: 90%;
-    margin: 50px;
+    margin: 50px auto;
 }
 
-.container_produto {
+.produto-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.row {
+.produto-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,14 +23,27 @@
     margin: 10px 0;
 }
 
-.row img {
+.produto-row img {
     width: 600px;
     height: 330px;
     border-radius: 10px;
     margin: 0 30px;
 }
 
-.row-buy {
+.produto-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto-col img {
+    width: 400px;
+    height: auto;
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.produto-row-buy {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,32 +51,11 @@
     margin: 60px 50px 0 0;
 }
 
-.col-prod {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.col img{
-    width: 600px;
-    height: 330px;
-    border-radius: 10px;
+.produto-h {
     margin: 0 30px;
 }
 
-.col-prod img {
-    width: 400px;
-    height: auto;
-    margin: 0 30px;
-    opacity: 0.5;
-}
-
-.h {
-    margin: 5px 0;
-    margin: 0 30px;
-}
-
-.button_compra {
+.produto-button {
     background-color: white;
     color: black;
     padding: 10px;
@@ -71,29 +63,43 @@
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.button_compra:hover {
+.produto-button:hover {
     background-color: #b6b6b6;
 }
 
-.row-requerimento{
-    width:90%;
+.produto-linha {
+    width: 91%;
+    border: 1px solid #ccc;
 }
 
-.requerimentos, .h-requirimentos{
-    list-style-type: none;
-    padding: 0;
-    font-size: 2rem;
+.produto-info {
+    width: 95%;
+    margin-top: 10px;
 }
 
-.requerimentos li {
-    margin: 0;
-    font-size: 1.2rem;
+.produto-info-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
 }
 
-p {
+.produto-estrelas {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.produto-descricao {
     font-size: 1rem;
-    margin: 10px 60px;
+    margin: 10px 30px;
     text-align: justify;
+}
+
+.produto-requisitos {
+    width: 90%;
+    margin-top: 10px;
+    margin: 0 30px;
 }

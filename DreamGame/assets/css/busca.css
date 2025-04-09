@@ -2,8 +2,8 @@
 
 .ctn-busca {
     width: 600px;
-    padding: 50px;
-    margin: 150px;
+    padding: 20px 60px;
+    margin: 50px 100px;
     background-color: #09070D;
     padding-left: 10px;
     border-radius: 25px;
@@ -49,6 +49,9 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    height: 600px;
+    width: 650px;
 }
 
 .item-game {
@@ -100,18 +103,29 @@
     border-radius: 15px;
     color: white;
     max-width: 300px;
-    margin: 200px 10px;
+    margin: 80px 10px;
 }
 
 .conteiner_busca {
     display: flex;
-    justify-content: space-between; /* Espaço entre a busca e o filtro */
-    align-items: flex-start; /* Alinha os elementos ao topo */
+    justify-content: space-between;
+    align-items: flex-start;
     width: 90%;
     margin: 0 auto;
 }
 
 .filtro-input {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.option {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -119,6 +133,7 @@
     border: none;
     outline: none;
     font-size: 16px;
+    text-align: center;
 }
 
 .filtro-botao {
@@ -138,4 +153,30 @@
     background-color: #b6b6b6;
 }
 
+.filtro-titulo {
+    text-align: center;
+}
+
 /* FILTRO */
+
+/* SCROL */
+
+.list-game::-webkit-scrollbar {
+    width: 10px;
+}
+
+.list-game::-webkit-scrollbar-track {
+    background: #1e1a2e;
+    border-radius: 10px;
+}
+
+.list-game::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.list-game::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* SCROL */

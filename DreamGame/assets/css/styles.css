@@ -176,17 +176,25 @@ nav {
 
 .estrelas {
     display: flex;
-    gap: 3px;
-    margin: 5px 0;
+    gap: 4px;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    color: #FFD700;
+    z-index: 1;
+    position: relative;
 }
 
-.star {
-    font-size: 1.5rem; /* Aumentei o tamanho para 1.5rem, pode ajustar conforme necessário */
-    color: #ccc; /* Cor padrão para estrelas vazias */
+.bi-star-fill::before{
+    font-style: italic;
 }
 
-.star.filled {
-    color: #ffcc00; /* Cor para estrelas cheias */
+.star , i.bi{
+    color: #ccc;
+
+}
+
+.star.filled , i.bi-star-fill{
+    color: #ffcc00;
 }
 
 /* ESTRELAS */

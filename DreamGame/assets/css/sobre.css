@@ -1,4 +1,3 @@
-/* Certifique-se de que o body ocupe toda a altura da tela */
 .sobre-body {
     display: flex;
     justify-content: center;
@@ -24,11 +23,11 @@
 
 .sobre h2 {
     text-decoration: underline;
-    font-family: 'Righteous', sans-serif; /* Adicionando uma fonte genérica como fallback */
+    font-family: 'Righteous', sans-serif;
     font-style: normal;
 }
 
 .sobre p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 20px;
 }

@@ -1,4 +1,3 @@
-/* Container do banner */
 .banner-container {
     display: flex;
     align-items: center;
@@ -11,7 +10,6 @@
     margin: 20px auto;
 }
 
-/* Estilo do banner */
 .banner {
     display: flex;
     background-color: #09070D;
@@ -23,7 +21,6 @@
     align-items: center;
 }
 
-/* Imagem do banner */
 .banner-capa {
     width: 288px;
     height: 385px;
@@ -32,14 +29,12 @@
     position: relative;
 }
 
-/* Detalhes do banner (preço, miniaturas, etc.) */
 .banner-detalhes {
     margin-left: 15px;
     display: flex;
     flex-direction: column;
 }
 
-/* Miniaturas dentro do banner */
 .banner-miniaturas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -47,7 +42,6 @@
     margin: 0 0 30px 0;
 }
 
-/* Imagens das miniaturas */
 .banner-miniaturas img {
     width: 250px;
     height: 120px;
@@ -60,14 +54,12 @@
     transform: scale(1.1);
 }
 
-/* Preço do produto */
 .banner-preco {
     color: white;
     font-size: 18px;
     margin-top: 10px;
 }
 
-/* Botão "Ver Produto" */
 .banner-botao-compra {
     background-color: white;
     border: none;
@@ -82,7 +74,6 @@
     background-color: #555;
 }
 
-/* Botões de navegação (anterior e próximo) */
 .banner-botao-nav {
     background: none;
     border: none;
@@ -91,22 +82,19 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    transform: translateY(-50%);
 }
 
-/* Estilo de compra: flex para distribuir os itens */
 .banner-compra {
     display: flex;
     justify-content: space-around;
 }
 
-/* Posição do preço */
 .banner-compra p {
     position: relative;
     right: 60px;
 }
 
-/* Posição do botão de compra */
 .banner-compra button {
     position: relative;
     left: 30px;
@@ -121,12 +109,10 @@
     transition: background 0.3s;
 }
 
-/* Botão "anterior" */
 .banner-esquerda {
     left: 10px;
 }
 
-/* Botão "próximo" */
 .banner-direita {
     right: 10px;
 }
