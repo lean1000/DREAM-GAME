@@ -18,18 +18,26 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
 - [x] **Header**
   - [x] Menu de Navegação
     - [x] Início
+      - [x] leva para tela de inicio
     - [x] Produtos
+      - [x] leva para tela de produto
     - [x] Contato
+      - [x] leva para tela de contato
     - [x] Sobre
-  - [x] Menu Hamburguer
+      - [x] leva para tela de sobre nós
+  - [x] Carrinho
+    - [x] abrir o carrinho ao clicar
+    - [x] deixar registrados os produtos até finalizar a compra
   - [x] Barra de Pesquisa
     - [x] Ícone de Filtro
-    - [ ] Redireciona para a tela do produto pesquisado ou para a tela de pesquisa caso não encontre resultados
+    - [x] Redireciona para a tela do produto pesquisado ou para a tela de pesquisa caso não encontre resultados
+    - [x] pesquisa atraves do titulo de produto
 - [x] **Banner**
-  - [x] Imagens promocionais
-  - [x] Botão de Compra leva para a tela do produto em destaque
-- [ ] **Área de Produtos**
-  - [ ] Lista de produtos com links para suas páginas
+  - [x] Imagens
+  - [x] Botão de Compra leva para a tela do produto
+- [x] **Área de Produtos**
+  - [x] Imagens dos produtos
+  - [x] Lista de produtos com links para suas páginas
 - [x] **Footer**
   - [x] Informações de direitos autorais
 
@@ -37,10 +45,10 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
 
 ### 🧾 Tela de Produtos
 - [x] Header
-- [ ] Lista de Produtos
-  - [ ] Imagem do produto
-  - [ ] Nome e preço
-  - [ ] Botão "Comprar" redirecionando para a tela do produto
+- [x] Lista de Produtos
+  - [x] Imagem do produto
+  - [x] Nome e preço
+  - [x] Botão "Comprar" redirecionando para a tela do produto
 - [x] Footer
 
 ---
@@ -60,14 +68,15 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
 ### 🔎 Tela de Pesquisa
 - [x] Header
 - [x] Barra de Pesquisa
-- [ ] Resultados de Produtos
-- [ ] Filtros (gênero, ano, valor)
+- [x] Resultados de Produtos
+- [x] Filtros (gênero, ano, valor)
 
 ---
 
 ### 👤 Tela de Perfil
 - [x] Header
-- [ ] Opções para edição do perfil
+- [x] informações do perfil
+- [x] Botâo para edição do perfil
 - [x] Footer
 
 ---
@@ -79,6 +88,7 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
 - [x] Formulário de Cadastro
   - [x] **Apelido (Nickname)**:
     - [x] Obrigatório
+    - [x] Unico
     - [x] Entre 3 e 20 caracteres (letras, números e `_`)
   - [x] **Nome Completo**:
     - [x] Obrigatório
@@ -91,6 +101,7 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
     - [x] Obrigatório
     - [x] Formato válido (ex: exemplo@dominio.com)
     - [x] Verificação de email duplicado
+    - [x] Unico
   - [x] **Senha**:
     - [x] Obrigatória
     - [x] Mínimo de 8 caracteres
@@ -118,10 +129,36 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
 ---
 
 ### 🖥️ Telas em C# (Sistema Administrativo)
-- [x] Tela de Login
-- [ ] Tela de Cadastro
-- [ ] Tela de Editar Produto
-- [ ] Tela de Editar Usuário
+
+### Tela de Login
+- [x] **Email**:
+  - [x] Email de admin
+- [x] **Senha:**
+  - [x] Senha de admin
+---
+
+### Usuário
+
+#### Tela Editar Usuário
+
+- [x] **Campos para as informações**
+- [x] **Botão de Buscar** para puchar as informações para o campo
+- [x] **Botão de Salvar** para salvar as informações editadas
+
+---
+
+### Produto
+
+#### Tela Editar Produto
+
+- [x] **Campos para as informações**
+- [x] **Botão de Buscar** para puchar as informações para o campo
+- [x] **Botão de Salvar** para salvar as informações editadas
+
+#### Tela Cadastrar Produto
+
+- [x] **Campos para colocar as informações para o cadastro**
+- [ ] **Botão de Enviar** para enviar as informações dos campos para o banco
 
 ---
 
