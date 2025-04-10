@@ -202,7 +202,7 @@ Integrantes que desenvolveram este projeto:
 
 ## 📸 Imagem do Projeto
 
-<img src="./assets/img/logo/print-site.png" alt="Print da interface" width="100%">
+<img src="./DreamGame/assets/img/logo/print-site.png" alt="Print da interface" width="100%">
 
 ---
 
