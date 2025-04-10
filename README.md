@@ -137,7 +137,7 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
   - [x] Senha de admin
 ---
 
-### Usuário
+### ⚙️ Usuário
 
 #### Tela Editar Usuário
 
@@ -147,7 +147,7 @@ O projeto está em andamento e conta com diversas funcionalidades concluídas e 
 
 ---
 
-### Produto
+### ⚙️ Produto
 
 #### Tela Editar Produto
 
