@@ -143,4 +143,69 @@ O projeto foi testado no sistema **Windows**, mas deve funcionar também no **Li
 ### 1. Clone o projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/dreamgame.git
+git clone https://github.com/lean1000/DREAM-GAME.git
+```
+---
+
+### 2. Configure o Banco de Dados:
+- Crie um banco chamado db_dreamgame no seu phpMyAdmin
+- Importe o arquivo db_dreamgame.sql da pasta database/
+---
+### 3. Inicie o Servidor Local:
+- Abra seu navegador e acesse:
+
+```bash
+http://localhost/DREAM-GAME/DreamGame/index.php
+```
+---
+
+## 🎮 Funcionalidades WebSite
+
+- 🔍 **Busca de jogos com filtros avançados**
+- 🧾 **Página de produto** com descrição, avaliação e botão de compra
+- 🛒 **Carrinho** com armazenamento em `localStorage`
+- 👤 **Sistema completo de autenticação** (login, cadastro, recuperação de senha)
+- 🧠 **Validações com JavaScript em tempo real** no cadastro
+- ✅ **Finalização de compra** com verificação de login
+- ⭐ **Exibição de avaliações com estrelas dinâmicas**
+
+---
+
+## ⚙️ Funcionalidades C# Administrador
+
+- 🔍 **Filtro de busca para adiministrar usuario**
+- 🔍 **Filtro de busca para adiministrar produto**
+- 🛠️ **Editar** informaçoes do usuario
+- 🛠️ **Editar** informaçoes do produto
+- 📝 **Cadasro** de produtos
+
+---
+
+## 🤝 Colaboradores
+
+Integrantes que desenvolveram este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="Foto Leandro"/><br/>
+      <sub><b>Leandro Piai Barreto</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="Foto Thiago"/><br/>
+      <sub><b>Thiago Bispo Souza</b></sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📸 Imagem do Projeto
+
+<img src="./assets/img/capa_banners/banner1.jpg" alt="Print da interface" width="100%">
+
+---
+
+## 📄 Licença
+
+Este projeto é de uso **acadêmico** e **não possui fins comerciais**.
