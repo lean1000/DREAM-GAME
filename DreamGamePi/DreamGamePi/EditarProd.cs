@@ -66,7 +66,8 @@ command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
  
                          MessageBox.Show("Nenhuma alteração foi feita ou produto não encontrado.");
 
-//titulo usado na cláusula WHERE não tenha sido encontrado ou que os dados sejam iguais aos que já estavam no banco)//
+//titulo usado na WHERE não tenha sido encontrado ou que os dados sejam iguais aos que já estavam no banco)//
+
               }
                     }
                     catch (Exception ex)
@@ -96,19 +97,27 @@ command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
                      WHERE titulo LIKE @Titulo 
                      LIMIT 1"; 
 
+//Usa o LIKE com parâmetro @Titulo para permitir buscar por palavras-chave//
+
             using (MySqlConnection connection = new MySqlConnection(conexaoString))
             {
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Titulo", "%" + textBoxBusca.Text + "%");
 
+//% ao redor do texto servem para permitir que o LIKE funcione como busca parcial//
+
                     try
                     {
                         connection.Open();
                         MySqlDataReader reader = command.ExecuteReader();
 
+//executa a consulta e retorna um leitor de dados reader que permite ler os resultados linha por linha//
+
                         if (reader.Read())
                         {
+//preenche os campos com os dados encontrados//
+
                             textBoxTitulo.Text = reader["titulo"].ToString();
                             textBoxImagem.Text = reader["imagen"].ToString(); 
                             textBoxValor.Text = reader["valor"].ToString();
@@ -120,7 +129,7 @@ command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
                         }
                         else
                         {
-                            
+//Caso nenhum produto seja encontrado reader.Read() retorna false limpando os campos//                 
                             textBoxTitulo.Clear();
                             textBoxImagem.Clear();
                             textBoxValor.Clear();
