@@ -27,7 +27,10 @@ namespace DreamGamePi
         private void buttonEditarproduto_Click(object sender, EventArgs e)
         {
             string conexaoString = "Server=185.213.81.205;Port=3306;Database=u336727971_db_dreamgame;Uid=u336727971_hostinger;Pwd=DreamGame@1;";
-            string query = "UPDATE tb_produtos SET valor = @Valor, imagen = @Imagen, ano = @Ano, desenvolvedor = @Desenvolvedor, " +
+
+// Comando SQL para atualizar os dados do produto baseado no título//
+
+string query = "UPDATE tb_produtos SET valor = @Valor, imagen = @Imagen, ano = @Ano, desenvolvedor = @Desenvolvedor, " +
                            "ID_genero = @ID_genero, descricao = @Descricao,  avaliacao = @Avaliacao " +
                            "WHERE titulo = @Titulo";
 
@@ -36,7 +39,9 @@ namespace DreamGamePi
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
 
-                    command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
+// Adiciona o valor dos campos aos parâmetros da query SQL//
+
+command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
                     command.Parameters.AddWithValue("@Valor", textBoxValor.Text);
                     command.Parameters.AddWithValue("@Ano", textBoxAno.Text);
                     command.Parameters.AddWithValue("@Desenvolvedor", textBoxDesenvolvedor.Text);                   
