@@ -188,11 +188,11 @@ Integrantes que desenvolveram este projeto:
 <table>
   <tr>
     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="Foto Leandro"/><br/>
+      <img src="https://github.com/lean1000.png" width="100px" alt="Foto do Leandro"/><br/>
       <sub><b>Leandro Piai Barreto</b></sub>
     </td>
     <td align="center">
-      <img src="https://avatars.githubusercontent.com/u/000000?v=4" width="100px;" alt="Foto Thiago"/><br/>
+      <img src="https://github.com/lean1000.png" width="100px;" alt="Foto Thiago"/><br/>
       <sub><b>Thiago Bispo Souza</b></sub>
     </td>
   </tr>
