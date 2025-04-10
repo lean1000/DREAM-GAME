@@ -55,9 +55,11 @@ command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
                         connection.Open();
                         int rowsAffected = command.ExecuteNonQuery();
 
+
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Produto atualizado com sucesso!");
+//Se uma ou mais linhas foram afetadas, mostra uma mensagem de sucesso.//
                         }
                         else
                         {
