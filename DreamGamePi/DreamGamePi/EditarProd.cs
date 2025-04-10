@@ -63,8 +63,11 @@ command.Parameters.AddWithValue("@Titulo", textBoxTitulo.Text);
                         }
                         else
                         {
-                            MessageBox.Show("Nenhuma alteração foi feita ou produto não encontrado.");
-                        }
+ 
+                         MessageBox.Show("Nenhuma alteração foi feita ou produto não encontrado.");
+
+//titulo usado na cláusula WHERE não tenha sido encontrado ou que os dados sejam iguais aos que já estavam no banco)//
+              }
                     }
                     catch (Exception ex)
                     {
