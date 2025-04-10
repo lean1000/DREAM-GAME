@@ -192,7 +192,7 @@ Integrantes que desenvolveram este projeto:
       <sub><b>Leandro Piai Barreto</b></sub>
     </td>
     <td align="center">
-      <img src="https://github.com/lean1000.png" width="100px;" alt="Foto Thiago"/><br/>
+      <img src="https://github.com/Thbispo.png" width="100px;" alt="Foto Thiago"/><br/>
       <sub><b>Thiago Bispo Souza</b></sub>
     </td>
   </tr>
